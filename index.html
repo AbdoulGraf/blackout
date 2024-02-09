@@ -43,7 +43,27 @@
 
         <div class="page-wrapper">
             <!-- Preloader -->
-            <div class="preloader"><div class="icon"></div></div>
+
+            <!-- <div class="preloader">
+                <video  autoplay id="preloaderVideo">
+                    <source src="images/newVideo/preloader/preloader.mp4"
+                        type="video/mp4">
+                   
+                </video>
+            </div> -->
+
+            <div class="preloader">
+                <video id="preloaderVideo" loop autoplay muted >
+                    <source src="images/newVideo/preloader/preloader.mp4"
+                        type="video/mp4">
+                    <!-- Add other video sources for cross-browser compatibility -->
+                </video>
+                <!-- Ensure the button is part of your HTML -->
+                <!-- <button id="playVideo"
+                    style="position: absolute; z-index: 1000;"
+                    class="playVideo">Unmute</button> -->
+
+            </div>
 
             <!-- Main Header -->
             <header class="main-header header-style-two">
@@ -55,8 +75,10 @@
                             <div class="inner clearfix">
                                 <div class="top-left"
                                     style="visibility: hidden;">
+
                                     <div class="top-text">Welcome to game
                                         developement studio</div>
+
                                 </div>
 
                                 <div class="top-right">
@@ -420,9 +442,11 @@
                                 <div class="inner wow fadeInLeft"
                                     data-wow-delay="0ms"
                                     data-wow-duration="1500ms">
-                                    <div class="image-box"><img
-                                            src="images/newImages/aboutUs/featured-image-2.webp"
-                                            alt title></div>
+                                    <div class="image-box">
+                                        <img
+                                            src="images/newImages/aboutUs/1.gif"
+                                            alt title
+                                            style="border-top-right-radius:50%"></div>
                                 </div>
                             </div>
 
@@ -448,13 +472,14 @@
                     <div class="container">
                         <div class="row">
 
-                            <div class="col-12">
+                            <div class="col-12" style="margin-top: 60px;">
                                 <div
                                     class="section-title title-style-three white-title"
                                     style="padding: 0px;">
                                     <h2>REALISTIC HORROR & ESCAPE ROOM
                                         <span>GAMES WITH LIVE ACTORS</span></h2>
-                                    <p>Welcome to the biggest escape room in
+                                    <p style="font-size: 20px;">Welcome to the
+                                        biggest escape room in
                                         Dubai Jumeirah</p>
                                 </div>
 
@@ -539,7 +564,8 @@
                                             <img
                                                 src="images/newImages/blackIcon/fearface.webp"
                                                 alt
-                                                class="just-gamers-character">
+                                                class="just-gamers-character  scale"
+                                                id="scalingImage">
                                             <!-- <div class="just-gamers-circle-shape">
                                                 <img src="css/outcss/img/images/gamers_circle_line.png" alt="">
                                                 <img src="css/outcss/img/images/gamers_circle_shape.png" alt="" class="rotateme">
@@ -560,7 +586,7 @@
 
             <!-- featured-game-area -->
             <section class="featured-game-area position-relative pt-115 pb-90"
-                style="background: #07070f;">
+                style="background: #070710;">
                 <div class="featured-game-bg"></div>
                 <div class="container">
 
@@ -568,8 +594,10 @@
                             style="color: #910613; font-weight: 700; font-size: 3.5rem;">
                             ESCAPE ROOMS IN DUBAI
                         </h1>
-                        <h5 style="color: #ffff;"> CHOOSE YOUR GAME TO UNRAVEL
-                            THE STORY.. </h5>
+                        <p
+                            style="color: #ffff; font-size: 20px; font-weight: 0;">
+                            Choose your game to unravel
+                            the story. </p>
                         <span class="bottom-curve"></span></div>
 
                     <!-- <div class="row justify-content-center">
@@ -586,9 +614,20 @@
 
                         <div class="col-lg-3 col-sm-6 grid-item">
                             <div class="featured-game-item mb-30">
+
+                                <div class="link-box"
+                                    style="position: absolute; margin-top: 15px; border-radius: 5px; left: 20px;"><a
+                                        style="text-transform: none;"
+                                        href="#"
+                                        class="theme-btn btn-style-one"><span
+                                            class="btn-title"
+                                            style="padding: 0px 10px; font-size: 12px; border-radius: 5px;">
+
+                                            With Live Actor </span></a></div>
+
                                 <div class="featured-game-thumb">
                                     <img
-                                        src="css/outcss/img/images/featured_game_thumb01.jpg"
+                                        src="css/outcss/img/newposters/black_out_posters-01.png"
                                         alt>
                                 </div>
                                 <div class="featured-game-content">
@@ -616,9 +655,10 @@
                                 <div
                                     class="featured-game-content featured-game-overlay-content">
                                     <div class="featured-game-icon"><img
-                                            src="css/outcss/img/icon/featured_game_icon.png"
+                                            src="images/newImages/postersIcon/Psychiatric Title 3.png"
                                             alt></div>
-                                    <h4><a href="#">PSYCHIATRIC</a></h4>
+
+                                    <!-- <h4><a href="#">PSYCHIATRIC</a></h4> -->
 
                                     <div class="featured-game-meta">
                                         <i class="fas fa-clock"></i>
@@ -648,9 +688,20 @@
 
                         <div class="col-lg-3 col-sm-6 grid-item">
                             <div class="featured-game-item mb-30">
+
+                                <div class="link-box"
+                                    style="position: absolute; margin-top: 15px; border-radius: 5px; left: 20px;"><a
+                                        style="text-transform: none;"
+                                        href="#"
+                                        class="theme-btn btn-style-one"><span
+                                            class="btn-title"
+                                            style="padding: 0px 10px; font-size: 12px; border-radius: 5px;">
+
+                                            With Live Actor </span></a></div>
+
                                 <div class="featured-game-thumb">
                                     <img
-                                        src="css/outcss/img/images/featured_game_thumb02.jpg"
+                                        src="css/outcss/img/newposters/black_out_posters-03.png"
                                         alt>
                                 </div>
                                 <div class="featured-game-content">
@@ -677,9 +728,9 @@
                                 <div
                                     class="featured-game-content featured-game-overlay-content">
                                     <div class="featured-game-icon"><img
-                                            src="css/outcss/img/icon/featured_game_icon.png"
+                                            src="images/newImages/postersIcon/Exorcism Title.png"
                                             alt></div>
-                                    <h4><a href="#"> EXORCISM </a></h4>
+                                    <!-- <h4><a href="#"> EXORCISM </a></h4> -->
 
                                     <div class="featured-game-meta">
                                         <i class="fas fa-clock"></i>
@@ -709,9 +760,20 @@
 
                         <div class="col-lg-3 col-sm-6 grid-item">
                             <div class="featured-game-item mb-30">
+
+                                <div class="link-box"
+                                    style="position: absolute; margin-top: 15px; border-radius: 5px; left: 20px;"><a
+                                        style="text-transform: none;"
+                                        href="#"
+                                        class="theme-btn btn-style-one"><span
+                                            class="btn-title"
+                                            style="padding: 0px 10px; font-size: 12px; border-radius: 5px;">
+
+                                            With Live Actor </span></a></div>
+
                                 <div class="featured-game-thumb">
                                     <img
-                                        src="css/outcss/img/images/featured_game_thumb03.jpg"
+                                        src="css/outcss/img/newposters/black_out_posters-02.png"
                                         alt>
                                 </div>
                                 <div class="featured-game-content">
@@ -738,10 +800,10 @@
                                 <div
                                     class="featured-game-content featured-game-overlay-content">
                                     <div class="featured-game-icon"><img
-                                            src="css/outcss/img/icon/featured_game_icon.png"
+                                            src="images/newImages/postersIcon/Torture Title.png"
                                             alt></div>
-                                    <h4><a href="#"> TORTURE
-                                        </a></h4>
+                                    <!-- <h4><a href="#"> TORTURE
+                                        </a></h4> -->
 
                                     <div class="featured-game-meta">
                                         <i class="fas fa-clock"></i>
@@ -771,9 +833,19 @@
 
                         <div class="col-lg-3 col-sm-6 grid-item">
                             <div class="featured-game-item mb-30">
+
+                                <div class="link-box"
+                                    style="position: absolute; margin-top: 15px; border-radius: 5px; left: 20px;"><a
+                                        style="text-transform: none;"
+                                        href="#"
+                                        class="theme-btn btn-style-one"><span
+                                            class="btn-title"
+                                            style="padding: 0px 10px; font-size: 12px; border-radius: 5px;">
+
+                                            With Live Actor </span></a></div>
                                 <div class="featured-game-thumb">
                                     <img
-                                        src="css/outcss/img/images/featured_game_thumb02.jpg"
+                                        src="css/outcss/img/newposters/black_out_posters-04.png"
                                         alt>
                                 </div>
                                 <div class="featured-game-content">
@@ -801,10 +873,10 @@
                                 <div
                                     class="featured-game-content featured-game-overlay-content">
                                     <div class="featured-game-icon"><img
-                                            src="css/outcss/img/icon/featured_game_icon.png"
+                                            src="images/newImages/postersIcon/Chaos Title.png"
                                             alt></div>
-                                    <h4><a href="#"> CHAOS
-                                        </a></h4>
+                                    <!-- <h4><a href="#"> CHAOS
+                                        </a></h4> -->
                                     <div class="featured-game-meta">
                                         <i class="fas fa-clock"></i>
                                         <span>60 Mins</span>
@@ -840,7 +912,8 @@
             <!--Video Section-->
             <section class="video-section">
                 <div class="top-pattern-layer-allblack"></div>
-                <div class="bottom-pattern-layer-dark-allblack"></div>
+                <div class="bottom-pattern-layer-dark-allblack"
+                    style="background: url(images/newImages/layers/beyaz_parca.webp); width: 101%;"></div>
 
                 <div class="image-layer"
                     style="background-image: url(images/newImages/dubaImages/video-bg.webp);"></div>
@@ -867,14 +940,14 @@
                                 <!-- <div class="icon-box"><span class="flaticon-pumpkin"></span></div> -->
                                 <div class="services-two__icon">
                                     <img
-                                        src="images/newImages/icon/friends-families.svg"
-                                        style="max-width: 85px;">
+                                        src="images/newImages/black_out_icons/friends-families.svg"
+                                        style="max-width: 115px;">
                                 </div>
                                 &nbsp;
-                                <h4>horor & Adventure</h4>
-                                <div class="feature-text">Lorem ipsum is simply
-                                    are many variations of pass of
-                                    majority.</div>
+                                <h4>FRIENDS & FAMILIES</h4>
+                                <div class="feature-text">Experience the
+                                    exciting adventure with your family and
+                                    friends!</div>
                             </div>
                         </div>
                         <!--Feature-->
@@ -883,14 +956,14 @@
                             data-wow-delay="200ms" data-wow-duration="1500ms">
                             <div class="inner-box">
                                 <div class="services-two__icon">
-                                    <img src="images/newImages/icon/tourist.svg"
-                                        style="max-width: 85px;">
+                                    <img
+                                        src="images/newImages/black_out_icons/tourist.svg"
+                                        style="max-width: 115px;">
                                 </div>
                                 &nbsp;
-                                <h4>Multi Players</h4>
-                                <div class="feature-text">Lorem ipsum is simply
-                                    are many variations of pass of
-                                    majority.</div>
+                                <h4>TOURISTS</h4>
+                                <div class="feature-text">Let your trip turn
+                                    into an unforgettable experience.</div>
                             </div>
                         </div>
                         <!--Feature-->
@@ -899,14 +972,14 @@
                             data-wow-delay="400ms" data-wow-duration="1500ms">
                             <div class="inner-box">
                                 <div class="services-two__icon">
-                                    <img src="images/newImages/icon/gamers.svg"
-                                        style="max-width: 85px;">
+                                    <img
+                                        src="images/newImages/black_out_icons/gamers.svg"
+                                        style="max-width: 115px; ">
                                 </div>
                                 &nbsp;
-                                <h4>Real Graphic Heroes</h4>
-                                <div class="feature-text">Lorem ipsum is simply
-                                    are many variations of pass of
-                                    majority.</div>
+                                <h4>GAMERS </h4>
+                                <div class="feature-text">Are you bored and
+                                    looking for new challenges?</div>
                             </div>
                         </div>
                         <!--Feature-->
@@ -916,472 +989,48 @@
                             <div class="inner-box">
                                 <div class="services-two__icon">
                                     <img
-                                        src="images/newImages/icon/corporate.svg"
-                                        style="max-width: 85px;">
+                                        src="images/newImages/black_out_icons/corporate.svg"
+                                        style="max-width: 115px;">
                                 </div>
                                 &nbsp;
-                                <h4>Smooth Controlling</h4>
-                                <div class="feature-text">Lorem ipsum is simply
-                                    are many variations of pass of
-                                    majority.</div>
+                                <h4>CORPORATE</h4>
+                                <div class="feature-text">Corporate event to
+                                    build the team spirit in your company.</div>
                             </div>
                         </div>
                     </div>
 
                 </div>
-            </section>
-
-            <section class="games-section" style="background: #07070f;">
-                <!-- <div class="top-pattern-layer"></div>
-                    <div class="bottom-pattern-layer"></div> -->
-                <!-- <div class="top-pattern-layer"></div> -->
-                <!-- <div class="top-pattern-layer-dark"></div> -->
-                <div class="bottom-pattern-layer-dark"></div>
-
-                <div class="auto-container">
-                    <!--Title-->
-                    <div class="sec-title centered"><h1
-                            style="color: #910613; font-weight: 700; font-size: 3.5rem;">
-                            ESCAPE ROOMS IN DUBAI
-                        </h1>
-                        <h5 style="color: #ffff;"> CHOOSE YOUR GAME TO UNRAVEL
-                            THE STORY.. </h5>
-                        <span class="bottom-curve"></span></div>
-
-                    <div class="row clearfix">
-                        <!--Game Block-->
-                        <div
-                            class="game-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp"
-                            data-wow-delay="0ms" data-wow-duration="1500ms">
-
-                            <div class="inner-box">
-                                <div class="image-box">
-                                    <figure class="image"><a
-                                            href="#"><img
-                                                src="images/newImages/dubaImages/example1.png"
-                                                alt title></a></figure>
-                                    <!-- <div class="link-box"><a href="#"
-                                            class="link-btn"> <span
-                                                class="btn-title">Download
-                                                game</span></a></div> -->
-                                </div>
-                                <div class="lower-content"
-                                    style="padding-top: 20px;">
-
-                                    <div class="post-info"
-                                        style="border-top: none;">
-                                        <ul class="clearfix">
-                                            <!-- <li><a href="#"><span class="icon flaticon-calendar-2"></span>May 2018</a></li>
-                                                <li><a href="#"><span class="icon flaticon-console"></span>Ps4</a></li> -->
-                                            <li><a href><i
-                                                        class="fas fa-clock"></i>
-                                                    60 Mins </a></li>
-                                            <li><a href><i
-                                                        class="fas fa-hammer"></i>
-                                                    Hard </a></li>
-                                            <li><a href><i
-                                                        class="fas fa-running"></i>
-                                                    2- 10 </a></li>
-                                        </ul>
-                                    </div>
-
-                                    <!-- <div class="rating">Rating <span class="ratings"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></span></div> -->
-
-                                    <!-- <h3><a href="#">Dragon
-                                            Fight</a></h3> -->
-
-                                    <div class="post-info">
-
-                                        <div class="text">Lorem ipsum is simply
-                                            free
-                                            text used by copytyping
-                                            refreshing.</div>
-
-                                    </div>
-
-                                    <div class="link-box"><a href="#"
-                                            class="theme-btn btn-style-one"><span
-                                                class="btn-title"
-                                                style="background: #910613;">
-                                                Book
-                                                Now</span></a></div>
-
-                                    <!-- <div class="post-info">
-                                        <ul class="clearfix">
-                                            <li><a href="#"><span
-                                                        class="icon flaticon-calendar-2"></span>May
-                                                    2018</a></li>
-                                            <li><a href="#"><span
-                                                        class="icon flaticon-console"></span>Ps4</a></li>
-                                        </ul>
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
-                        <!--Game Block-->
-                        <div
-                            class="game-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp"
-                            data-wow-delay="0ms" data-wow-duration="1500ms">
-
-                            <div class="inner-box">
-                                <div class="image-box">
-                                    <figure class="image"><a
-                                            href="#"><img
-                                                src="images/newImages/dubaImages/example1.webp"
-                                                alt title></a></figure>
-
-                                    <!-- <div class="link-box"><a href="#"
-                                            class="link-btn"> <span
-                                                class="btn-title">Download
-                                                game</span></a></div> -->
-                                </div>
-                                <div class="lower-content"
-                                    style="padding-top: 20px;">
-
-                                    <div class="post-info"
-                                        style="border-top: none;">
-                                        <ul class="clearfix">
-                                            <!-- <li><a href="#"><span class="icon flaticon-calendar-2"></span>May 2018</a></li>
-                                                <li><a href="#"><span class="icon flaticon-console"></span>Ps4</a></li> -->
-                                            <li><a href><i
-                                                        class="fas fa-clock"></i>
-                                                    60 Mins </a></li>
-                                            <li><a href><i
-                                                        class="fas fa-hammer"></i>
-                                                    Hard </a></li>
-                                            <li><a href><i
-                                                        class="fas fa-running"></i>
-                                                    2- 10 </a></li>
-                                        </ul>
-                                    </div>
-
-                                    <!-- <div class="rating">Rating <span class="ratings"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></span></div> -->
-
-                                    <!-- <h3><a href="#">Dragon
-                                            Fight</a></h3> -->
-
-                                    <div class="post-info">
-
-                                        <div class="text">Lorem ipsum is simply
-                                            free
-                                            text used by copytyping
-                                            refreshing.</div>
-
-                                    </div>
-
-                                    <div class="link-box"><a href="#"
-                                            class="theme-btn btn-style-one"><span
-                                                class="btn-title"
-                                                style="background: #910613;">
-                                                Book
-                                                Now</span></a></div>
-
-                                    <!-- <div class="post-info">
-                                        <ul class="clearfix">
-                                            <li><a href="#"><span
-                                                        class="icon flaticon-calendar-2"></span>May
-                                                    2018</a></li>
-                                            <li><a href="#"><span
-                                                        class="icon flaticon-console"></span>Ps4</a></li>
-                                        </ul>
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
-                        <!--Game Block-->
-                        <div
-                            class="game-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp"
-                            data-wow-delay="0ms" data-wow-duration="1500ms">
-
-                            <div class="inner-box">
-                                <div class="image-box">
-                                    <figure class="image"><a
-                                            href="#"><img
-                                                src="images/newImages/dubaImages/example1.webp"
-                                                alt title></a></figure>
-                                    <!-- <div class="link-box"><a href="#"
-                                            class="link-btn"> <span
-                                                class="btn-title">Download
-                                                game</span></a></div> -->
-                                </div>
-                                <div class="lower-content"
-                                    style="padding-top: 20px;">
-
-                                    <div class="post-info"
-                                        style="border-top: none;">
-                                        <ul class="clearfix">
-                                            <!-- <li><a href="#"><span class="icon flaticon-calendar-2"></span>May 2018</a></li>
-                                                <li><a href="#"><span class="icon flaticon-console"></span>Ps4</a></li> -->
-                                            <li><a href><i
-                                                        class="fas fa-clock"></i>
-                                                    60 Mins </a></li>
-                                            <li><a href><i
-                                                        class="fas fa-hammer"></i>
-                                                    Hard </a></li>
-                                            <li><a href><i
-                                                        class="fas fa-running"></i>
-                                                    2- 10 </a></li>
-                                        </ul>
-                                    </div>
-
-                                    <!-- <div class="rating">Rating <span class="ratings"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></span></div> -->
-
-                                    <!-- <h3><a href="#">Dragon
-                                            Fight</a></h3> -->
-
-                                    <div class="post-info">
-
-                                        <div class="text">Lorem ipsum is simply
-                                            free
-                                            text used by copytyping
-                                            refreshing.</div>
-
-                                    </div>
-
-                                    <div class="link-box"><a href="#"
-                                            class="theme-btn btn-style-one"><span
-                                                class="btn-title"
-                                                style="background: #910613;">
-                                                Book
-                                                Now</span></a></div>
-
-                                    <!-- <div class="post-info">
-                                        <ul class="clearfix">
-                                            <li><a href="#"><span
-                                                        class="icon flaticon-calendar-2"></span>May
-                                                    2018</a></li>
-                                            <li><a href="#"><span
-                                                        class="icon flaticon-console"></span>Ps4</a></li>
-                                        </ul>
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
-
-                        <div
-                            class="game-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp"
-                            data-wow-delay="0ms" data-wow-duration="1500ms">
-
-                            <div class="inner-box">
-                                <div class="image-box">
-                                    <figure class="image"><a
-                                            href="#"><img
-                                                src="images/newImages/dubaImages/example1.webp"
-                                                alt title></a></figure>
-                                    <!-- <div class="link-box"><a href="#"
-                                            class="link-btn"> <span
-                                                class="btn-title">Download
-                                                game</span></a></div> -->
-                                </div>
-                                <div class="lower-content"
-                                    style="padding-top: 20px;">
-
-                                    <div class="post-info"
-                                        style="border-top: none;">
-                                        <ul class="clearfix">
-                                            <!-- <li><a href="#"><span class="icon flaticon-calendar-2"></span>May 2018</a></li>
-                                                <li><a href="#"><span class="icon flaticon-console"></span>Ps4</a></li> -->
-                                            <li><a href><i
-                                                        class="fas fa-clock"></i>
-                                                    60 Mins </a></li>
-                                            <li><a href><i
-                                                        class="fas fa-hammer"></i>
-                                                    Hard </a></li>
-                                            <li><a href><i
-                                                        class="fas fa-running"></i>
-                                                    2- 10 </a></li>
-                                        </ul>
-                                    </div>
-
-                                    <!-- <div class="rating">Rating <span class="ratings"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></span></div> -->
-
-                                    <!-- <h3><a href="#">Dragon
-                                            Fight</a></h3> -->
-
-                                    <div class="post-info">
-
-                                        <div class="text">Lorem ipsum is simply
-                                            free
-                                            text used by copytyping
-                                            refreshing.</div>
-
-                                    </div>
-
-                                    <div class="link-box"><a href="#"
-                                            class="theme-btn btn-style-one"><span
-                                                class="btn-title"
-                                                style="background: #910613;">
-                                                Book
-                                                Now</span></a></div>
-
-                                    <!-- <div class="post-info">
-                                        <ul class="clearfix">
-                                            <li><a href="#"><span
-                                                        class="icon flaticon-calendar-2"></span>May
-                                                    2018</a></li>
-                                            <li><a href="#"><span
-                                                        class="icon flaticon-console"></span>Ps4</a></li>
-                                        </ul>
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </section>
-
-            <section class="games-section" style="background: #f5f5f5;">
-                <div class="top-pattern-layer"></div>
-                <div class="bottom-pattern-layer"></div>
-
-                <div class="auto-container">
-                    <!--Title-->
-                    <div class="sec-title centered"
-                        style="visibility:hidden;"><h2>Latest games</h2><span
-                            class="bottom-curve"></span></div>
-
-                    <div class="row clearfix" style="visibility:hidden;">
-                        <!--Game Block-->
-                        <div
-                            class="game-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp"
-                            data-wow-delay="0ms" data-wow-duration="1500ms"
-                            style="visibility:hidden;">
-                            <div class="inner-box">
-                                <div class="image-box">
-                                    <figure class="image"><a
-                                            href="#"><img
-                                                src="images/resource/game-image-1.jpg"
-                                                alt title></a></figure>
-                                    <div class="link-box"><a href="#"
-                                            class="link-btn"> <span
-                                                class="btn-title">Download
-                                                game</span></a></div>
-                                </div>
-                                <div class="lower-content">
-                                    <div class="rating">Rating <span
-                                            class="ratings"><span
-                                                class="fa fa-star"></span><span
-                                                class="fa fa-star"></span><span
-                                                class="fa fa-star"></span><span
-                                                class="fa fa-star"></span><span
-                                                class="fa fa-star"></span></span></div>
-                                    <h3><a href="#">Dragon
-                                            Fight</a></h3>
-                                    <div class="text">Lorem ipsum is simply free
-                                        text used by copytyping
-                                        refreshing.</div>
-                                    <div class="post-info">
-                                        <ul class="clearfix">
-                                            <li><a href="#"><span
-                                                        class="icon flaticon-calendar-2"></span>May
-                                                    2018</a></li>
-                                            <li><a href="#"><span
-                                                        class="icon flaticon-console"></span>Ps4</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Game Block-->
-                        <div
-                            class="game-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp"
-                            data-wow-delay="300ms" data-wow-duration="1500ms"
-                            style="visibility:hidden;">
-
-                            <div class="inner-box">
-                                <div class="image-box">
-                                    <figure class="image"><a
-                                            href="#"><img
-                                                src="images/resource/game-image-2.jpg"
-                                                alt title></a></figure>
-                                    <div class="link-box"><a href="#"
-                                            class="link-btn"> <span
-                                                class="btn-title">Download
-                                                game</span></a></div>
-                                </div>
-                                <div class="lower-content">
-                                    <div class="rating">Rating <span
-                                            class="ratings"><span
-                                                class="fa fa-star"></span><span
-                                                class="fa fa-star"></span><span
-                                                class="fa fa-star"></span><span
-                                                class="fa fa-star"></span><span
-                                                class="fa fa-star"></span></span></div>
-                                    <h3><a href="#">Street
-                                            fighter</a></h3>
-                                    <div class="text">Lorem ipsum is simply free
-                                        text used by copytyping
-                                        refreshing.</div>
-                                    <div class="post-info">
-                                        <ul class="clearfix">
-                                            <li><a href="#"><span
-                                                        class="icon flaticon-calendar-2"></span>May
-                                                    2018</a></li>
-                                            <li><a href="#"><span
-                                                        class="icon flaticon-console"></span>Ps4</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Game Block-->
-                        <div
-                            class="game-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp"
-                            data-wow-delay="600ms" data-wow-duration="1500ms"
-                            style="visibility: hidden;">
-                            <div class="inner-box">
-                                <div class="image-box">
-                                    <figure class="image"><a
-                                            href="#"><img
-                                                src="images/resource/game-image-3.jpg"
-                                                alt title></a></figure>
-                                    <div class="link-box"><a href="#"
-                                            class="link-btn"> <span
-                                                class="btn-title">Download
-                                                game</span></a></div>
-                                </div>
-                                <div class="lower-content">
-                                    <div class="rating">Rating <span
-                                            class="ratings"><span
-                                                class="fa fa-star"></span><span
-                                                class="fa fa-star"></span><span
-                                                class="fa fa-star"></span><span
-                                                class="fa fa-star"></span><span
-                                                class="fa fa-star"></span></span></div>
-                                    <h3><a href="#">Justice
-                                            League</a></h3>
-                                    <div class="text">Lorem ipsum is simply free
-                                        text used by copytyping
-                                        refreshing.</div>
-                                    <div class="post-info">
-                                        <ul class="clearfix">
-                                            <li><a href="#"><span
-                                                        class="icon flaticon-calendar-2"></span>May
-                                                    2018</a></li>
-                                            <li><a href="#"><span
-                                                        class="icon flaticon-console"></span>Ps4</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </section>
 
             <!--Reviews Section-->
             <section class="reviews-section">
-                <div class="top-pattern-layer-dark"></div>
-                <div class="bottom-pattern-layer-dark"></div>
+
+                <!-- <div class="top-pattern-layer-dark" style="top: -72px;"></div>
+                <div class="bottom-pattern-layer-dark"></div> -->
 
                 <div class="auto-container">
                     <!--Title-->
-                    <div class="sec-title"><h3>Players reviews</h2><span
-                            class="bottom-curve"></span></div>
+                    <!-- <div class="sec-title"><h2> Players Reviews  </h2><span
+                            class="bottom-curve"></span></div> -->
 
-                    <div class="testimonial-slider carousel-outer clearfix">
+                    <div class="row">
+
+                        <div class="col-12">
+                            <div
+                                class="section-title title-style-three white-title">
+                                <h2>
+                                    <span>TESTIMONIALS</span></h2>
+                                <p style="font-size: 20px;"> Your Comments are
+                                    important to us</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="testimonial-slider carousel-outer clearfix"
+                        style="margin-bottom: 75px;">
 
                         <div class="thumb-carousel-box">
                             <ul class="thumb-carousel owl-carousel owl-theme">
@@ -1516,268 +1165,56 @@
 
             </section>
 
-            <!--Carousel Gallery Section-->
-            <section class="carousel-gallery">
-                <div class="auto-container">
-                    <div class="sec-title centered"><h2>Games gallery</h2><span
-                            class="bottom-curve"></span></div>
-                </div>
-
-                <div class="carousel-box">
-                    <!--Gallery Carousel-->
-                    <div class="gallery-carousel owl-theme owl-carousel">
-                        <!--Slide Item-->
-                        <div class="slide-item">
-                            <!--Gallery Item-->
-                            <div class="gallery-item">
-                                <div class="inner-box">
-                                    <div class="image-box">
-                                        <figure class="image"><img
-                                                src="images/gallery/17.jpg" alt
-                                                title></figure>
-                                    </div>
-                                    <div class="hover-box">
-                                        <a href="images/gallery/17.jpg" title
-                                            data-fancybox="home-gallery"
-                                            class="lightbox-image"><span
-                                                class="icon flaticon-cross"></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Slide Item-->
-                        <div class="slide-item">
-                            <!--Gallery Item-->
-                            <div class="gallery-item">
-                                <div class="inner-box">
-                                    <div class="image-box">
-                                        <figure class="image"><img
-                                                src="images/gallery/18.jpg" alt
-                                                title></figure>
-                                    </div>
-                                    <div class="hover-box">
-                                        <a href="images/gallery/18.jpg" title
-                                            data-fancybox="home-gallery"
-                                            class="lightbox-image"><span
-                                                class="icon flaticon-cross"></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Slide Item-->
-                        <div class="slide-item">
-                            <!--Gallery Item-->
-                            <div class="gallery-item">
-                                <div class="inner-box">
-                                    <div class="image-box">
-                                        <figure class="image"><img
-                                                src="images/gallery/19.jpg" alt
-                                                title></figure>
-                                    </div>
-                                    <div class="hover-box">
-                                        <a href="images/gallery/19.jpg" title
-                                            data-fancybox="home-gallery"
-                                            class="lightbox-image"><span
-                                                class="icon flaticon-cross"></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Slide Item-->
-                        <div class="slide-item">
-                            <!--Gallery Item-->
-                            <div class="gallery-item">
-                                <div class="inner-box">
-                                    <div class="image-box">
-                                        <figure class="image"><img
-                                                src="images/gallery/20.jpg" alt
-                                                title></figure>
-                                    </div>
-                                    <div class="hover-box">
-                                        <a href="images/gallery/20.jpg" title
-                                            data-fancybox="home-gallery"
-                                            class="lightbox-image"><span
-                                                class="icon flaticon-cross"></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Slide Item-->
-                        <div class="slide-item">
-                            <!--Gallery Item-->
-                            <div class="gallery-item">
-                                <div class="inner-box">
-                                    <div class="image-box">
-                                        <figure class="image"><img
-                                                src="images/gallery/17.jpg" alt
-                                                title></figure>
-                                    </div>
-                                    <div class="hover-box">
-                                        <a href="images/gallery/17.jpg" title
-                                            data-fancybox="home-gallery"
-                                            class="lightbox-image"><span
-                                                class="icon flaticon-cross"></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Slide Item-->
-                        <div class="slide-item">
-                            <!--Gallery Item-->
-                            <div class="gallery-item">
-                                <div class="inner-box">
-                                    <div class="image-box">
-                                        <figure class="image"><img
-                                                src="images/gallery/18.jpg" alt
-                                                title></figure>
-                                    </div>
-                                    <div class="hover-box">
-                                        <a href="images/gallery/18.jpg" title
-                                            data-fancybox="home-gallery"
-                                            class="lightbox-image"><span
-                                                class="icon flaticon-cross"></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Slide Item-->
-                        <div class="slide-item">
-                            <!--Gallery Item-->
-                            <div class="gallery-item">
-                                <div class="inner-box">
-                                    <div class="image-box">
-                                        <figure class="image"><img
-                                                src="images/gallery/19.jpg" alt
-                                                title></figure>
-                                    </div>
-                                    <div class="hover-box">
-                                        <a href="images/gallery/19.jpg" title
-                                            data-fancybox="home-gallery"
-                                            class="lightbox-image"><span
-                                                class="icon flaticon-cross"></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Slide Item-->
-                        <div class="slide-item">
-                            <!--Gallery Item-->
-                            <div class="gallery-item">
-                                <div class="inner-box">
-                                    <div class="image-box">
-                                        <figure class="image"><img
-                                                src="images/gallery/20.jpg" alt
-                                                title></figure>
-                                    </div>
-                                    <div class="hover-box">
-                                        <a href="images/gallery/20.jpg" title
-                                            data-fancybox="home-gallery"
-                                            class="lightbox-image"><span
-                                                class="icon flaticon-cross"></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--Featured Game-->
-            <section class="featured-game">
-                <div class="bottom-pattern-layer"></div>
-
-                <div class="auto-container">
-
-                    <div class="row clearfix">
-                        <!--Text Column-->
-                        <div class="text-column col-lg-6 col-md-12 col-sm-12">
-                            <div class="inner">
-                                <div class="sec-title"><h2>spirit of a warrior
-                                        who battled dragons</h2><span
-                                        class="bottom-curve"></span></div>
-                                <div class="text">Lorem Ipsum is simply dummy
-                                    text of the printing and typesetting
-                                    industry. Lorem Ipsum has been the
-                                    industry's standard dummy text ever since
-                                    the 1500s, when an unknown printer took a
-                                    galley of type and scrambled it to make a
-                                    type specimen book. It has survived not only
-                                    five centuries. There are many variations of
-                                    passages of Lorem Ipsum available, but the
-                                    majority have suffered alteration in some
-                                    form by injected humour.</div>
-                                <div class="link-box"><a
-                                        href="#"
-                                        class="theme-btn btn-style-one"><span
-                                            class="btn-title">Buy game
-                                            Now</span></a></div>
-                            </div>
-                        </div>
-                        <!--Image Column-->
-                        <div class="image-column col-lg-6 col-md-12 col-sm-12">
-                            <div class="inner wow fadeInLeft"
-                                data-wow-delay="0ms" data-wow-duration="1500ms">
-                                <div class="image-box"><img
-                                        src="images/resource/featured-image-2.png"
-                                        alt title></div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-            <!--Parallax Section-->
-            <section class="parallax-section">
-                <div class="image-layer"
-                    style="background-image: url(images/background/parallax-bg.jpg);"></div>
-
-                <div class="auto-container">
-                    <div class="content-box wow zoomInStable"
-                        data-wow-delay="0ms" data-wow-duration="2500ms">
-                        <h2>THE WORLD NEEDS HEROES</h2>
-                        <div class="text-box">Slow down time, rain destruction
-                            from above in a jet-powered armor suit, or pilot a
-                            superpowered hamster ball: In Dragon Fight, every
-                            hero has a unique set of devastating
-                            abilities.</div>
-                    </div>
-                </div>
-            </section>
-
             <!--FAQs Section-->
-            <section class="faq-section">
-                <div class="top-pattern-layer"></div>
+            <section class="faq-section"
+                style="background: #07070f; padding-bottom: 100px;">
 
-                <div class="auto-container">
+                <div class="top-pattern-layer"
+                    style="background: url(images/newImages/layers/pattern-black-up.webp);"></div>
+
+                <!-- <div class="top-pattern-layer-allblack"></div> -->
+                <!-- <div class="bottom-pattern-layer-dark-allblack"></div> -->
+
+                <div class="auto-container" style="margin-bottom: 50px;">
                     <!--Title-->
-                    <div class="sec-title centered"><h2>Question &
-                            Answers</h2><span class="bottom-curve"></span></div>
+                    <!-- <div class="sec-title centered"><h2 style="color: #ffff;">FAQ</h2>
+                        <p> Your Comments are important to us</p>
+                        <span class="bottom-curve"></span></div> -->
+
+                    <div class="row">
+
+                        <div class="col-12">
+                            <div
+                                class="section-title title-style-three white-title"
+                                style="text-align: center;">
+                                <h2 style="color: #910611;">FAQ
+                                    <span></span></h2>
+                                <p style="color: #cccccc; font-size: 20px;">
+                                    Your Comments are
+                                    important to us </p>
+                            </div>
+
+                        </div>
+
+                    </div>
 
                     <div class="faq-container">
                         <div class="accordion-box">
                             <!--Block-->
                             <div class="accordion block current wow fadeInUp"
                                 data-wow-delay="0ms" data-wow-duration="1500ms">
-                                <div class="acc-btn active">How to earn point in
-                                    the game? <div
+                                <div class="acc-btn active">Who Can Play This
+                                    Game? <div
                                         class="icon flaticon-cross"></div></div>
                                 <div class="acc-content">
                                     <div class="content">
-                                        <div class="text">Lorem Ipsum is simply
-                                            dummy text of the printing and
-                                            typesetting industry. Lorem Ipsum
-                                            has been the industry's standard
-                                            dummy text ever since the 1500s,
-                                            when an unknown printer took a
-                                            galley of type and scrambled it to
-                                            make a type specimen book. It has
-                                            survived not only five centuries.
-                                            There are many variations of
-                                            passages of Lorem Ipsum available,
-                                            but the majority have suffered
-                                            alteration in some form by injected
-                                            humour.</div>
+                                        <div class="text"
+                                            style="color: #ffff;">You can play
+                                            this game
+                                            together with your family members or
+                                            colleagues from work or play it as a
+                                            corporate game and have fun with
+                                            them for one hour.</div>
                                     </div>
                                 </div>
                             </div>
@@ -1791,7 +1228,9 @@
                                         class="icon flaticon-cross"></div></div>
                                 <div class="acc-content">
                                     <div class="content">
-                                        <div class="text">Lorem Ipsum is simply
+                                        <div class="text"
+                                            style="color: #ffff;">Lorem Ipsum is
+                                            simply
                                             dummy text of the printing and
                                             typesetting industry. Lorem Ipsum
                                             has been the industry's standard
@@ -1813,25 +1252,17 @@
                             <div class="accordion block wow fadeInUp"
                                 data-wow-delay="200ms"
                                 data-wow-duration="1500ms">
-                                <div class="acc-btn">who lives to cause chaos
-                                    and destruction? <div
+                                <div class="acc-btn"> Is It Scary? <div
                                         class="icon flaticon-cross"></div></div>
                                 <div class="acc-content">
                                     <div class="content">
-                                        <div class="text">Lorem Ipsum is simply
-                                            dummy text of the printing and
-                                            typesetting industry. Lorem Ipsum
-                                            has been the industry's standard
-                                            dummy text ever since the 1500s,
-                                            when an unknown printer took a
-                                            galley of type and scrambled it to
-                                            make a type specimen book. It has
-                                            survived not only five centuries.
-                                            There are many variations of
-                                            passages of Lorem Ipsum available,
-                                            but the majority have suffered
-                                            alteration in some form by injected
-                                            humour.</div>
+                                        <div class="text"
+                                            style="color: #ffff;">The products
+                                            of the
+                                            Black-Out are the most scariest
+                                            Escape Games in the Middle East but
+                                            in case of request level can be set.
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1839,25 +1270,14 @@
                             <div class="accordion block wow fadeInUp"
                                 data-wow-delay="300ms"
                                 data-wow-duration="1500ms">
-                                <div class="acc-btn">A cyborg ninja and deadly
-                                    warrior? <div
+                                <div class="acc-btn"> How Long Does The Whole
+                                    Experience Take? <div
                                         class="icon flaticon-cross"></div></div>
                                 <div class="acc-content">
-                                    <div class="content">
-                                        <div class="text">Lorem Ipsum is simply
-                                            dummy text of the printing and
-                                            typesetting industry. Lorem Ipsum
-                                            has been the industry's standard
-                                            dummy text ever since the 1500s,
-                                            when an unknown printer took a
-                                            galley of type and scrambled it to
-                                            make a type specimen book. It has
-                                            survived not only five centuries.
-                                            There are many variations of
-                                            passages of Lorem Ipsum available,
-                                            but the majority have suffered
-                                            alteration in some form by injected
-                                            humour.</div>
+                                    <div class="content" style="color: #ffff;">
+                                        <div class="text">You must puzzle your
+                                            way to the intriguing conclusion and
+                                            escape the room in 60 minutes.</div>
                                     </div>
                                 </div>
                             </div>
@@ -1865,25 +1285,89 @@
                             <div class="accordion block wow fadeInUp"
                                 data-wow-delay="400ms"
                                 data-wow-duration="1500ms">
-                                <div class="acc-btn">which hero has a unique set
-                                    of devastating abilities? <div
+                                <div class="acc-btn"> How Difficult Is The Game?
+                                    <div
                                         class="icon flaticon-cross"></div></div>
                                 <div class="acc-content">
                                     <div class="content">
-                                        <div class="text">Lorem Ipsum is simply
-                                            dummy text of the printing and
-                                            typesetting industry. Lorem Ipsum
-                                            has been the industry's standard
-                                            dummy text ever since the 1500s,
-                                            when an unknown printer took a
-                                            galley of type and scrambled it to
-                                            make a type specimen book. It has
-                                            survived not only five centuries.
-                                            There are many variations of
-                                            passages of Lorem Ipsum available,
-                                            but the majority have suffered
-                                            alteration in some form by injected
-                                            humour.</div>
+                                        <div class="text"
+                                            style="color: #ffff;">The games
+                                            designed to
+                                            be completed in 60 minutes by
+                                            concentration and solving puzzles.
+                                            You do not need any special talent
+                                            other than using your brain and
+                                            acting fast. Remember that you can
+                                            request a hint! This, however, does
+                                            not necessarily mean that everybody
+                                            can finish the game! .</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion block wow fadeInUp"
+                                data-wow-delay="400ms"
+                                data-wow-duration="1500ms">
+                                <div class="acc-btn"> Do We Have To Wear Special
+                                    Costumes To Play The Game? <div
+                                        class="icon flaticon-cross"></div></div>
+                                <div class="acc-content">
+                                    <div class="content">
+                                        <div class="text"
+                                            style="color: #ffff;">No. However,
+                                            we
+                                            recommend that you bring the least
+                                            amount of belongings and accessories
+                                            possible with you in order to move
+                                            comfortably and fast during the
+                                            game.</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion block wow fadeInUp"
+                                data-wow-delay="400ms"
+                                data-wow-duration="1500ms">
+                                <div class="acc-btn"> Will It Be Safe During The
+                                    Game? <div
+                                        class="icon flaticon-cross"></div></div>
+                                <div class="acc-content">
+                                    <div class="content">
+                                        <div class="text"
+                                            style="color: #ffff;">Yes. Although
+                                            all of
+                                            our games is based on the concept of
+                                            Fear, you will not come across with
+                                            creatures such as those you would
+                                            see in a fear tunnel. In addition,
+                                            there will be real time monitoring
+                                            in all of the rooms in the house.
+                                            You can end the game whenever you
+                                            want and leave the house.</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion block wow fadeInUp"
+                                data-wow-delay="400ms"
+                                data-wow-duration="1500ms">
+                                <div class="acc-btn"> How Much Is An Escape Room
+                                    In Dubai Al Quoz? <div
+                                        class="icon flaticon-cross"></div></div>
+                                <div class="acc-content">
+                                    <div class="content">
+                                        <div class="text"
+                                            style="color: #ffff;">The cost of an
+                                            escape
+                                            room in Dubai varies depending on
+                                            the type, duration and size of the
+                                            game. Generally speaking, expect to
+                                            pay between AED 160-200 per person
+                                            for a one hour game. More complex
+                                            games may require a longer time
+                                            limit or additional players
+                                            which could increase the total
+                                            cost.</div>
                                     </div>
                                 </div>
                             </div>
@@ -1896,89 +1380,95 @@
             </section>
 
             <!--News Section-->
-            <section class="news-section no-top-curve">
+            <section class="news-section no-top-curve"
+                style="background: #910613;">
+
+                <div class="top-pattern-layer-allred"
+                    style="background: url(images/newImages/layers/pattern.png); top: -73px;"></div>
+                <!-- <div class="bottom-pattern-layer-dark-allblack"></div> -->
 
                 <div class="auto-container">
                     <!--Title-->
-                    <div class="sec-title centered"><h2>latest Blog
-                            Posts</h2><span class="bottom-curve"></span></div>
+                    <!-- <div class="sec-title centered"><h2
+                            style="color: #ffff;">latest Blog
+                            Posts</h2><span class="bottom-curve"></span></div> -->
+
+                    <div class="row">
+
+                        <div class="col-12">
+                            <div
+                                class="section-title title-style-three white-title"
+                                style="text-align: center;">
+                                <h2 style="color: #ffff;">LATEST BLOG
+                                    <span></span></h2>
+                                <p style="color: #cccccc; font-size: 20px;">
+                                    Your Comments are
+                                    important to us </p>
+                            </div>
+
+                        </div>
+
+                    </div>
 
                     <div class="row clearfix">
 
                         <!--News Block-->
                         <div
-                            class="news-block col-lg-6 col-md-6 col-sm-12 wow fadeInLeft"
+                            class="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInLeft"
                             data-wow-delay="0ms" data-wow-duration="1500ms">
                             <div class="inner-box">
                                 <figure class="image-box"><a
                                         href="#"><img
-                                            src="images/resource/news-image-1.jpg"
+                                            src="images/blog/blog_imaage_1.webp"
                                             alt title></a></figure>
                                 <div class="over-box">
                                     <div class="date"><span
                                             class="date-title">26 May,
-                                            2019</span></div>
-                                    <h3><a href="#">esports games
-                                            this weekend</a></h3>
+                                            2023</span></div>
+                                    <h3><a href="#">Our Website Is
+                                            Online</a></h3>
                                 </div>
                             </div>
                         </div>
 
                         <!--News Block-->
                         <div
-                            class="news-block col-lg-6 col-md-6 col-sm-12 wow fadeInRight"
+                            class="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInRight"
                             data-wow-delay="0ms" data-wow-duration="1500ms">
                             <div class="inner-box">
                                 <figure class="image-box"><a
                                         href="#"><img
-                                            src="images/resource/news-image-2.jpg"
+                                            src="images/blog/blog_imaage_2.webp"
                                             alt title></a></figure>
                                 <div class="over-box">
                                     <div class="date"><span
                                             class="date-title">22 May,
-                                            2019</span></div>
-                                    <h3><a href="#">Willkommen in
-                                            sintix Eternal Foren</a></h3>
+                                            2023</span></div>
+                                    <h3><a href="#">Our Website Is
+                                            Online</a></h3>
                                 </div>
                             </div>
                         </div>
 
                         <!--News Block-->
                         <div
-                            class="news-block col-lg-6 col-md-6 col-sm-12 wow fadeInLeft"
+                            class="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInLeft"
                             data-wow-delay="0ms" data-wow-duration="1500ms">
                             <div class="inner-box">
                                 <figure class="image-box"><a href="#"><img
-                                            src="images/resource/news-image-3.jpg"
+                                            src="images/blog/blog_imaage_3.webp"
                                             alt title></a></figure>
                                 <div class="over-box">
                                     <div class="date"><span
                                             class="date-title">19 May,
-                                            2019</span></div>
-                                    <h3><a href="#">Concept art from
-                                            sintix</a></h3>
+                                            2023</span></div>
+                                    <h3><a href="#">Our Website Is Online
+                                        </a></h3>
                                 </div>
                             </div>
                         </div>
 
                         <!--News Block-->
-                        <div
-                            class="news-block col-lg-6 col-md-6 col-sm-12 wow fadeInRight"
-                            data-wow-delay="0ms" data-wow-duration="1500ms">
-                            <div class="inner-box">
-                                <figure class="image-box"><a
-                                        href="#"><img
-                                            src="images/resource/news-image-4.jpg"
-                                            alt title></a></figure>
-                                <div class="over-box">
-                                    <div class="date"><span
-                                            class="date-title">18 May,
-                                            2019</span></div>
-                                    <h3><a href="#">The slayer
-                                            has entered the facility</a></h3>
-                                </div>
-                            </div>
-                        </div>
 
                     </div>
                 </div>
@@ -1986,12 +1476,13 @@
 
             <!-- Main Footer -->
             <footer class="main-footer">
-                <div class="top-pattern-layer-dark"></div>
+                <div class="top-pattern-layer-dark"
+                    style="background: url(images/newImages/layers/pattern-red.webp); top: 0px;"></div>
 
                 <div class="auto-container">
                     <!--Widgets Section-->
                     <div class="widgets-section">
-                        <div class="row clearfix">
+                        <div class="row clearfix " style="padding-top: 100px;">
 
                             <!--Column-->
                             <div class="column col-lg-4 col-md-6 col-sm-12">
@@ -1999,14 +1490,16 @@
                                     <div class="widget-title">
                                         <h3>Black Out</h3>
                                     </div>
-                                    <div class="text"> Lorem ipsum dolor sit
+                                    <div class="text" style="color: #ffff;">
+                                        Lorem ipsum dolor sit
                                         amet, consectetur adipisicing elit.
                                         Rerum, facere! </div>
                                     <!--Newsletter-->
                                     <div class="newsletter-form">
                                         <form method="post"
-                                            action="https://t.commonsupport.xyz/sintix/contact.html">
-                                            <div class="form-group clearfix">
+                                            action="#">
+                                            <div class="form-group clearfix"
+                                                style="width: 100%;">
                                                 <input type="email" name="email"
                                                     value
                                                     placeholder="Email address"
@@ -2121,7 +1614,9 @@
                                     <div class="copyright"><span
                                             class="logo-icon"></span> &copy;
                                         Copyrights 2024 <a
-                                            href="#">GrafStudios</a> -
+                                            href="#"
+                                            style="color: #ffff;">GrafStudios</a>
+                                        -
                                         All Rights Reserved</div>
                                 </div>
                                 <!-- Column -->
@@ -2155,6 +1650,9 @@
         <div class="scroll-to-top scroll-to-target" data-target="html"><span
                 class="flaticon-up-arrow"></span></div>
 
+        <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script> -->
         <script src="js/jquery.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
@@ -2165,10 +1663,11 @@
         <script src="js/wow.js"></script>
         <script src="js/scrollbar.js"></script>
         <script src="js/script.js"></script>
+        <script src="js/scriptvideo.js"></script>
 
         <!-- tempplate from outside games -->
         <!-- <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script> -->
-        <script src="css/outcss/css/js/vendor/jquery-3.4.1.min.js"></script>
+        <!-- <script src="css/outcss/css/js/vendor/jquery-3.4.1.min.js"></script> -->
         <script src="css/outcss/css/js/popper.min.js"></script>
         <script src="css/outcss/css/js/bootstrap.min.js"></script>
         <script src="css/outcss/css/js/isotope.pkgd.min.js"></script>
