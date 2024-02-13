@@ -188,12 +188,20 @@ section {
 }
 
 .link-boxx {
+
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* If you want to vertically center everything in the container */
+    position: relative; /* For absolutely positioned child elements */
+    text-align: center;
+
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	/* align-items: center; */
 	height: 100vh;
 	width: 100vw;
-	position: relative;
+	/* position: relative; */
 	/* Allows absolute positioning of children */
 	overflow: hidden;
 	/* Hide overflow to keep animation clean */
@@ -544,9 +552,9 @@ figure {
 
 
 
-@media (max-width: 390px){
+@media (max-width: 390px) {
 
-	.main-header .header-top .info{
+	.main-header .header-top .info {
 		display: inline-flex !important;
 	}
 
@@ -556,7 +564,7 @@ figure {
 
 
 @media (max-width: 426px) {
-	.news-section{
+	.news-section {
 		padding: 150px 0px 50px !important;
 	}
 
