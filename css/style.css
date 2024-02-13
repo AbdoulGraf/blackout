@@ -130,6 +130,11 @@ body {
 	/* Make the message visible */
 }
 
+section {
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+}
+
 
 
 @keyframes moveFromLeftToCenter {
@@ -350,6 +355,7 @@ figure {
 }
 
 .btn-style-one .btn-title {
+	border-radius: 10px !important;
 	position: relative;
 	display: block;
 	z-index: 1;
@@ -496,6 +502,11 @@ figure {
 
 
 
+
+
+
+
+
 @media (min-width: 426px) and (max-width: 769px) {
 	.about-section .image-column img {
 		margin-top: -250px !important;
@@ -505,13 +516,17 @@ figure {
 
 
 @media (max-width: 426px) {
+
+	.sec-title{
+		padding-bottom: 09px !important;
+	}
 	.about-section .image-column img {
 		margin-top: -90px !important;
 		margin-left: 30px !important;
 	}
 
 	.about-section {
-		padding: 120px 0px !important;
+		padding: 120px 20px !important;
 	}
 
 	.about-section .image-column .image-box {
@@ -766,7 +781,7 @@ img {
 	text-align: center;
 	z-index: 100;
 	cursor: pointer;
-	background: #25283a;
+	background: #070710;
 	border-radius: 0px;
 	margin-left: -26px;
 	display: none;
@@ -3960,6 +3975,7 @@ img {
 ***/
 
 .main-footer {
+	padding: 20px;
 	position: relative;
 	background-color: #07070f;
 }
@@ -4806,7 +4822,7 @@ img {
 
 .about-section {
 	position: relative;
-	padding: 190px 0px;
+	padding: 140px 20px;
 }
 
 .about-section .bg-image-layer {
