@@ -92,11 +92,12 @@ font-family: 'Oswald', sans-serif;
 
 body {
 
+	overflow-x: hidden !important;
 	font-size: 16px;
 	color: #727489;
 	line-height: 1.6em;
 	font-weight: 300;
-	background: #0d0e1b;
+	background: #070710;
 	-webkit-font-smoothing: antialiased;
 	-moz-font-smoothing: antialiased;
 	font-family: 'Oswald', sans-serif;
@@ -114,15 +115,19 @@ body {
 
 
 .description__message {
-    opacity: 0;
-    transition: opacity 2s ease-out; /* Smooth transition */
-    text-align: center; /* Center the message, adjust as needed */
-    margin-top: 180px; /* Space between the links and the message */
+	opacity: 0;
+	transition: opacity 2s ease-out;
+	/* Smooth transition */
+	text-align: center;
+	/* Center the message, adjust as needed */
+	margin-top: 180px;
+	/* Space between the links and the message */
 }
 
 /* Class to be added via JavaScript */
 .show-message {
-    opacity: 1 !important; /* Make the message visible */
+	opacity: 1 !important;
+	/* Make the message visible */
 }
 
 
@@ -484,27 +489,36 @@ figure {
 /* header responsive  */
 
 @media (max-width: 1025px) {
-    .main-header .header-upper .logo img {
-        max-width: 150px !important;
-    }
+	.main-header .header-upper .logo img {
+		max-width: 150px !important;
+	}
+}
+
+
+
+@media (min-width: 426px) and (max-width: 769px) {
+	.about-section .image-column img {
+		margin-top: -250px !important;
+		margin-left: 50px !important;
+	}
 }
 
 
 @media (max-width: 426px) {
-    .about-section .image-column img {
-		margin-top: -190px !important;
+	.about-section .image-column img {
+		margin-top: -90px !important;
 		margin-left: 30px !important;
-    }
+	}
 
-	.about-section{
+	.about-section {
 		padding: 120px 0px !important;
 	}
 
-	.about-section .image-column .image-box{
+	.about-section .image-column .image-box {
 		position: relative !important;
 	}
 
-	.just-gamers-list{
+	.just-gamers-list {
 		width: 100% !important;
 		padding-top: 50px;
 		padding-bottom: 50px;
@@ -513,24 +527,28 @@ figure {
 
 @media (max-width: 769px) {
 
-	.about-section .image-column .image-box{
+	.about-section .image-column .image-box {
 		position: relative !important;
 	}
 
-	
-    .header-style-two .nav-outer {
-        width: 100% !important;
-    }
+	.main-footer .footer-bottom {
+		overflow: hidden;
+	}
 
-	.main-header .header-upper .social-links{
+
+	.header-style-two .nav-outer {
+		width: 100% !important;
+	}
+
+	.main-header .header-upper .social-links {
 		float: left !important;
 	}
 
-	.main-header .header-upper .logo-box{
+	.main-header .header-upper .logo-box {
 		display: none !important;
 	}
 
-	.banner-carousel .content-box{
+	.banner-carousel .content-box {
 		padding-top: 260px !important;
 	}
 }
@@ -562,24 +580,51 @@ figure {
 
 /* Custom CSS for 5 equal columns in a row */
 .custom-five-col {
-    flex: 0 0 20%; /* Each column takes up 20% of the row */
-    max-width: 20%; /* Maximum width of each column is also 20% */
+	flex: 0 0 20%;
+	/* Each column takes up 20% of the row */
+	max-width: 20%;
+	/* Maximum width of each column is also 20% */
 }
 
 /* Ensure it applies only to larger screens where a 5-column layout makes sense */
 @media (min-width: 992px) {
-    .col-lg-3.custom-five-col {
-        flex: 0 0 20%;
-        max-width: 20%;
-    }
+	.col-lg-3.custom-five-col {
+		flex: 0 0 20%;
+		max-width: 20%;
+	}
+
+	.allcontainer{
+		max-width: 95% !important;
+	}
 }
 
-/* Optional: Adjustments for smaller screens */
-@media (max-width: 991px) {
-    .col-sm-6.custom-five-col {
-        flex: 0 0 50%; /* 2 columns for smaller screens */
-        max-width: 50%;
-    }
+@media (max-width: 769px) {
+
+	.featured-game-area {
+		background: #070710;
+	}
+
+}
+
+@media (max-width: 426px) {
+
+
+
+	.col-sm-6.custom-five-col {
+		flex: 0 0 100%;
+		/* 2 columns for smaller screens */
+		max-width: 100%;
+	}
+
+}
+
+@media (min-width: 426px) and (max-width: 991px) {
+	.col-sm-6.custom-five-col {
+		flex: 0 0 50%;
+		/* Each item takes up 50% of the container width, creating 2 columns */
+		max-width: 50%;
+		/* Ensures the item does not exceed 50% of the container's width */
+	}
 }
 
 
@@ -4005,7 +4050,7 @@ img {
 }
 
 .newsletter-form .form-group .newsletter-btn {
-	margin: 0px ;
+	margin: 0px;
 	position: absolute;
 	width: 50px;
 	height: 70px;
