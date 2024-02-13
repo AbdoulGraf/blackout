@@ -2780,14 +2780,29 @@ ul.minicart .cart-price .new {
 }
 
 .featured-game-bg {
-	background-image: url(../img/bg/featured_game_bg.png);
+
+	width: 100vw;
+	/* Viewport width */
+	height: 100vh;
+	/* Viewport height */
+	object-fit: cover;
+	/* Cover the container without losing the aspect ratio */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+
+
+
+	/* background-image: url(../img/bg/featured_game_bg.png); */
 	background-position: center;
 	background-size: cover;
 	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
+	/* left: 0; */
+	/* top: 0; */
+	/* width: 100%; */
+	/* height: 100%; */
 	z-index: -1;
 }
 
@@ -2808,50 +2823,6 @@ ul.minicart .cart-price .new {
 	overflow: hidden;
 	z-index: 1;
 }
-
-
-.image-box {
-	position: relative;
-	display: inline-block;
-	overflow: hidden;
-	width: 100%;
-	height: 100%;
-}
-
-.image-box::before {
-	content: '';
-	position: absolute;
-	top: -10px;
-	/* Extend beyond the container */
-	left: -10px;
-	/* Extend beyond the container */
-	right: -10px;
-	/* Extend beyond the container */
-	bottom: -10px;
-	/* Extend beyond the container */
-	background-image: url(../../../images/newImages/aboutUs/1.gif);
-	background-size: cover;
-	filter: blur(2px);
-	/* Adjust the blur level */
-	z-index: -1;
-	border-top-right-radius:50%;
-}
-
-.image-box img {
-	position: relative;
-	width: calc(100% + 20px);
-	/* Counteract the pseudo-element's extension */
-	height: calc(100% + 20px);
-	/* Counteract the pseudo-element's extension */
-	object-fit: cover;
-	margin: -10px;
-	/* Align with the container's edges */
-}
-
-
-
-
-
 
 
 .featured-game-area .container-full {

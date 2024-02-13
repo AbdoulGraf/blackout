@@ -104,6 +104,108 @@ body {
 
 
 
+/* for slide left out and in  */
+
+.preloader {
+	position: relative;
+	background-size: cover;
+	background-position: center;
+}
+
+
+.description__message {
+    opacity: 0;
+    transition: opacity 2s ease-out; /* Smooth transition */
+    text-align: center; /* Center the message, adjust as needed */
+    margin-top: 180px; /* Space between the links and the message */
+}
+
+/* Class to be added via JavaScript */
+.show-message {
+    opacity: 1 !important; /* Make the message visible */
+}
+
+
+
+@keyframes moveFromLeftToCenter {
+	0% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+
+	100% {
+		transform: translateX(calc(50vw - 50% - 100px));
+		/* Moves towards the center, considering the element's width */
+		opacity: 1;
+	}
+}
+
+
+
+
+@keyframes moveFromRightToCenter {
+	0% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+
+	100% {
+		transform: translateX(calc(-50vw + 50% + 100px));
+		/* Moves towards the center, considering the element's width */
+		opacity: 1;
+	}
+}
+
+.link-boxx {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+	position: relative;
+	/* Allows absolute positioning of children */
+	overflow: hidden;
+	/* Hide overflow to keep animation clean */
+}
+
+.link-boxx a {
+	opacity: 0;
+	/* Initially invisible to wait for animation trigger */
+	position: absolute;
+
+}
+
+.link-boxx a:first-child {
+	left: 0;
+	/* Prepared "DUBAI" at the left */
+}
+
+.link-boxx a:nth-child(2) {
+	right: 0;
+	/* Prepared "ABUDHABI" at the right */
+}
+
+
+
+
+.animate {
+	animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+
+
+
+
 /* for video play here */
 
 .video-background {
@@ -377,6 +479,46 @@ figure {
 	transition-timing-function: cubic-bezier(0.860, 0.000, 0.070, 1.000);
 }
 
+
+
+/* header responsive  */
+
+@media (max-width: 1025px) {
+    .main-header .header-upper .logo img {
+        max-width: 150px !important;
+    }
+}
+
+
+@media (max-width: 426px) {
+    .about-section .image-column img {
+		margin-top: -190px !important;
+		margin-left: 30px !important;
+    }
+}
+
+@media (max-width: 769px) {
+    .header-style-two .nav-outer {
+        width: 100% !important;
+    }
+
+	.main-header .header-upper .social-links{
+		float: left !important;
+	}
+
+	.main-header .header-upper .logo-box{
+		display: none !important;
+	}
+
+	.banner-carousel .content-box{
+		padding-top: 260px !important;
+	}
+}
+
+
+
+
+
 .btn-style-old:hover .btn-title:before {
 	-webkit-transform: scale(1, 1);
 	-ms-transform: scale(1, 1);
@@ -398,14 +540,53 @@ figure {
 	float: left;
 }
 
+/* Custom CSS for 5 equal columns in a row */
+.custom-five-col {
+    flex: 0 0 20%; /* Each column takes up 20% of the row */
+    max-width: 20%; /* Maximum width of each column is also 20% */
+}
+
+/* Ensure it applies only to larger screens where a 5-column layout makes sense */
+@media (min-width: 992px) {
+    .col-lg-3.custom-five-col {
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+
+/* Optional: Adjustments for smaller screens */
+@media (max-width: 991px) {
+    .col-sm-6.custom-five-col {
+        flex: 0 0 50%; /* 2 columns for smaller screens */
+        max-width: 50%;
+    }
+}
+
+
 .preloader {
 	position: fixed;
+	/* position: relative; */
 	left: 0px;
 	top: 0px;
 	width: 100%;
 	height: 100%;
 	z-index: 999999;
 	background-color: rgba(0, 0, 0, 0);
+}
+
+
+#preloaderVideo {
+	width: 100vw;
+	/* Viewport width */
+	height: 100vh;
+	/* Viewport height */
+	object-fit: cover;
+	/* Cover the container without losing the aspect ratio */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	/* Center the video */
 }
 
 .preloader .icon {
@@ -1609,7 +1790,7 @@ img {
 	font-size: 13px;
 	width: 39px;
 	height: 39px;
-	background: #000000;
+	background: #910611;
 	border: 1px solid rgba(255, 255, 255, 0.10);
 	line-height: 38px;
 	text-align: center;
@@ -1622,7 +1803,7 @@ img {
 }
 
 .mobile-menu .social-links li a:hover {
-	color: #910611;
+	color: #ffffff;
 	-webkit-box-shadow: 0px 0px 30px 0px #910611;
 	-ms-box-shadow: 0px 0px 30px 0px #910611;
 	box-shadow: 0px 0px 30px 0px #910611;
@@ -3369,7 +3550,7 @@ img {
 }
 
 .news-block .inner-box:hover {
-	background: #07070f ;
+	background: #07070f;
 	-webkit-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.50);
 	-ms-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.50);
 	box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.50);
@@ -3804,6 +3985,7 @@ img {
 }
 
 .newsletter-form .form-group .newsletter-btn {
+	margin: 0px ;
 	position: absolute;
 	width: 50px;
 	height: 70px;
@@ -4559,7 +4741,7 @@ img {
 
 .about-section {
 	position: relative;
-	padding: 100px 0px;
+	padding: 190px 0px;
 }
 
 .about-section .bg-image-layer {
@@ -4593,8 +4775,11 @@ img {
 }
 
 .about-section .image-column .image-box {
-	position: relative;
+	/* relative before */
+	position: absolute;
 	display: block;
+	text-align: center;
+	width: 100%;
 }
 
 .about-section .image-column img {
@@ -5362,7 +5547,7 @@ img {
 	position: relative;
 	font-size: 16px;
 	line-height: 32px;
-	color: #727489;
+	color: #ffffff;
 	margin-bottom: 20px;
 }
 
