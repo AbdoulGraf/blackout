@@ -114,13 +114,34 @@ body {
 }
 
 
+
+.imgpart {
+	opacity: 0;
+	/* Initially hidden */
+	transition: opacity 2s ease-out;
+	/* Smooth transition for the opacity */
+
+	/* Adjust based on your logo size */
+}
+
+.imgpart img {
+	width: 100px;
+	height: 50px;
+}
+
+.show-logo {
+	opacity: 1;
+	/* Make it visible */
+}
+
+
 .description__message {
 	opacity: 0;
 	transition: opacity 2s ease-out;
 	/* Smooth transition */
 	text-align: center;
 	/* Center the message, adjust as needed */
-	margin-top: 180px;
+	margin-top: 210px;
 	/* Space between the links and the message */
 }
 
@@ -517,9 +538,10 @@ figure {
 
 @media (max-width: 426px) {
 
-	.sec-title{
+	.sec-title {
 		padding-bottom: 09px !important;
 	}
+
 	.about-section .image-column img {
 		margin-top: -90px !important;
 		margin-left: 30px !important;
@@ -608,7 +630,7 @@ figure {
 		max-width: 20%;
 	}
 
-	.allcontainer{
+	.allcontainer {
 		max-width: 95% !important;
 	}
 }
