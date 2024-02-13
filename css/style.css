@@ -165,7 +165,7 @@ section {
 	}
 
 	100% {
-		transform: translateX(calc(50vw - 50% - 100px));
+		transform: translateX(calc(50vw - 50% - 80px));
 		/* Moves towards the center, considering the element's width */
 		opacity: 1;
 	}
@@ -181,7 +181,7 @@ section {
 	}
 
 	100% {
-		transform: translateX(calc(-50vw + 50% + 100px));
+		transform: translateX(calc(-50vw + 50% + 80px));
 		/* Moves towards the center, considering the element's width */
 		opacity: 1;
 	}
@@ -548,7 +548,7 @@ figure {
 	}
 
 	.about-section {
-		padding: 120px 20px !important;
+		padding: 120px 20px 0px 20px !important;
 	}
 
 	.about-section .image-column .image-box {
