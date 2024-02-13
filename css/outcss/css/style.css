@@ -40,7 +40,7 @@
 
 
 
-/* 1. Theme default css */
+
 @import url('https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&amp;display=swap');
 
 /* @font-face {
@@ -254,7 +254,7 @@ label {
 	border-top: 1px solid #f2f2f2
 }
 
-/* button style */
+
 .btn {
 	-moz-user-select: none;
 	border: medium none;
@@ -368,7 +368,7 @@ label {
 	color: #888;
 }
 
-/* scrollUp */
+
 #scrollUp {
 	background: #910613;
 	height: 40px;
@@ -388,7 +388,7 @@ label {
 }
 
 
-/* 2. Header */
+
 .header-top-area {
 	background: #1c1121;
 }
@@ -574,13 +574,13 @@ ul.minicart .cart-content a:hover,
 }
 
 .main-header {
-	/* background-image: url(../img/bg/header_bg.jpg); */
+	
 	background: rgba(0, 0, 0, 0.3) !important;
-	/* -webkit-backdrop-filter: blur(10px) !important; */
-	/* backdrop-filter: blur(10px) !important; */
+	
+	
 	background-position: right center;
 	background-size: cover;
-	/* position: relative; */
+	
 }
 
 .main-menu nav {
@@ -1227,7 +1227,7 @@ ul.minicart .cart-price .new {
 	border-top: none;
 }
 
-/* 3. Search modal */
+
 #search-modal {
 	background-color: rgba(23, 26, 33, .95);
 }
@@ -1318,7 +1318,7 @@ ul.minicart .cart-price .new {
 	background: #910613;
 }
 
-/* 4. Breadcrumb */
+
 .breadcrumb-bg {
 	background-image: url(../img/bg/breadcrumb_bg.jpg);
 	padding-top: 275px;
@@ -1425,7 +1425,7 @@ ul.minicart .cart-price .new {
 }
 
 
-/* 5. Slider */
+
 .slider-bg {
 	background-image: url(../img/slider/slider_bg.jpg);
 	background-position: center;
@@ -1720,7 +1720,7 @@ ul.minicart .cart-price .new {
 	bottom: auto;
 }
 
-/* 6. Brand */
+
 .brand-bg {
 	background-image: url(../img/bg/brand_bg.jpg);
 	background-position: center;
@@ -1765,7 +1765,7 @@ ul.minicart .cart-price .new {
 	background-image: url(../img/bg/s_brand_bg.jpg);
 }
 
-/* area-bg */
+
 .area-bg-one {
 	background-image: url(../img/bg/area_bg01.jpg);
 	background-position: center;
@@ -1794,7 +1794,7 @@ ul.minicart .cart-price .new {
 	background-size: cover;
 }
 
-/* 7. Product-area */
+
 .section-title>span {
 	display: block;
 	line-height: 1;
@@ -1932,7 +1932,7 @@ ul.minicart .cart-price .new {
 	text-transform: uppercase;
 }
 
-/* 8. About-us */
+
 .about-img {
 	padding: 15px;
 	background-color: rgba(245, 58, 7, 0);
@@ -1966,14 +1966,14 @@ ul.minicart .cart-price .new {
 	position: absolute;
 	left: 0;
 	bottom: 0;
-	/* background-image: url(../img/images/title_bar.png); */
+	
 	width: 270px;
 	height: 13px;
 	background-repeat: no-repeat;
 }
 
 .title-style-three::before {
-	/* background-image: url(../img/images/title_bar02.png); */
+	
 }
 
 .title-style-three h2 {
@@ -2258,7 +2258,7 @@ ul.minicart .cart-price .new {
 	color: #ff5917;
 }
 
-/* Live-match */
+
 .home-four-title.text-center h2 {
 	position: relative;
 }
@@ -2370,7 +2370,7 @@ ul.minicart .cart-price .new {
 	text-align: right;
 }
 
-/* 9. Game Released */
+
 .released-game-item {
 	display: flex;
 	align-items: center;
@@ -2540,7 +2540,7 @@ ul.minicart .cart-price .new {
 	background: #910613;
 }
 
-/* 10. Game Manage */
+
 .title-style-two.text-center::before,
 .title-style-three.text-center::before {
 	right: 0;
@@ -2676,7 +2676,7 @@ ul.minicart .cart-price .new {
 	display: none;
 }
 
-/* 11. Featured-Games */
+
 .featured-game-item {
 	box-shadow: 0px 1px 13px 0px rgba(12, 11, 15, 0.32);
 	position: relative;
@@ -2782,11 +2782,11 @@ ul.minicart .cart-price .new {
 .featured-game-bg {
 
 	width: 100vw;
-	/* Viewport width */
+	
 	height: 100vh;
-	/* Viewport height */
+	
 	object-fit: cover;
-	/* Cover the container without losing the aspect ratio */
+	
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -2795,14 +2795,14 @@ ul.minicart .cart-price .new {
 
 
 
-	/* background-image: url(../img/bg/featured_game_bg.png); */
+	
 	background-position: center;
 	background-size: cover;
 	position: absolute;
-	/* left: 0; */
-	/* top: 0; */
-	/* width: 100%; */
-	/* height: 100%; */
+	
+	
+	
+	
 	z-index: -1;
 }
 
@@ -2811,12 +2811,12 @@ ul.minicart .cart-price .new {
 }
 
 
-/* games section css  */
+
 
 .games-section,
 .reviews-section {
 	background-image: url(../../../images/newImages/blackIcon/white_bg_crack-04.webp);
-	/* background: #f5f5f5; */
+	
 	position: relative;
 	background-position: center;
 	background-size: cover;
@@ -2839,7 +2839,7 @@ ul.minicart .cart-price .new {
 	background: #f7f7f7;
 }
 
-/* 12. Cta */
+
 .cta-bg {
 	background-image: url(../img/bg/cta_bg.jpg);
 	padding: 120px 0;
@@ -2858,7 +2858,7 @@ ul.minicart .cart-price .new {
 }
 
 
-/* 13. Tournament */
+
 .tournament-top-wrap {
 	display: flex;
 	align-items: center;
@@ -3157,7 +3157,7 @@ ul.minicart .cart-price .new {
 	color: #1f2026;
 }
 
-/* Game-gallery */
+
 .game-gallery-area.position-relative {
 	z-index: 1;
 	padding: 120px 0 0;
@@ -3230,14 +3230,14 @@ ul.minicart .cart-price .new {
 	color: #ff5917;
 }
 
-/* 14. Just-gamers */
+
 
 
 
 
 .just-gamers-bg {
-	/* background-image: url(../../../images/newImages/blackIcon/video3-bg_son_1.webp); */
-	/* background: #f5f5f5; */
+	
+	
 	position: relative;
 	background-position: center;
 	background-size: cover;
@@ -3284,7 +3284,7 @@ ul.minicart .cart-price .new {
 }
 
 .title-style-three.white-title::before {
-	/* background-image: url(../img/images/title_bar03.png); */
+	
 }
 
 .just-gamers-list ul li {
@@ -3295,13 +3295,13 @@ ul.minicart .cart-price .new {
 
 .just-gamers-list-icon {
 	float: left;
-	/* background-image: url(../img/bg/gamer_list_icon_bg.jpg); */
+	
 	width: 97px;
 	height: 97px;
 	text-align: center;
 	line-height: 85px;
 	display: block;
-	/* border: 6px solid #333240; */
+	
 	margin-right: 25px;
 	transition: .3s linear;
 }
@@ -3329,7 +3329,7 @@ ul.minicart .cart-price .new {
 }
 
 .just-gamers-img {
-	/* position: absolute; */
+	
 	width: 100%;
 	top: -83px;
 	right: 0;
@@ -3354,7 +3354,7 @@ ul.minicart .cart-price .new {
 	top: 70px;
 }
 
-/* 15. Features */
+
 .features-bg {
 	background-image: url(../img/bg/features_bg.jpg);
 	background-position: center;
@@ -3443,7 +3443,7 @@ ul.minicart .cart-price .new {
 	margin-left: 50px;
 }
 
-/* 16. Fact */
+
 .fact-item {
 	display: flex;
 	align-items: first baseline;
@@ -3467,7 +3467,7 @@ ul.minicart .cart-price .new {
 	color: #dfdede;
 }
 
-/* 17. Shop */
+
 .shop-item {
 	background-color: rgb(31, 21, 40);
 	box-shadow: 0px 5px 12.09px 0.91px rgba(0, 0, 0, 0.16);
@@ -3652,7 +3652,7 @@ ul.minicart .cart-price .new {
 	margin-top: 20px;
 }
 
-/* 18. Upcoming-games */
+
 .upcoming-game-item {
 	background-color: rgb(255, 255, 255);
 	box-shadow: 0px 2px 21px 0px rgba(59, 53, 63, 0.12);
@@ -3884,7 +3884,7 @@ ul.minicart .cart-price .new {
 	z-index: -1;
 }
 
-/* 19. Game-overview */
+
 .game-overview-content .upcoming-game-head {
 	margin-bottom: 25px;
 }
@@ -3959,7 +3959,7 @@ ul.minicart .cart-price .new {
 	margin-bottom: 0;
 }
 
-/* Donation */
+
 .donation-bg {
 	background-image: url(../img/bg/donation_bg.jpg);
 	background-position: center;
@@ -3976,7 +3976,7 @@ ul.minicart .cart-price .new {
 	letter-spacing: 2px;
 }
 
-/* 20. Blog */
+
 .blog-post-wrap {
 	background-color: rgb(27, 16, 36);
 	box-shadow: 0px 5px 12.09px 0.91px rgba(0, 0, 0, 0.34);
@@ -4693,7 +4693,7 @@ ul.minicart .cart-price .new {
 	color: #e9a401;
 }
 
-/* 21. Pagination */
+
 .pagination-wrap ul {
 	display: flex;
 	align-items: center;
@@ -4720,7 +4720,7 @@ ul.minicart .cart-price .new {
 	color: #252525;
 }
 
-/* My match */
+
 .my-match-bg {
 	background-image: url(../img/bg/my_match_bg.jpg);
 	background-position: center;
@@ -4849,7 +4849,7 @@ ul.minicart .cart-price .new {
 	margin-right: 10px;
 }
 
-/* 22. Testimonial */
+
 .testimonial-active {
 	background-color: rgb(27, 16, 36);
 	box-shadow: 0px 5px 12.09px 0.91px rgba(0, 0, 0, 0.34);
@@ -4920,7 +4920,7 @@ ul.minicart .cart-price .new {
 	border-color: #4b4550;
 }
 
-/* 23. Community */
+
 .community-area {
 	position: relative;
 	z-index: 1;
@@ -5186,7 +5186,7 @@ ul.minicart .cart-price .new {
 }
 
 
-/* 24. Contact */
+
 #contact-map {
 	width: 100%;
 	height: 445px;
@@ -5326,7 +5326,7 @@ ul.minicart .cart-price .new {
 	font-weight: 500;
 }
 
-/* 25. Newsletter */
+
 .newsletter-wrap {
 	border-radius: 80px;
 	background-color: rgb(25, 14, 34);
@@ -5466,7 +5466,7 @@ ul.minicart .cart-price .new {
 }
 
 
-/* 26. Footer */
+
 .footer-bg {
 	background-image: url(../img/bg/footer_bg.jpg);
 	background-color: #f9f9f9;
@@ -5703,7 +5703,7 @@ ul.minicart .cart-price .new {
 	background: #131418;
 }
 
-/* 27. Preloader */
+
 #preloader {
 	background-color: #161417;
 	height: 100%;
@@ -5730,7 +5730,7 @@ ul.minicart .cart-price .new {
 }
 
 
-/* Home Five CSS */
+
 .home-five-header .t-header-top-area .header-top-social ul li a {
 	color: #cfcdcd;
 }
@@ -5759,7 +5759,7 @@ ul.minicart .cart-price .new {
 	padding: 35px 0;
 }
 
-/* Banner */
+
 .home-five-banner {
 	background-image: url(../img/slider/fifth_banner_bg.jpg);
 	background-position: center;
@@ -5906,7 +5906,7 @@ ul.minicart .cart-price .new {
 	margin-right: 5px;
 }
 
-/* Trending */
+
 .trending-gamepay-area {
 	background: #171821;
 	padding: 80px 0 30px;
@@ -6047,7 +6047,7 @@ ul.minicart .cart-price .new {
 	color: #fa0101;
 }
 
-/* live-streaming */
+
 .live-streaming-area {
 	background-image: url(../img/bg/streaming_bg.jpg);
 	background-position: center;
@@ -6175,13 +6175,13 @@ ul.minicart .cart-price .new {
 	background: #007bff;
 }
 
-/* Latest-video */
+
 .latest-game-video-area {
 	background: #111111;
 	padding: 80px 0 25px;
 }
 
-/* Episodes */
+
 .game-episodes-area,
 .video-blog-area {
 	background: #111111;
@@ -6323,7 +6323,7 @@ ul.minicart .cart-price .new {
 	opacity: 1;
 }
 
-/* Blog */
+
 .video-blog-thumb {
 	position: relative;
 	margin-bottom: 20px;
@@ -6423,7 +6423,7 @@ ul.minicart .cart-price .new {
 	margin-left: 5px;
 }
 
-/* Footer */
+
 .home-five-footer .footer-bg {
 	background-image: url(../img/bg/h5_footer_bg.jpg);
 	background-position: center;
@@ -6491,9 +6491,9 @@ ul.minicart .cart-price .new {
 }
 
 
-/* Home-six-css */
 
-/* Header */
+
+
 .home-six-header .t-header-top-area .header-top-social ul li a {
 	color: #cfcdcd;
 }
@@ -6526,7 +6526,7 @@ ul.minicart .cart-price .new {
 	border: 1px solid #bcee0e6e;
 }
 
-/* Banner */
+
 .home-six-banner {
 	background-image: url(../img/slider/magazine_banner_bg.jpg);
 	background-position: center;
@@ -6937,7 +6937,7 @@ ul.minicart .cart-price .new {
 	background: #3ab7f7;
 }
 
-/* Latest-collection */
+
 .latest-collection-item {
 	position: relative;
 	overflow: hidden;
@@ -7006,7 +7006,7 @@ ul.minicart .cart-price .new {
 	display: block;
 }
 
-/* Popular-category */
+
 .game-shop-title {
 	padding-bottom: 20px;
 	position: relative;
@@ -7163,7 +7163,7 @@ ul.minicart .cart-price .new {
 	background: #fff;
 }
 
-/* makes-gaming-chair */
+
 .makes-gaming-chair {
 	background-image: url(../img/bg/makes_chair_bg.jpg);
 	background-position: center;
@@ -7265,7 +7265,7 @@ ul.minicart .cart-price .new {
 	margin-left: -30px;
 }
 
-/* Chair shop  */
+
 .chair-product-area {
 	padding: 110px 0 60px;
 }
@@ -7373,7 +7373,7 @@ ul.minicart .cart-price .new {
 }
 
 
-/* Chair-discount */
+
 .chair-discount-area {
 	position: relative;
 	overflow: hidden;
@@ -7427,7 +7427,7 @@ ul.minicart .cart-price .new {
 	margin-right: 30px;
 }
 
-/* Trend-news */
+
 .trending-news-area {
 	background: #24252f;
 	padding: 80px 0 80px;
@@ -7623,7 +7623,7 @@ ul.minicart .cart-price .new {
 	margin-top: 40px;
 }
 
-/* World-news */
+
 .world-news-area {
 	background: #171821;
 	padding: 80px 0 50px;
@@ -7679,7 +7679,7 @@ ul.minicart .cart-price .new {
 	max-width: 100%;
 }
 
-/* live-streaming */
+
 .live-streaming-two {
 	background-image: url(../img/bg/streaming_bg02.jpg);
 }
@@ -7688,7 +7688,7 @@ ul.minicart .cart-price .new {
 	background: #bcee0e;
 }
 
-/* Game News */
+
 .latest-game-news-area {
 	background-image: url(../img/bg/latest_game_news.jpg);
 	background-position: center;
@@ -7752,7 +7752,7 @@ ul.minicart .cart-price .new {
 	color: #1c1121;
 }
 
-/* Brand */
+
 .pz-brand-item {
 	display: flex;
 	min-height: 73px;
@@ -7770,7 +7770,7 @@ ul.minicart .cart-price .new {
 	opacity: 1;
 }
 
-/* Footer */
+
 .home-six-footer .footer-bg {
 	background-image: url(../img/bg/h5_footer_bg.jpg);
 	background-position: center;
@@ -7838,14 +7838,14 @@ ul.minicart .cart-price .new {
 }
 
 
-/* bounce css effect */
+
 
 
 .scale {
-	/* width: 100px; */
-	/* Adjust based on your image size */
+	
+	
 	animation: scaleInOut 4s infinite ease-in-out;
-	/* Run scaleInOut animation */
+	
 }
 
 @keyframes scaleInOut {
@@ -7853,11 +7853,11 @@ ul.minicart .cart-price .new {
 	0%,
 	100% {
 		transform: scale(1);
-		/* Original size */
+		
 	}
 
 	50% {
 		transform: scale(0.8);
-		/* Smaller. Adjust scale value for more/less shrink */
+		
 	}
 }

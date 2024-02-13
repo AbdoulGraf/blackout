@@ -105,7 +105,7 @@ body {
 
 
 
-/* for slide left out and in  */
+
 
 .preloader {
 	position: relative;
@@ -117,11 +117,11 @@ body {
 
 .imgpart {
 	opacity: 0;
-	/* Initially hidden */
+	
 	transition: opacity 2s ease-out;
-	/* Smooth transition for the opacity */
+	
 
-	/* Adjust based on your logo size */
+	
 }
 
 .imgpart img {
@@ -131,24 +131,24 @@ body {
 
 .show-logo {
 	opacity: 1;
-	/* Make it visible */
+	
 }
 
 
 .description__message {
 	opacity: 0;
 	transition: opacity 2s ease-out;
-	/* Smooth transition */
+	
 	text-align: center;
-	/* Center the message, adjust as needed */
+	
 	margin-top: 210px;
-	/* Space between the links and the message */
+	
 }
 
-/* Class to be added via JavaScript */
+
 .show-message {
 	opacity: 1 !important;
-	/* Make the message visible */
+	
 }
 
 section {
@@ -166,7 +166,7 @@ section {
 
 	100% {
 		transform: translateX(calc(50vw - 50% - 80px));
-		/* Moves towards the center, considering the element's width */
+		
 		opacity: 1;
 	}
 }
@@ -182,7 +182,7 @@ section {
 
 	100% {
 		transform: translateX(calc(-50vw + 50% + 80px));
-		/* Moves towards the center, considering the element's width */
+		
 		opacity: 1;
 	}
 }
@@ -192,36 +192,36 @@ section {
 	display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* If you want to vertically center everything in the container */
-    position: relative; /* For absolutely positioned child elements */
+    justify-content: center; 
+    position: relative; 
     text-align: center;
 
 	display: flex;
 	justify-content: center;
-	/* align-items: center; */
+	
 	height: 100vh;
 	width: 100vw;
-	/* position: relative; */
-	/* Allows absolute positioning of children */
+	
+	
 	overflow: hidden;
-	/* Hide overflow to keep animation clean */
+	
 }
 
 .link-boxx a {
 	opacity: 0;
-	/* Initially invisible to wait for animation trigger */
+	
 	position: absolute;
 
 }
 
 .link-boxx a:first-child {
 	left: 0;
-	/* Prepared "DUBAI" at the left */
+	
 }
 
 .link-boxx a:nth-child(2) {
 	right: 0;
-	/* Prepared "ABUDHABI" at the right */
+	
 }
 
 
@@ -245,19 +245,19 @@ section {
 
 
 
-/* for video play here */
+
 
 .video-background {
 	position: relative;
 	width: 100%;
-	/* Adjust as necessary */
+	
 	height: 100%;
-	/* Adjust as necessary */
+	
 	overflow: hidden;
 }
 
 .video-background video {
-	/* Cover entire parent */
+	
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -267,12 +267,12 @@ section {
 	height: auto;
 	min-height: 100%;
 	z-index: -1;
-	/* Ensure it stays as a background */
+	
 }
 
 
 
-/* end of play video */
+
 
 a {
 	text-decoration: none;
@@ -368,7 +368,7 @@ figure {
 	text-align: center !important;
 }
 
-/*Btn Style One*/
+
 
 .btn-style-one {
 	position: relative;
@@ -389,7 +389,7 @@ figure {
 	display: block;
 	z-index: 1;
 	padding: 16px 45px;
-	/* background: #07070f; */
+	
 	background: rgba(0, 0, 0, 0.25);
 	backdrop-filter: blur(8px);
 	border-radius: 0px;
@@ -457,7 +457,7 @@ figure {
 	box-shadow: 0px 0px 20px 0px #910611;
 }
 
-/*Btn Style Old*/
+
 
 .btn-style-old {
 	position: relative;
@@ -521,7 +521,7 @@ figure {
 
 
 
-/* header responsive  */
+
 
 
 @media (min-width: 1025px) and (max-width: 1281px) {
@@ -649,15 +649,15 @@ figure {
 	float: left;
 }
 
-/* Custom CSS for 5 equal columns in a row */
+
 .custom-five-col {
 	flex: 0 0 20%;
-	/* Each column takes up 20% of the row */
+	
 	max-width: 20%;
-	/* Maximum width of each column is also 20% */
+	
 }
 
-/* Ensure it applies only to larger screens where a 5-column layout makes sense */
+
 @media (min-width: 992px) {
 	.col-lg-3.custom-five-col {
 		flex: 0 0 20%;
@@ -683,7 +683,7 @@ figure {
 
 	.col-sm-6.custom-five-col {
 		flex: 0 0 100%;
-		/* 2 columns for smaller screens */
+		
 		max-width: 100%;
 	}
 
@@ -692,16 +692,16 @@ figure {
 @media (min-width: 426px) and (max-width: 991px) {
 	.col-sm-6.custom-five-col {
 		flex: 0 0 50%;
-		/* Each item takes up 50% of the container width, creating 2 columns */
+		
 		max-width: 50%;
-		/* Ensures the item does not exceed 50% of the container's width */
+		
 	}
 }
 
 
 .preloader {
 	position: fixed;
-	/* position: relative; */
+	
 	left: 0px;
 	top: 0px;
 	width: 100%;
@@ -713,16 +713,16 @@ figure {
 
 #preloaderVideo {
 	width: 100vw;
-	/* Viewport width */
+	
 	height: 100vh;
-	/* Viewport height */
+	
 	object-fit: cover;
-	/* Cover the container without losing the aspect ratio */
+	
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	/* Center the video */
+	
 }
 
 .preloader .icon {
@@ -749,7 +749,7 @@ figure {
 
 #unmuteButton {
 	pointer-events: none;
-	/* This should not be present or should be set to auto */
+	
 }
 
 
@@ -963,7 +963,7 @@ img {
 	padding: 17px 0px;
 }
 
-/* Top Left*/
+
 
 .main-header .header-top .top-left {
 	position: relative;
@@ -1048,7 +1048,7 @@ img {
 	box-shadow: 0px 0px 30px 0px #910611;
 }
 
-/*=== Header Upper ===*/
+
 
 .main-header .header-upper {
 	position: relative;
@@ -1586,7 +1586,7 @@ img {
 	padding: 0px 0px;
 	z-index: -1;
 	background: #ffffff;
-	/* border-bottom:1px solid #e5e5e5; */
+	
 	-webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.10);
 	-moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.10);
 	-ms-box-shadow: 0 0 15px rgba(0, 0, 0, 0.10);
@@ -1600,8 +1600,8 @@ img {
 }
 
 .fixed-header .sticky-header {
-	/* background: #07070f; */
-	/* background-color: rgba(255, 255, 255, 0.1); */
+	
+	
 	background-color: rgba(0, 0, 0, 0.5);
 	-webkit-backdrop-filter: blur(10px) !important;
 	backdrop-filter: blur(10px) !important;
@@ -3706,7 +3706,7 @@ img {
 .news-block .image-box:before {
 	content: '';
 	position: absolute;
-	/* left: 0; */
+	
 	bottom: 0;
 	display: block;
 	width: 100%;
@@ -4896,7 +4896,7 @@ img {
 
 .about-section .about-content {
 	position: relative;
-	/* margin-bottom: 70px; */
+	
 	z-index: 1;
 }
 
@@ -4912,7 +4912,7 @@ img {
 }
 
 .about-section .image-column .image-box {
-	/* relative before */
+	
 	position: absolute;
 	display: block;
 	text-align: center;
@@ -5123,7 +5123,7 @@ img {
 	margin: 0 auto;
 }
 
-/*Default Form*/
+
 
 .default-form {
 	position: relative;
@@ -5479,7 +5479,7 @@ img {
 	position: relative;
 	display: block;
 	padding: 50px 50px;
-	/* background: rgba(7, 7, 15, 0.7); */
+	
 }
 
 .feature-block .icon-box {
@@ -5689,13 +5689,13 @@ img {
 }
 
 
-/*post share options*/
+
 .post-share-options {
 	position: relative;
 	margin-bottom: 50px;
 }
 
-/* Author Box */
+
 
 .author-box {
 	position: relative;
@@ -5768,7 +5768,7 @@ img {
 	position: relative;
 }
 
-/* Sidebar Title */
+
 
 .sidebar-title {
 	position: relative;
@@ -5784,7 +5784,7 @@ img {
 
 
 
-/*Search Box Widget*/
+
 
 .sidebar .search-box {
 	position: relative;
@@ -5854,7 +5854,7 @@ img {
 }
 
 
-/*Post Widget*/
+
 
 .sidebar .popular-posts {
 	position: relative;
@@ -5934,7 +5934,7 @@ img {
 	margin-bottom: 13px;
 }
 
-/* Blog Categories */
+
 
 .sidebar .categories {
 	position: relative;

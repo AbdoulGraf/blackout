@@ -1,5 +1,5 @@
 
-/* Extra large devices (large desktops, 1800px and up) */
+
 @media (max-width: 1800px) {
 .container-full-padding,
 .s-container-full-padding {
@@ -53,7 +53,7 @@
 }
 
 
-/* Extra large devices (large desktops, 1800px and up) */
+
 @media (max-width: 1500px) {
 .container-full-padding,
 .s-container-full-padding {
@@ -137,7 +137,7 @@
 }
 
 
-/* Extra large devices (large desktops, 1200px and up) */
+
 @media (max-width: 1199.98px) {
 .container-full-padding,
 .s-container-full-padding {
@@ -454,7 +454,7 @@
 
 
 
-/* Large devices (desktops, 992px and up) */
+
 @media (max-width: 991.98px) {
 .container-full-padding,
 .s-container-full-padding {
@@ -812,7 +812,7 @@ form.third-contact-form {
 
 
 
-/* Medium devices (tablets, 768px and up) */
+
 @media (max-width: 767.98px) {
 .container-full-padding,
 .s-container-full-padding {
@@ -1264,7 +1264,7 @@ form.third-contact-form {
 }
 
 
-/* Small devices (landscape phones, 576px and up) */
+
 @media only screen and (min-width: 576px) and (max-width: 767px) {
 .match-team-logo img {
 	width: auto;
@@ -1443,9 +1443,9 @@ form.third-contact-form {
 
 }
 
-/* New Responsive CSS */
 
-/* Extra large devices (large desktops, 1800px and up) */
+
+
 @media (max-width: 1800px) {
 .h-seven-slider-active .slick-dots {
     right: 6%;
@@ -1453,7 +1453,7 @@ form.third-contact-form {
 
 }
 
-/* Extra large devices (large desktops, 1800px and up) */
+
 @media (max-width: 1500px) {
 .home-five-banner {
 	padding: 170px 0 150px;
@@ -1477,7 +1477,7 @@ form.third-contact-form {
 
 }
 
-/* Extra large devices (large desktops, 1200px and up) */
+
 @media (max-width: 1199.98px) {
 .gameplay-content {
     margin-right: 30px;
@@ -1596,7 +1596,7 @@ form.third-contact-form {
 }
 
 
-/* Large devices (desktops, 992px and up) */
+
 @media (max-width: 991.98px) {
 .live-stream-item.style-two .content {
     width: auto;
@@ -1675,7 +1675,7 @@ form.third-contact-form {
 
 }
 
-/* Medium devices (tablets, 768px and up) */
+
 @media (max-width: 767.98px) {
 .home-five-banner {
     padding: 140px 0 120px;
@@ -1832,7 +1832,7 @@ form.third-contact-form {
 
 }
 
-/* Small devices (landscape phones, 576px and up) */
+
 @media only screen and (min-width: 576px) and (max-width: 767px) {
 .home-five-banner .banner-content .title-one{
 	font-size: 60px;

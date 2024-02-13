@@ -1,5 +1,5 @@
-/* Deafult Margin & Padding */
-/*-- Margin Top --*/
+
+
 .mt-5 {
 	margin-top: 5px;
 }
@@ -120,7 +120,7 @@
 .mt-200 {
 	margin-top: 200px;
 }
-/*-- Margin Bottom --*/
+
 
 .mb-5 {
 	margin-bottom: 5px;
@@ -242,7 +242,7 @@
 .mb-200 {
 	margin-bottom: 200px;
 }
-/*-- Padding Top --*/
+
 
 .pt-5 {
 	padding-top: 5px;
@@ -364,7 +364,7 @@
 .pt-200 {
 	padding-top: 200px;
 }
-/*-- Padding Bottom --*/
+
 
 .pb-5 {
 	padding-bottom: 5px;
@@ -489,7 +489,7 @@
 
 
 
-/*-- Padding Left --*/
+
 .pl-0 {
 	padding-left: 0px;
 }
@@ -564,7 +564,7 @@
 }
 
 
-/*-- Padding Right --*/
+
 .pr-0 {
 	padding-right: 0px;
 }
@@ -638,14 +638,14 @@
 	padding-right: 100px;
 }
 
-/* font weight */
+
 .f-700{font-weight: 700;}
 .f-600{font-weight: 600;}
 .f-500{font-weight: 500;}
 .f-400{font-weight: 400;}
 .f-300{font-weight: 300;}
 
-/* Background Color */
+
 
 .gray-bg {
 	background: #f6f6f6;
@@ -665,7 +665,7 @@
 .primary-bg {
 	background: #f9f9f9;
 }
-/* Color */
+
 
 .white-color {
 	color: #fff;
@@ -679,7 +679,7 @@
 .primary-color {
 	color: #222;
 }
-/* black overlay */
+
 
 [data-overlay] {
 	position: relative;
