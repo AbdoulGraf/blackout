@@ -6,6 +6,14 @@
     padding-top: 12px;
 }
 
+input[type='radio'] {
+    accent-color: #880611;
+}
+
+input[type='checkbox'] {
+    accent-color: #880611;
+}
+
 .formbold-main-wrapper {
     display: flex;
     align-items: center;
@@ -34,19 +42,6 @@
     color: #ffff;
     margin-bottom: 0px;
 }
-
-
-input[type='checkbox'] {
-    accent-color: #880611;
-}
-
-input[type='radio'] {
-    accent-color: #880611;
-}
-
-#cb1 {
-    accent-color: #880611;
-  }
 
 .formbold-form-label-2 {
     font-weight: 600;
@@ -119,9 +114,9 @@ input[type='radio'] {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 500px){
 
-    .formbold-main-wrapper {
+    .formbold-main-wrapper{
         padding-left: 0px;
         padding-right: 0px;
     }
@@ -130,23 +125,22 @@ input[type='radio'] {
 }
 
 
-@media (max-width: 998px) {
+@media (max-width: 998px){
 
-    .section-title {
+    .section-title{
         width: 100% !important;
     }
 
-    .inputform_part {
+    .inputform_part{
         width: 100% !important;
     }
 
 }
 
-.section-title {
+.section-title{
     width: 300px;
 }
-
-.inputform_part {
+.inputform_part{
     width: 450px;
 }
 
@@ -181,7 +175,7 @@ input[type='radio'] {
 
     .section-title,
     .field-group {
-
+       
         /* flex: 1; */
         /* Allow flexible box growth */
         min-width: 0;
@@ -200,3 +194,5 @@ input[type='radio'] {
         /* Ensure space between label and input is maintained */
     }
 }
+
+
