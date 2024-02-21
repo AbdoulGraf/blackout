@@ -34,8 +34,32 @@
         <link rel="stylesheet" href="../../css/outcss/css/responsive.css">
         <link rel="stylesheet"
             href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+
+                const today = new Date().toISOString().split('T')[0];
+                // Set the input field value to today's date
+    document.getElementById('datepicker').value = today;
+    flatpickr("#datepicker", {
+        // Options here
+    });
+});
+
+
+flatpickr("#datepicker", {
+    dateFormat: "Y-m-d",
+});
+
+
+        </script>
 
         <!-- FOR DATA DİSPLAY -->
         <script>
@@ -47,6 +71,12 @@
             { time: "11:30-12:30", price: "AED 220.00" },
             { time: "12:30-13:30", price: "AED 220.00" },
             { time: "13:30-14:30", price: "AED 220.00" },
+            { time: "14:30-15:30", price: "AED 220.00" },
+            { time: "14:30-15:30", price: "AED 220.00" },
+            { time: "14:30-15:30", price: "AED 220.00" },
+            { time: "14:30-15:30", price: "AED 220.00" },
+            { time: "14:30-15:30", price: "AED 220.00" },
+            { time: "14:30-15:30", price: "AED 220.00" },
             { time: "14:30-15:30", price: "AED 220.00" }
         ],
 
@@ -54,7 +84,14 @@
             { time: "10:30-12:30", price: "AED 230.00" },
             { time: "12:30-13:30", price: "AED 230.00" },
             { time: "14:30-14:30", price: "AED 250.00" },
-            { time: "14:30-15:30", price: "AED 230.00" }
+            { time: "14:30-15:30", price: "AED 230.00" },
+            { time: "10:30-12:30", price: "AED 230.00" },
+            { time: "12:30-13:30", price: "AED 230.00" },
+            { time: "14:30-14:30", price: "AED 250.00" },
+            { time: "14:30-15:30", price: "AED 230.00" },
+            { time: "10:30-12:30", price: "AED 230.00" },
+            { time: "12:30-13:30", price: "AED 230.00" },
+            
         ],
 
         3: [
@@ -119,6 +156,7 @@
         const boxesContainer = document.querySelector('.boxes-container');
         boxesContainer.innerHTML = ''; // Clear existing boxes first
         const dataArray = persons[number];
+
         dataArray.forEach(data => {
             const boxHTML = `
                 <div class="box">
@@ -137,14 +175,29 @@
     }
 
     document.querySelectorAll('.number').forEach(function(element) {
+
+
+
         element.addEventListener('click', function() {
+
+            document.querySelectorAll('.number').forEach(el => {
+            el.classList.remove('active__Number');
+        });
+
+        // Then, add 'active' class to the clicked element
+        element.classList.add('active__Number');
+
+
             const number = this.getAttribute('data-number');
+
+
             updateBoxes(number);
         });
     });
 
     // Automatically display data for the first item on page load
     updateBoxes(1);
+
 });
 
 
@@ -153,7 +206,7 @@
 
         <script>
                 function openCalendar() {
-                    var datePicker = document.getElementById('datePicker');
+                    var datePicker = document.getElementById('datepicker');
 
                     if (datePicker.style.display === "none") {
                         datePicker.style.display = "block";
@@ -232,20 +285,26 @@ document.addEventListener('DOMContentLoaded', function() {
         <style>
 
 
+.active__Number {
+  background-color: #191919 !important; /* Change to red when active */
+  border: 3px solid #950004 !important;
+}
+
+/* 
 #datePicker {
     background-color: #191919;
     color: #fff;
     border: 1px solid  #3a3a3a;
     border-radius: 4px;
     padding: 5px;
-}
+} */
 
 
 /* Base styles */
 .boxes-container {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     gap: 20px; /* Reduced gap for smaller boxes */
     margin-top: 8px;
 }
@@ -285,10 +344,6 @@ document.addEventListener('DOMContentLoaded', function() {
         flex-basis: 18%; /* Even smaller width for large screens to fit 5 in a row neatly */
     }
 }
-
-
-
-
 
                 @media (min-width: 992px) { /* Adjust for your project's 'lg' breakpoint */
                   .select__number_part {
@@ -330,7 +385,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
                 }
-
 
                 @media (max-width: 547px){
                     .span__select{
@@ -480,47 +534,48 @@ document.addEventListener('DOMContentLoaded', function() {
                                                 </li>
 
                                                 <li class="dropdown"><a
-                                                    href="index.html">OUR ROOMS</a>
+                                                        href="index.html">OUR
+                                                        ROOMS</a>
 
-                                                <ul>
+                                                    <ul>
 
-                                                    <li class><a
-                                                            href="hotel-666.html">
-                                                            Hotel 666
-                                                        </a>
+                                                        <li class><a
+                                                                href="hotel-666.html">
+                                                                Hotel 666
+                                                            </a>
 
-                                                    </li>
+                                                        </li>
 
-                                                    <li class><a
-                                                            href="dungeon.html">
-                                                            Dungeon
-                                                        </a>
+                                                        <li class><a
+                                                                href="dungeon.html">
+                                                                Dungeon
+                                                            </a>
 
-                                                    </li>
+                                                        </li>
 
-                                                    <li class><a
-                                                            href="the-circus.html">
-                                                            The Circus
-                                                        </a>
+                                                        <li class><a
+                                                                href="the-circus.html">
+                                                                The Circus
+                                                            </a>
 
-                                                    </li>
+                                                        </li>
 
-                                                    <li class><a
-                                                            href="psychiatric.html">
-                                                            Psychiatric
-                                                        </a>
+                                                        <li class><a
+                                                                href="psychiatric.html">
+                                                                Psychiatric
+                                                            </a>
 
-                                                    </li>
+                                                        </li>
 
-                                                    <li class><a
-                                                            href="exorcism.html">
-                                                            Exorcism
-                                                        </a>
+                                                        <li class><a
+                                                                href="exorcism.html">
+                                                                Exorcism
+                                                            </a>
 
-                                                    </li>
+                                                        </li>
 
-                                                </ul>
-                                            </li>
+                                                    </ul>
+                                                </li>
 
                                                 <li><a
                                                         href="../video-order.html">REQUEST
@@ -531,7 +586,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                                 <li class="dropdown"><a
                                                         href="../blog.html">BLOG</a>
-                                                    
+
                                                 </li>
                                                 <li><a
                                                         href="../contact.html">CONTACT</a></li>
@@ -614,6 +669,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
 
             </header>
+
             <!-- Banner Section -->
             <section class="banner-section"
                 style="padding-left: 0px !important; padding-right: 0px !important;">
@@ -639,7 +695,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
             <section class="about-section"
                 style="background: #070711; padding-left: 20px; padding-right: 20px;">
-
 
                 <div class="top-pattern-layer"
                     style="background: url(../../images/newImages/layers/pattern-black-up.webp);"></div>
@@ -667,7 +722,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                 <!-- //people to play with -->
                                 <div
-                                    class="select__number_part d-sm-none d-md-none d-lg-none "
+                                    class="select__number_part d-sm-none d-md-none d-lg-none"
                                     style="align-self: center; display: contents;">
                                     <span style="color: #ffff;">Select number of
                                         players:</span>
@@ -675,52 +730,52 @@ document.addEventListener('DOMContentLoaded', function() {
                                     <div style="display: flex; gap: 25px;">
 
                                         <div
-                                            style="width: 30px; height: 30px; background-color: #950004; color: #fff; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer;"
-                                            class="number"
+                                            style="width: 40px; height: 40px; background-color: #950004; color: #fff; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer;"
+                                            class="number active__Number"
                                             data-number="1">1</div>
                                         <!-- Repeat the div for numbers 2 to 10 -->
                                         <div
-                                            style="width: 30px; height: 30px; background-color: #950004; color: #fff; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer;"
+                                            style="width: 40px; height: 40px; background-color: #950004; color: #fff; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer;"
                                             class="number"
                                             data-number="2">2</div>
                                         <!-- Repeat the div for numbers 2 to 10 -->
                                         <div
-                                            style="width: 30px; height: 30px; background-color: #950004; color: #fff; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer;"
+                                            style="width: 40px; height: 40px; background-color: #950004; color: #fff; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer;"
                                             class="number"
                                             data-number="3">3</div>
                                         <!-- Repeat the div for numbers 2 to 10 -->
                                         <div
-                                            style="width: 30px; height: 30px; background-color: #950004; color: #fff; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer;"
+                                            style="width: 40px; height: 40px; background-color: #950004; color: #fff; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer;"
                                             class="number"
                                             data-number="4">4</div>
                                         <!-- Repeat the div for numbers 2 to 10 -->
                                         <div
-                                            style="width: 30px; height: 30px; background-color: #950004; color: #fff; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer;"
+                                            style="width: 40px; height: 40px; background-color: #950004; color: #fff; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer;"
                                             class="number"
                                             data-number="5">5</div>
                                         <!-- Repeat the div for numbers 2 to 10 -->
                                         <div
-                                            style="width: 30px; height: 30px; background-color: #950004; color: #fff; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer;"
+                                            style="width: 40px; height: 40px; background-color: #950004; color: #fff; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer;"
                                             class="number"
                                             data-number="6">6</div>
                                         <!-- Repeat the div for numbers 2 to 10 -->
                                         <div
-                                            style="width: 30px; height: 30px; background-color: #950004; color: #fff; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer;"
+                                            style="width: 40px; height: 40px; background-color: #950004; color: #fff; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer;"
                                             class="number"
                                             data-number="7">7</div>
                                         <!-- Repeat the div for numbers 2 to 10 -->
                                         <div
-                                            style="width: 30px; height: 30px; background-color: #950004; color: #fff; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer;"
+                                            style="width: 40px; height: 40px; background-color: #950004; color: #fff; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer;"
                                             class="number"
                                             data-number="8">8</div>
                                         <!-- Repeat the div for numbers 2 to 10 -->
                                         <div
-                                            style="width: 30px; height: 30px; background-color: #950004; color: #fff; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer;"
+                                            style="width: 40px; height: 40px; background-color: #950004; color: #fff; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer;"
                                             class="number"
                                             data-number="9">9</div>
                                         <!-- Repeat the div for numbers 2 to 10 -->
                                         <div
-                                            style="width: 30px; height: 30px; background-color: #950004; color: #fff; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer;"
+                                            style="width: 40px; height: 40px; background-color: #950004; color: #fff; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer;"
                                             class="number"
                                             data-number="10">10</div>
 
@@ -739,15 +794,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                     </div>
 
-                                    <!-- Hidden date input -->
-                                    <!-- <input type="date" id="datePicker"
-                                        onchange="dateChanged(this)" /> -->
-
-                                    <div class="date-picker-container">
-                                        <input type="date" id="datePicker"
-                                            onchange="dateChanged(this)" />
-
-                                    </div>
+                                    <input type="text" id="datepicker"
+                                        style="display: none;"
+                                        onchange="dateChanged(this)" />
 
                                 </div>
                             </div>
@@ -762,7 +811,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                     <div class="red__bull_number"
                                         style="display: flex; gap: 2px;">
-                                        <div class="number" data-number="1"
+                                        <div class="number active__Number"
+                                            data-number="1"
                                             style="width: 30px; height: 30px; background-color: #950004; color: #fff; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer;">1</div>
 
                                         <div class="number" data-number="2"
@@ -804,7 +854,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                     <div class="col-lg-2 col-md-12 col-sm-12">
 
                                         <div class="row "
-                                            style="display: flex; flex-direction: row; justify-content: space-between; gap: 12px; height: 100%;">
+                                            style="display: flex; flex-direction: row; justify-content: space-between; gap: 25px; height: 100%;">
 
                                             <div class="col-12">
                                                 <div
@@ -827,7 +877,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                                 <div
                                                     style="display: flex; justify-content: space-between; gap: 5px; margin-top: 8px;">
                                                     <div
-                                                        style="flex-basis: 100%; height: auto; background-color: #191919; border-radius: 5px;">
+                                                        style="flex-basis: 100%; height: 50px; background-color: #191919; border-radius: 5px; display: flex; align-items: center;">
 
                                                         <div
                                                             class="featured-game-meta"
@@ -835,7 +885,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                                             <i
                                                                 class="fa-solid fa-hourglass-half"
-                                                                style="color: #3a3a3a; "></i>
+                                                                style="color: #950004; "></i>
                                                             &nbsp;
                                                             &nbsp;
                                                             <span
@@ -854,14 +904,14 @@ document.addEventListener('DOMContentLoaded', function() {
                                                 <div
                                                     style="display: flex; justify-content: space-between; gap: 5px; margin-top: 8px;">
                                                     <div
-                                                        style="flex-basis: 100%; height: auto; background-color: #191919; border-radius: 5px;">
+                                                        style="flex-basis: 100%; height: 50px; background-color: #191919; border-radius: 5px; display: flex; align-items: center;">
 
                                                         <div
                                                             class="featured-game-meta"
                                                             style=" width: 100%;  padding-top: 2px; padding-bottom: 2px; padding-left: 10px; padding-right: 2px;">
                                                             <i
                                                                 class="fa-solid fa-puzzle-piece"
-                                                                style="color: #3a3a3a; "></i>
+                                                                style="color: #950004; "></i>
 
                                                             &nbsp;
                                                             &nbsp;
@@ -881,14 +931,14 @@ document.addEventListener('DOMContentLoaded', function() {
                                                 <div
                                                     style="display: flex; justify-content: space-between; gap: 5px; margin-top: 8px;">
                                                     <div
-                                                        style="flex-basis: 100%; height: auto; background-color: #191919; border-radius: 5px;">
+                                                        style="flex-basis: 100%; height: 50px; background-color: #191919; border-radius: 5px; display: flex; align-items: center;">
 
                                                         <div
                                                             class="featured-game-meta"
                                                             style=" width: 100%;  padding-top: 2px; padding-bottom: 2px; padding-left: 10px; padding-right: 2px;">
                                                             <i
                                                                 class="fa-solid fa-user-group"
-                                                                style="color: #3a3a3a; "></i>
+                                                                style="color: #950004; "></i>
                                                             &nbsp;
                                                             &nbsp;
                                                             <span
@@ -925,8 +975,6 @@ document.addEventListener('DOMContentLoaded', function() {
                                         <!-- new small box -->
 
                                         <div class="boxes-container">
-
-                                           
 
                                         </div>
 

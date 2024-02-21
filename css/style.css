@@ -4769,9 +4769,50 @@ img {
 ====================================================================
 
 ***/
+
+/* 
 #datePicker {
 	color-scheme: dark;
+} */
+
+
+
+#datepicker {
+	background-color: #191919;
+	color: #fff;
+	border: 1px solid #3a3a3a;
+	border-radius: 4px;
+	padding: 5px;
 }
+
+.flatpickr-calendar {
+	/* background-color: #191919 !important; */
+
+}
+
+.flatpickr-calendar .day,
+.flatpickr-calendar .weekday {
+	color: #fff !important;
+}
+
+
+.flatpickr-day {
+	color: #ffffff;
+}
+
+.flatpickr-day.selected {
+	background: #950004 !important;
+	border: 1px solid #950004 !important;
+}
+
+.flatpickr-day:hover {
+	color: #ffffff !important;
+	background: #950004 !important;
+	border-color: #950004 !important;
+}
+
+
+
 
 
 .page-banner {
