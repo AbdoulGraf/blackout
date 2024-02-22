@@ -400,9 +400,9 @@ label {
 	z-index: 5;
 }
 
-@media (min-width: 1024px) and (max-width: 1440px){
+@media (min-width: 1024px) and (max-width: 1440px) {
 
-	.top___image__slide{
+	.top___image__slide {
 		position: absolute;
 		top: 408px;
 		left: 53%;
@@ -411,7 +411,7 @@ label {
 		max-height: 100%;
 		object-fit: contain;
 		z-index: 5;
-	
+
 	}
 
 }
@@ -449,14 +449,15 @@ label {
 
 
 
-@media (min-width: 1024px){
+@media (min-width: 1024px) {
 
-.first__push{
-	margin-left: 100px;
-}
-.second__push{
-	margin-left: 100px;
-}
+	.first__push {
+		margin-left: 100px;
+	}
+
+	.second__push {
+		margin-left: 100px;
+	}
 
 }
 
