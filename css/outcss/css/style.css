@@ -53,7 +53,7 @@
 body {
 
 	font-size: 16px;
-	color: #727489;
+	color: #ffffff;
 	line-height: 1.6em;
 	font-weight: 300;
 	background: #070710;
@@ -389,6 +389,86 @@ label {
 
 
 
+.top___image__slide {
+	position: absolute;
+	top: 412px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 25%;
+	max-height: 100%;
+	object-fit: contain;
+	z-index: 5;
+}
+
+@media (min-width: 780px) and (max-width: 1027px) {
+
+	.top___image__slide {
+		position: absolute;
+		top: 14%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		max-width: 38%;
+		max-height: 100%;
+		object-fit: contain;
+		z-index: 9999;
+	}
+
+
+
+}
+
+
+@media (min-width: 500px) and (max-width:770px) {
+
+
+	.top___image__slide {
+		position: absolute;
+		top: 6%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		max-width: 38%;
+		max-height: 100%;
+		object-fit: contain;
+		z-index: 9999;
+	}
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+@media (max-width: 500px) {
+
+	.top___image__slide {
+		position: absolute;
+		top: 149px;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		max-width: 50%;
+		max-height: 100%;
+		object-fit: contain;
+		z-index: 9999;
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
 .header-top-area {
 	background: #1c1121;
 }
@@ -574,13 +654,13 @@ ul.minicart .cart-content a:hover,
 }
 
 .main-header {
-	
-	background: rgba(0, 0, 0, 0.3) !important;
-	
-	
+
+	background: rgba(0, 0, 0, 0.3);
+
+
 	background-position: right center;
 	background-size: cover;
-	
+
 }
 
 .main-menu nav {
@@ -1966,15 +2046,13 @@ ul.minicart .cart-price .new {
 	position: absolute;
 	left: 0;
 	bottom: 0;
-	
+
 	width: 270px;
 	height: 13px;
 	background-repeat: no-repeat;
 }
 
-.title-style-three::before {
-	
-}
+.title-style-three::before {}
 
 .title-style-three h2 {
 	color: #1c1121;
@@ -2782,11 +2860,11 @@ ul.minicart .cart-price .new {
 .featured-game-bg {
 
 	width: 100vw;
-	
+
 	height: 100vh;
-	
+
 	object-fit: cover;
-	
+
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -2795,14 +2873,14 @@ ul.minicart .cart-price .new {
 
 
 
-	
+
 	background-position: center;
 	background-size: cover;
 	position: absolute;
-	
-	
-	
-	
+
+
+
+
 	z-index: -1;
 }
 
@@ -2816,7 +2894,7 @@ ul.minicart .cart-price .new {
 .games-section,
 .reviews-section {
 	background-image: url(../../../images/newImages/blackIcon/white_bg_crack-04.webp);
-	
+
 	position: relative;
 	background-position: center;
 	background-size: cover;
@@ -3236,8 +3314,8 @@ ul.minicart .cart-price .new {
 
 
 .just-gamers-bg {
-	
-	
+
+
 	position: relative;
 	background-position: center;
 	background-size: cover;
@@ -3283,25 +3361,23 @@ ul.minicart .cart-price .new {
 	color: #cbcbcb;
 }
 
-.title-style-three.white-title::before {
-	
-}
+.title-style-three.white-title::before {}
 
 .just-gamers-list ul li {
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 	padding-right: 20px;
 	overflow: hidden;
 }
 
 .just-gamers-list-icon {
 	float: left;
-	
+
 	width: 97px;
 	height: 97px;
 	text-align: center;
 	line-height: 85px;
 	display: block;
-	
+
 	margin-right: 25px;
 	transition: .3s linear;
 }
@@ -3328,11 +3404,18 @@ ul.minicart .cart-price .new {
 	top: 5px;
 }
 
-.just-gamers-img {
-	
+.just-gamers-character {
+	position: relative;
+	/* top: 12vh; */
 	width: 100%;
-	top: -83px;
-	right: 0;
+	margin: 0 auto;
+}
+
+.just-gamers-img {
+	position: absolute;
+	justify-content: center;
+	display: flex;
+	top: 0;
 }
 
 .just-gamers-circle-shape {
@@ -7840,12 +7923,10 @@ ul.minicart .cart-price .new {
 
 
 
-
+/* 
 .scale {
-	
-	
 	animation: scaleInOut 4s infinite ease-in-out;
-	
+
 }
 
 @keyframes scaleInOut {
@@ -7853,11 +7934,31 @@ ul.minicart .cart-price .new {
 	0%,
 	100% {
 		transform: scale(1);
-		
+
 	}
 
 	50% {
 		transform: scale(0.8);
-		
+
+	}
+} */
+
+
+
+.scale {
+
+	animation: scaleInOut 4s infinite ease-in-out;
+}
+
+@keyframes scaleInOut {
+
+	0%,
+	100% {
+		transform: scale(1.5);
+	}
+
+	50% {
+		transform: scale(2);
+		/* Increased scale */
 	}
 }

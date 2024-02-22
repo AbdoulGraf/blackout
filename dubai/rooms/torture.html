@@ -37,14 +37,11 @@
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-       
-
-           
         <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+            href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 
-    <script>
+        <script>
         document.addEventListener('DOMContentLoaded', function() {
 
             const today = new Date().toISOString().split('T')[0];
@@ -63,8 +60,8 @@ dateFormat: "Y-m-d",
 
     </script>
 
-    <!-- FOR DATA DİSPLAY -->
-    <script>
+        <!-- FOR DATA DİSPLAY -->
+        <script>
            
           
            document.addEventListener('DOMContentLoaded', function() {
@@ -206,7 +203,7 @@ updateBoxes(1);
 
         </script>
 
-    <script>
+        <script>
             function openCalendar() {
                 var datePicker = document.getElementById('datepicker');
 
@@ -284,7 +281,7 @@ initializeCalendarWithDate(new Date(), true); // For mobile
         
         </script>
 
-    <style>
+        <style>
 
 
 .active__Number {
@@ -443,7 +440,6 @@ margin-bottom: 6px;
 
         <div class="page-wrapper">
 
-           
             <header class="main-header header-style-two">
                 <div class="header-container">
 
@@ -484,7 +480,7 @@ margin-bottom: 6px;
                         <div class="auto-container" style="max-width: 1500px;">
                             <div class="inner-container clearfix">
 
-                                <div class="logo-box">
+                                <div class="logo-box mobile__logo__move">
                                     <div class="logo"><a href="../../index.html"
                                             title="Escape Rooms in Dubai | Black-Out"><img
                                                 src="../../images/newImages/newImage1.webp"
@@ -504,7 +500,7 @@ margin-bottom: 6px;
                                             class="collapse navbar-collapse show clearfix"
                                             id="navbarSupportedContent">
                                             <ul class="navigation clearfix">
-                                                <li class="current dropdown"><a
+                                                <li class="current "><a
                                                         href="../index.html">HOME</a>
 
                                                 </li>
@@ -590,7 +586,7 @@ margin-bottom: 6px;
                                                 <li><a
                                                         href="../franchise.html">FRANCHISE</a></li>
 
-                                                <li class="dropdown"><a
+                                                <li class=""><a
                                                         href="../blog.html">BLOG</a>
                                                     <!-- <ul>
                                                         <li><a
@@ -697,7 +693,7 @@ margin-bottom: 6px;
                         <div class="image-layer"
                             style="background-image:url(thumbnail/blackout_posters_web_page-02.webp)"></div>
 
-                        <div class="auto-container" style="max-width: 1500px;" >
+                        <div class="auto-container" style="max-width: 1500px;">
                             <div class="content-box"
                                 style="height: 500px !important;">
                                 <div class="content"
@@ -711,13 +707,14 @@ margin-bottom: 6px;
             </section>
 
             <section class="about-section"
-                style="background: #070711; padding-left: 20px; padding-right: 20px;">
+                style="background: #070711; padding-left: 20px; padding-right: 20px; ">
 
-                <div class="top-pattern-layer"
+                <div class="top-pattern-layer rooms__box"
                     style="background: url(../../images/newImages/layers/pattern-black-up.webp);"></div>
 
-                <div class="bottom-pattern-layer-dark-allblack"
-                    style="background: url(../../images/newImages/layers/pattern-black-bottom.webp); bottom: -56px;"></div>
+                <div
+                    class="bottom-pattern-layer-dark-allblack rooms__bottom_box"
+                    style="background: url(../../images/newImages/layers/pattern-black-bottom.webp); bottom: -126px;"></div>
 
                 <div class="about-content">
                     <div class="auto-container">
@@ -737,87 +734,85 @@ margin-bottom: 6px;
 
                                 </div>
 
-                               <!-- //people to play with -->
-                               <div
-                               class="select__number_part d-sm-none d-md-none d-lg-none"
-                               style="align-self: center; display: contents;">
-                               <span style="color: #ffff;">Select number of
-                                   players:</span>
+                                <!-- //people to play with -->
+                                <div
+                                    class="select__number_part d-sm-none d-md-none d-lg-none"
+                                    style="align-self: center; display: contents;">
+                                    <span style="color: #ffff;">Select number of
+                                        players:</span>
 
-                               <div style="display: flex; gap: 25px;">
+                                    <div style="display: flex; gap: 25px;">
 
-                                   <div
-                                       style="width: 40px; height: 40px; background-color: #950004; color: #fff; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer;"
-                                       class="number active__Number"
-                                       data-number="1">1</div>
-                                   <!-- Repeat the div for numbers 2 to 10 -->
-                                   <div
-                                       style="width: 40px; height: 40px; background-color: #950004; color: #fff; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer;"
-                                       class="number"
-                                       data-number="2">2</div>
-                                   <!-- Repeat the div for numbers 2 to 10 -->
-                                   <div
-                                       style="width: 40px; height: 40px; background-color: #950004; color: #fff; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer;"
-                                       class="number"
-                                       data-number="3">3</div>
-                                   <!-- Repeat the div for numbers 2 to 10 -->
-                                   <div
-                                       style="width: 40px; height: 40px; background-color: #950004; color: #fff; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer;"
-                                       class="number"
-                                       data-number="4">4</div>
-                                   <!-- Repeat the div for numbers 2 to 10 -->
-                                   <div
-                                       style="width: 40px; height: 40px; background-color: #950004; color: #fff; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer;"
-                                       class="number"
-                                       data-number="5">5</div>
-                                   <!-- Repeat the div for numbers 2 to 10 -->
-                                   <div
-                                       style="width: 40px; height: 40px; background-color: #950004; color: #fff; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer;"
-                                       class="number"
-                                       data-number="6">6</div>
-                                   <!-- Repeat the div for numbers 2 to 10 -->
-                                   <div
-                                       style="width: 40px; height: 40px; background-color: #950004; color: #fff; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer;"
-                                       class="number"
-                                       data-number="7">7</div>
-                                   <!-- Repeat the div for numbers 2 to 10 -->
-                                   <div
-                                       style="width: 40px; height: 40px; background-color: #950004; color: #fff; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer;"
-                                       class="number"
-                                       data-number="8">8</div>
-                                   <!-- Repeat the div for numbers 2 to 10 -->
-                                   <div
-                                       style="width: 40px; height: 40px; background-color: #950004; color: #fff; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer;"
-                                       class="number"
-                                       data-number="9">9</div>
-                                   <!-- Repeat the div for numbers 2 to 10 -->
-                                   <div
-                                       style="width: 40px; height: 40px; background-color: #950004; color: #fff; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer;"
-                                       class="number"
-                                       data-number="10">10</div>
+                                        <div
+                                            style="width: 40px; height: 40px; background-color: #950004; color: #fff; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer;"
+                                            class="number active__Number"
+                                            data-number="1">1</div>
+                                        <!-- Repeat the div for numbers 2 to 10 -->
+                                        <div
+                                            style="width: 40px; height: 40px; background-color: #950004; color: #fff; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer;"
+                                            class="number"
+                                            data-number="2">2</div>
+                                        <!-- Repeat the div for numbers 2 to 10 -->
+                                        <div
+                                            style="width: 40px; height: 40px; background-color: #950004; color: #fff; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer;"
+                                            class="number"
+                                            data-number="3">3</div>
+                                        <!-- Repeat the div for numbers 2 to 10 -->
+                                        <div
+                                            style="width: 40px; height: 40px; background-color: #950004; color: #fff; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer;"
+                                            class="number"
+                                            data-number="4">4</div>
+                                        <!-- Repeat the div for numbers 2 to 10 -->
+                                        <div
+                                            style="width: 40px; height: 40px; background-color: #950004; color: #fff; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer;"
+                                            class="number"
+                                            data-number="5">5</div>
+                                        <!-- Repeat the div for numbers 2 to 10 -->
+                                        <div
+                                            style="width: 40px; height: 40px; background-color: #950004; color: #fff; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer;"
+                                            class="number"
+                                            data-number="6">6</div>
+                                        <!-- Repeat the div for numbers 2 to 10 -->
+                                        <div
+                                            style="width: 40px; height: 40px; background-color: #950004; color: #fff; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer;"
+                                            class="number"
+                                            data-number="7">7</div>
+                                        <!-- Repeat the div for numbers 2 to 10 -->
+                                        <div
+                                            style="width: 40px; height: 40px; background-color: #950004; color: #fff; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer;"
+                                            class="number"
+                                            data-number="8">8</div>
+                                        <!-- Repeat the div for numbers 2 to 10 -->
+                                        <div
+                                            style="width: 40px; height: 40px; background-color: #950004; color: #fff; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer;"
+                                            class="number"
+                                            data-number="9">9</div>
+                                        <!-- Repeat the div for numbers 2 to 10 -->
+                                        <div
+                                            style="width: 40px; height: 40px; background-color: #950004; color: #fff; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer;"
+                                            class="number"
+                                            data-number="10">10</div>
 
-                               </div>
+                                    </div>
 
-                           </div>
+                                </div>
 
-                           <div>
-                            <div
-                                style="display: flex; gap: 8px; cursor: pointer; ">
-                                <h5 style="font-size: 25px;">2024 </h5>
+                                <div>
+                                    <div
+                                        style="display: flex; gap: 8px; cursor: pointer; justify-content: end; ">
+                                        <h5 style="font-size: 25px;">2024 </h5>
 
-                                <i class="fa-solid fa-calendar-days"
-                                    style="color: #ffff; font-size: 25px; "
-                                    onclick="openCalendar()"></i>
+                                        <i class="fa-solid fa-calendar-days"
+                                            style="color: #ffff; font-size: 25px; "
+                                            onclick="openCalendar()"></i>
 
-                            </div>                                
+                                    </div>
 
-                            <input type="text" id="datepicker"
-                                style="display: none;"
-                                onchange="dateChanged(this)" />
+                                    <input type="text" id="datepicker"
+                                        style="display: none;"
+                                        onchange="dateChanged(this)" />
 
-                           
-
-                        </div>
+                                </div>
 
                             </div>
 
@@ -830,8 +825,7 @@ margin-bottom: 6px;
                                         style="color: #ffff;">Select number of
                                         players:</span>
 
-
-                                        <div class="red__bull_number"
+                                    <div class="red__bull_number"
                                         style="display: flex; gap: 2px;">
                                         <div class="number active__Number"
                                             data-number="1"
@@ -895,8 +889,6 @@ margin-bottom: 6px;
                                                 </div>
 
                                             </div>
-
-                                           
 
                                             <div class="col-12">
 
@@ -979,7 +971,6 @@ margin-bottom: 6px;
 
                                             </div>
 
-
                                         </div>
 
                                     </div>
@@ -988,23 +979,21 @@ margin-bottom: 6px;
                                         class="col-lg-10 col-sm-12 col-md-12 mt-md-5"
                                         style="display: flex; flex-direction: column;">
                                         <div class="mb-4 calendar__web"
-                                        style="display: flex; justify-content: space-around; text-align: center;">
-                                        <!-- Dynamic day divs will be inserted here -->
-                                    </div>
+                                            style="display: flex; justify-content: space-around; text-align: center;">
+                                            <!-- Dynamic day divs will be inserted here -->
+                                        </div>
 
-                                    <!-- on mobile -->
-                                    <div class="mb-4 calendar__Mobile"
-                                        style="display: flex; justify-content: space-around; text-align: center;">
+                                        <!-- on mobile -->
+                                        <div class="mb-4 calendar__Mobile"
+                                            style="display: flex; justify-content: space-around; text-align: center;">
 
-                                    </div>
+                                        </div>
 
-                                    <!-- new small box -->
+                                        <!-- new small box -->
 
-                                    <div class="boxes-container">
+                                        <div class="boxes-container">
 
-                                       
-
-                                    </div>
+                                        </div>
 
                                     </div>
 

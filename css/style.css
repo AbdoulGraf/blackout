@@ -92,7 +92,7 @@ body {
 
 	overflow-x: hidden !important;
 	font-size: 16px;
-	color: #727489;
+	color: #ffffff;
 	line-height: 1.6em;
 	font-weight: 300;
 	background: #070710;
@@ -100,6 +100,42 @@ body {
 	-moz-font-smoothing: antialiased;
 	font-family: 'Oswald', sans-serif;
 }
+
+
+
+/* option css */
+
+
+
+option:checked,
+option:hover {
+	box-shadow: 0 0 10px 100px #880611 inset !important;
+	color: white;
+	background: #880611;
+}
+
+
+
+
+
+/* for box responsive */
+
+@media (max-width: 999px) {
+
+	.rooms__box {
+		margin-bottom: 70px !important;
+	}
+
+	.rooms__bottom_box {
+		bottom: -126px !important;
+	}
+
+}
+
+
+
+
+
 
 
 
@@ -547,6 +583,10 @@ figure {
 		margin-top: -250px !important;
 		margin-left: 50px !important;
 	}
+
+	.main-header .header-upper .logo-box {
+		display: none !important;
+	}
 }
 
 
@@ -559,6 +599,60 @@ figure {
 
 
 }
+
+/* //logo part to display */
+
+@media (min-width: 770px) {
+
+	.logo__web {
+		display: block;
+	}
+
+	.logo__mobile {
+		display: none;
+	}
+
+	.mobile__franchie__padding {
+		padding-right: 90px !important;
+	}
+
+}
+
+@media (max-width: 500px) {
+
+
+
+	.mobile__main__header__back {
+		background: rgba(0, 0, 0, 0.0) !important;
+	}
+
+	.mobile___menu {
+		position: absolute !important;
+		z-index: 9999 !important;
+	}
+
+	.mobile__logo__move {
+		display: none !important;
+	}
+
+	.mobile__top__header {
+		display: none !important;
+	}
+
+	.header-style-two .nav-outer {
+		float: unset !important;
+	}
+
+	.logo__web {
+		display: none;
+	}
+
+	.logo__mobile {
+		display: block;
+	}
+
+}
+
 
 
 
@@ -611,12 +705,12 @@ figure {
 	}
 
 	.main-header .header-upper .social-links {
-		float: left !important;
+
+		display: none;
+
 	}
 
-	.main-header .header-upper .logo-box {
-		display: none !important;
-	}
+
 
 	.banner-carousel .content-box {
 		padding-top: 260px !important;
@@ -905,7 +999,7 @@ img {
 	bottom: 0px;
 	right: 50px;
 	background: #090a14;
-	border-bottom: 1px solid #727489;
+	border-bottom: 1px solid #ffffff;
 }
 
 .main-header .bg-shape-box .bg-shape:before {
@@ -919,7 +1013,7 @@ img {
 	-webkit-transform: rotate(-15deg);
 	-ms-transform: rotate(-15deg);
 	transform: rotate(-15deg);
-	border-left: 1px solid #727489;
+	border-left: 1px solid #ffffff;
 }
 
 .main-header .bg-shape-box .bg-shape:after {
@@ -933,12 +1027,12 @@ img {
 	-webkit-transform: rotate(15deg);
 	-ms-transform: rotate(15deg);
 	transform: rotate(15deg);
-	border-right: 1px solid #727489;
+	border-right: 1px solid #ffffff;
 }
 
 .main-header .header-top {
 	position: relative;
-	color: #727489;
+	color: #ffffff;
 	font-size: 15px;
 	font-weight: 400;
 	padding-left: 210px;
@@ -966,7 +1060,7 @@ img {
 
 .main-header .header-top .top-left {
 	position: relative;
-	color: #727489;
+	color: #ffffff;
 	float: left;
 }
 
@@ -988,7 +1082,7 @@ img {
 	float: left;
 	font-size: 15px;
 	line-height: 30px;
-	color: #727489;
+	color: #ffffff;
 	padding: 0px 0px;
 	margin-left: 30px;
 }
@@ -996,7 +1090,7 @@ img {
 .main-header .header-top .info li a {
 	position: relative;
 	display: inline-block;
-	color: #727489;
+	color: #ffffff;
 	-webkit-transition: all 300ms ease;
 	-moz-transition: all 300ms ease;
 	-ms-transition: all 300ms ease;
@@ -1169,7 +1263,7 @@ img {
 	line-height: 28px;
 	font-weight: 400;
 	text-transform: uppercase;
-	color: #727489;
+	color: #ffffff;
 	padding: 12px 0px 10px;
 	letter-spacing: 0.05em;
 	opacity: 1;
@@ -3129,7 +3223,7 @@ img {
 	position: relative;
 	font-size: 16px;
 	line-height: 1.5em;
-	color: #727489;
+	color: #ffffff;
 	text-transform: uppercase;
 }
 
@@ -3377,7 +3471,7 @@ img {
 	position: relative;
 	float: left;
 	font-size: 15px;
-	color: #727489;
+	color: #ffffff;
 	line-height: 24px;
 	text-transform: uppercase;
 	margin-right: 25px;
@@ -3390,7 +3484,7 @@ img {
 .featured-carousel-box .slide-item .text-column .info li a {
 	display: inline-block;
 	vertical-align: middle;
-	color: #727489;
+	color: #ffffff;
 }
 
 .featured-carousel-box .slide-item .text-column .info li a:hover {
@@ -3590,7 +3684,7 @@ img {
 .team-block .lower-box .designation {
 	font-size: 15px;
 	text-transform: capitalize;
-	color: #727489;
+	color: #ffffff;
 	font-weight: 400;
 	margin: 0 0 12px;
 }
@@ -4671,6 +4765,7 @@ img {
 .faq-section {
 	position: relative;
 	padding: 100px 0px 0px;
+	padding-bottom: 0px !important;
 }
 
 .faq-section .faq-container {
@@ -5454,7 +5549,7 @@ img {
 .game-details .post-info li {
 	position: relative;
 	float: left;
-	color: #727489;
+	color: #ffffff;
 	text-transform: uppercase;
 	margin-right: 25px;
 }
@@ -5466,7 +5561,7 @@ img {
 .game-details .post-info li a {
 	display: inline-block;
 	vertical-align: middle;
-	color: #727489;
+	color: #ffffff;
 }
 
 .game-details .post-info li a:hover {
@@ -5948,13 +6043,13 @@ img {
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 400;
-	color: #727489;
+	color: #ffffff;
 	max-width: 150px;
 	text-transform: uppercase;
 }
 
 .sidebar .popular-posts .post .text a {
-	color: #727489;
+	color: #ffffff;
 	transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
 	-webkit-transition: all 0.3s ease;
@@ -6010,7 +6105,7 @@ img {
 	position: relative;
 	font-size: 16px;
 	line-height: 24px;
-	color: #727489;
+	color: #ffffff;
 	display: block;
 	font-weight: 300;
 	letter-spacing: 1px;

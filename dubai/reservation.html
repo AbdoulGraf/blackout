@@ -105,7 +105,7 @@
   box-sizing: border-box;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-  background: #3a3a3a;
+  /* background: #3a3a3a; */
 }
 
 .hero-form-submit {
@@ -132,10 +132,10 @@
 
         <div class="page-wrapper">
 
-            <header class="main-header header-style-two">
+            <header class="main-header header-style-two  mobile__main__header__back">
                 <div class="header-container">
 
-                    <div class="header-top">
+                    <div class="header-top mobile__top__header">
                         <div class="auto-container">
                             <div class="inner clearfix">
                                 <div class="top-left"
@@ -173,7 +173,7 @@
                         <div class="auto-container">
                             <div class="inner-container clearfix">
 
-                                <div class="logo-box">
+                                <div class="logo-box mobile__logo__move">
                                     <div class="logo"><a href="../index.html"
                                             title="Escape Rooms in Dubai | Black-Out"><img
                                                 src="../images/newImages/newImage1.webp"
@@ -184,7 +184,7 @@
 
                                 <div class="nav-outer clearfix">
 
-                                    <div class="mobile-nav-toggler"><span
+                                    <div class="mobile-nav-toggler" style="color: #ffff;"><span
                                             class="icon flaticon-menu-2"></span></div>
 
                                     <nav
@@ -396,30 +396,36 @@
 
             
 
+          
             <section class="page-banner"
-            style="position: relative; overflow: hidden;">
-            <video playsinline="playsinline" autoplay="autoplay"
-                muted="muted" loop="loop"
-                style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100vw; height: 100vh; object-fit: cover; z-index: -1;">
-                <source src="asset/images/thumbnail/5.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <!-- Image on top of the video -->
-            <img src="asset/images/ImagesThumb/Horror_Background.webp"
-                alt="Descriptive Text"
-                style="position: absolute; top: 38%; left: 50%; transform: translate(-50%, -50%); max-width: 60%; max-height: 100%; object-fit: contain; z-index: 1;" />
-            <div class="banner-inner">
-                <div class="auto-container">
-                    <!-- Content here -->
+                style="position: static; overflow: hidden;">
+                <video playsinline="playsinline" autoplay="autoplay"
+                    muted="muted" loop="loop"
+                    style="position: absolute;  left: 50%; transform: translate(-50%, -50%); width: 100vw; height: 100vh; object-fit: cover; z-index: -1;">
+                    <source src="asset/images/thumbnail/5.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <!-- Image on top of the video -->
+                <img src="asset/images/ImagesThumb/Horror_Background.webp"
+                    class="top___image__slide"
+                    alt="Descriptive Text" />
+                <div class="banner-inner">
+                    <div class="auto-container">
+                        <!-- Content here -->
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+
 
             <section class="faq-section"
-                style="background: #07070f; padding-bottom: 100px;">
+                style="background: #07070f; padding-bottom: 100px !important;  padding-top:173px;">
 
                 <div class="top-pattern-layer"
                     style="background: url(../images/newImages/layers/pattern-black-up.webp);"></div>
+
+                      <!-- bottom for pattern -->
+                <div class="bottom-pattern-layer-dark-allblack"
+                style="background: url(../images/newImages/layers/pattern-black-bottom.webp); bottom: -73px;"></div>
 
                 <div class="formbold-main-wrapper">
 
@@ -452,7 +458,7 @@
                                     method="POST">
 
                                     <div
-                                        class="form-container formbold-mb-5 formbold-pt-3">
+                                        class="form-container formbold-mb-5 formbold-pt-3" style="gap: 10px;">
                                         <div class="section-title">
                                             <label
                                                 class="formbold-form-label formbold-form-label-2">
@@ -990,9 +996,47 @@
 
             </section>
 
+            <section class="reviews-section">
+
+                <div class="auto-container">
+
+                    <div class="row">
+
+                        <div class="col-12">
+
+                            <div class="slide-item">
+                                <div class="inner">
+                                    <div class="text">
+                                        <p
+                                            style="text-align: center; font-size: 20px; color: #910613;">
+                                            <strong
+                                                style="color: #cbcbcb;">Black
+                                                Out's escape rooms are a
+                                                unique and fun way to
+                                                engage</strong> with your
+                                            colleagues and test how well
+                                            your team works together.
+                                        </p>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
             <footer class="main-footer">
+
                 <div class="top-pattern-layer-dark"
-                    style="background: url(../images/newImages/layers/pattern-black-bottom.webp); top: 0px;"></div>
+                style="background: url(../images/newImages/layers/pattern-black-up.webp); top: -72px;"></div>
 
                 <div class="auto-container">
 

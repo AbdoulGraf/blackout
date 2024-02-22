@@ -38,9 +38,6 @@
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-
-
-
         <link rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
         <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
@@ -444,7 +441,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
         <div class="page-wrapper">
 
-           
             <header class="main-header header-style-two">
                 <div class="header-container">
 
@@ -485,7 +481,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         <div class="auto-container" style="max-width: 1500px;">
                             <div class="inner-container clearfix">
 
-                                <div class="logo-box">
+                                <div class="logo-box mobile__logo__move">
                                     <div class="logo"><a href="../../index.html"
                                             title="Escape Rooms in Dubai | Black-Out"><img
                                                 src="../../images/newImages/newImage1.webp"
@@ -505,7 +501,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                             class="collapse navbar-collapse show clearfix"
                                             id="navbarSupportedContent">
                                             <ul class="navigation clearfix">
-                                                <li class="current dropdown"><a
+                                                <li class="current"><a
                                                         href="../index.html">HOME</a>
 
                                                 </li>
@@ -591,7 +587,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                                 <li><a
                                                         href="../franchise.html">FRANCHISE</a></li>
 
-                                                <li class="dropdown"><a
+                                                <li class=""><a
                                                         href="../blog.html">BLOG</a>
                                                     <!-- <ul>
                                                         <li><a
@@ -711,13 +707,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
             </section>
 
-            <section class="about-section"
-                style="background: #070711; padding-left: 20px; padding-right: 20px;">
+            <section class="about-section rooms__box"
+                style="background: #070711; padding-left: 20px; padding-right: 20px; ">
 
                 <div class="top-pattern-layer"
                     style="background: url(../../images/newImages/layers/pattern-black-up.webp);"></div>
 
-                <div class="bottom-pattern-layer-dark-allblack"
+                <div
+                    class="bottom-pattern-layer-dark-allblack rooms__bottom_box"
                     style="background: url(../../images/newImages/layers/pattern-black-bottom.webp); bottom: -56px;"></div>
 
                 <div class="about-content">
@@ -802,21 +799,20 @@ document.addEventListener('DOMContentLoaded', function() {
                                 </div>
 
                                 <div>
+
                                     <div
-                                        style="display: flex; gap: 8px; cursor: pointer; ">
+                                        style="display: flex; gap: 8px; cursor: pointer; justify-content: end; ">
                                         <h5 style="font-size: 25px;">2024 </h5>
 
                                         <i class="fa-solid fa-calendar-days"
-                                            style="color: #ffff; font-size: 25px; "
+                                            style="color: #ffff; font-size: 25px;"
                                             onclick="openCalendar()"></i>
 
-                                    </div>                                
+                                    </div>
 
                                     <input type="text" id="datepicker"
                                         style="display: none;"
                                         onchange="dateChanged(this)" />
-
-                                   
 
                                 </div>
                             </div>
@@ -828,7 +824,6 @@ document.addEventListener('DOMContentLoaded', function() {
                                     <span class="span__select"
                                         style="color: #ffff;">Select number of
                                         players:</span>
-
 
                                     <div class="red__bull_number"
                                         style="display: flex; gap: 2px;">
