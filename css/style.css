@@ -4755,7 +4755,6 @@ img {
 }
 
 /*** 
-
 ====================================================================
 	FAQs Section
 ====================================================================
@@ -4765,7 +4764,7 @@ img {
 .faq-section {
 	position: relative;
 	padding: 100px 0px 0px;
-	padding-bottom: 0px !important;
+	padding-bottom: 100px !important;
 }
 
 .faq-section .faq-container {
