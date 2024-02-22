@@ -303,17 +303,17 @@
             </header>
 
             <section class="page-banner"
-                style="position: relative; overflow: hidden;">
+                style="position: static; overflow: hidden;">
                 <video playsinline="playsinline" autoplay="autoplay"
                     muted="muted" loop="loop"
-                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100vw; height: 100vh; object-fit: cover; z-index: -1;">
+                    style="position: absolute;  left: 50%; transform: translate(-50%, -50%); width: 100vw; height: 100vh; object-fit: cover; z-index: -1;">
                     <source src="asset/images/thumbnail/5.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
                 <!-- Image on top of the video -->
-                <!-- <img src="asset/images/ImagesThumb/Horror_Background.webp"
-                    alt="Descriptive Text"
-                    style="position: absolute; top: 38%; left: 50%; transform: translate(-50%, -50%); max-width: 60%; max-height: 100%; object-fit: contain; z-index: 1;" /> -->
+                <img src="asset/images/ImagesThumb/Horror_Background.webp"
+                    class="top___image__slide"
+                    alt="Descriptive Text" />
                 <div class="banner-inner">
                     <div class="auto-container">
                         <!-- Content here -->
@@ -322,7 +322,8 @@
             </section>
 
             <section class="faq-section"
-                style=" padding-bottom: 100px; padding-top:43px !important;">
+                style=" padding-bottom: 100px; padding-top:123px !important;">
+
                 <div class="featured-game-bg">
                     <video autoplay loop muted playsinline
                         style="height: 100%;">

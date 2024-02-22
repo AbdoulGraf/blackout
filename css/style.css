@@ -618,7 +618,7 @@ figure {
 
 }
 
-@media (max-width: 500px) {
+@media (max-width: 770px) {
 
 
 
@@ -4131,7 +4131,7 @@ img {
 
 .main-footer .widgets-section {
 	position: relative;
-	padding: 100px 0px 70px;
+	padding: 0px 0px 70px;
 }
 
 .main-footer .footer-widget {

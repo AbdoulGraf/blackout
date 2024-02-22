@@ -391,7 +391,7 @@ label {
 
 .top___image__slide {
 	position: absolute;
-	top: 412px;
+	top: 420px;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	max-width: 25%;
@@ -400,46 +400,65 @@ label {
 	z-index: 5;
 }
 
-@media (min-width: 780px) and (max-width: 1027px) {
+@media (min-width: 1024px) and (max-width: 1440px){
 
+	.top___image__slide{
+		position: absolute;
+		top: 408px;
+		left: 53%;
+		transform: translate(-50%, -50%);
+		max-width: 25%;
+		max-height: 100%;
+		object-fit: contain;
+		z-index: 5;
+	
+	}
+
+}
+
+@media (min-width: 780px) and (max-width: 1027px) {
 	.top___image__slide {
 		position: absolute;
-		top: 14%;
+		/* top: 14%; */
 		left: 50%;
 		transform: translate(-50%, -50%);
 		max-width: 38%;
 		max-height: 100%;
 		object-fit: contain;
-		z-index: 9999;
+		z-index: 5;
 	}
-
-
 
 }
 
 
 @media (min-width: 500px) and (max-width:770px) {
 
-
 	.top___image__slide {
 		position: absolute;
-		top: 6%;
+		top: 210px;
 		left: 50%;
 		transform: translate(-50%, -50%);
 		max-width: 38%;
 		max-height: 100%;
 		object-fit: contain;
-		z-index: 9999;
+		z-index: 5;
 	}
-
-
-
-
-
 
 }
 
 
+
+
+@media (min-width: 1024px){
+
+.first__push{
+	margin-left: 100px;
+}
+.second__push{
+	margin-left: 100px;
+}
+
+}
 
 
 
@@ -449,13 +468,13 @@ label {
 
 	.top___image__slide {
 		position: absolute;
-		top: 149px;
-		left: 50%;
+		top: 152px;
+		left: 53%;
 		transform: translate(-50%, -50%);
 		max-width: 50%;
 		max-height: 100%;
 		object-fit: contain;
-		z-index: 9999;
+		z-index: 5;
 
 	}
 
@@ -2861,7 +2880,7 @@ ul.minicart .cart-price .new {
 
 	width: 100vw;
 
-	height: 100vh;
+	height: 100%;
 
 	object-fit: cover;
 
