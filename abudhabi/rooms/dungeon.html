@@ -41,6 +41,36 @@
             href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
         <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 
+
+
+
+        
+        <script>
+
+            document.addEventListener('DOMContentLoaded', function() {
+                var showPhotos = document.getElementById('showPhotos');
+                var showVideos = document.getElementById('showVideos');
+                var photosContainer = document.getElementById('photosContainer');
+                var videosContainer = document.getElementById('videosContainer');
+            
+                showPhotos.addEventListener('click', function() {
+                    photosContainer.style.display = 'flex';
+                    videosContainer.style.display = 'none';
+                });
+            
+                showVideos.addEventListener('click', function() {
+                    videosContainer.style.display = 'flex';
+                    photosContainer.style.display = 'none';
+                });
+            });
+            
+            
+            
+                  </script>
+
+
+
+
         <script>
             document.addEventListener('DOMContentLoaded', function() {
 
@@ -1094,9 +1124,445 @@ document.addEventListener('DOMContentLoaded', function() {
 
             <!-- photo and video -->
 
+            <!-- photo and video -->
+
+            <section class="faq-section"
+                style=" padding-bottom: 100px; padding-top: 90px;">
+
+                <div class="top-pattern-layer"
+                    style="background: url(../../images/newImages/layers/pattern-black-up.webp);"></div>
+
+                <!-- bottom for pattern -->
+                <div class="bottom-pattern-layer-dark-allblack"
+                    style="background: url(../../images/newImages/layers/pattern-black-bottom.webp); bottom: -73px;"></div>
+
+                <div class="featured-game-bg">
+
+                    <video autoplay loop muted playsinline
+                        style="height: 100%;">
+                        <source src="../../images/newVideo/escape/4.mp4"
+                            type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+
+                </div>
+
+                <div class="container">
+
+                    <div class="sec-title centered">
+
+                        <h2 class
+                            style="color: #910613; font-weight: 800; font-size: 36px;">
+                            <span id="showPhotos"
+                                style="cursor: pointer;">PHOTO</span> / <span
+                                id="showVideos"
+                                style="color: #fff; cursor: pointer;">VIDEO</span>
+                        </h2>
+
+                        <p style="color: #cccccc; font-size: 20px;"
+                            class="mb-5">
+                            Your Comments are
+                            important to us </p>
+
+                        <div class="row featured-active" id="photosContainer">
+
+                            <div class="col-lg-4 col-sm-6 grid-item">
+                                <div
+                                    class="featured-game-item  images_Item mb-30">
+
+                                    <div class="featured-game-thumb">
+                                        <img
+                                            src="../../images/blog/blog_imaage_1.webp"
+                                            alt style="border-radius: 15px;">
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6 grid-item">
+                                <div
+                                    class="featured-game-item images_Item mb-30">
+
+                                    <div class="featured-game-thumb">
+                                        <img
+                                            src="../../images/blog/blog_imaage_2.webp"
+                                            alt style="border-radius: 15px;">
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6 grid-item">
+                                <div
+                                    class="featured-game-item images_Item mb-30">
+
+                                    <div class="featured-game-thumb">
+                                        <img
+                                            src="../../images/blog/blog_imaage_3.webp"
+                                            alt style="border-radius: 15px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="videosContainer" class="row featured-active"
+                            style="display: none;">
+                            <!-- Example video div -->
+                            <div class="col-lg-4 col-sm-6 grid-item">
+                                <div
+                                    class="featured-game-item images_Item mb-30"
+                                    style="cursor: pointer;">
+                                    <div class="featured-game-thumb">
+                                        <iframe width="100%" height="315"
+                                            style="border-radius: 15px; border: none;"
+                                            src="https://www.youtube.com/embed/BYysLg8Hzlo"
+                                            title="YouTube video player"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6 grid-item">
+                                <div
+                                    class="featured-game-item images_Item mb-30"
+                                    style="cursor: pointer;">
+                                    <div class="featured-game-thumb">
+                                        <iframe width="100%" height="315"
+                                            style="border-radius: 15px; border: none;"
+                                            src="https://www.youtube.com/embed/BYysLg8Hzlo"
+                                            title="YouTube video player"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6 grid-item">
+                                <div
+                                    class="featured-game-item images_Item mb-30"
+                                    style="cursor: pointer;">
+                                    <div class="featured-game-thumb">
+                                        <iframe width="100%" height="315"
+                                            style="border-radius: 15px; border: none;"
+                                            src="https://www.youtube.com/embed/BYysLg8Hzlo"
+                                            title="YouTube video player"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="auto-container"
+                            style="margin-bottom: 50px; margin-top: 100px;">
+
+                            <div class="row">
+
+                                <div class="col-12">
+                                    <div
+                                        class="section-title title-style-three white-title"
+                                        style="text-align: center;">
+                                        <h2 style="color: #910611;">FAQ
+                                            <span></span></h2>
+                                        <p
+                                            style="color: #cccccc; font-size: 20px;">
+                                            Your Comments are
+                                            important to us </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="faq-container">
+                                <div class="accordion-box">
+
+                                    <div
+                                        class="accordion block current wow fadeInUp"
+                                        data-wow-delay="0ms"
+                                        data-wow-duration="1500ms">
+                                        <div class="acc-btn active">Who Can Play
+                                            This
+                                            Game? <div
+                                                class="icon flaticon-cross"></div></div>
+                                        <div class="acc-content">
+                                            <div class="content">
+                                                <div class="text"
+                                                    style="color: #ffff;">You
+                                                    can play
+                                                    this game
+                                                    together with your family
+                                                    members or
+                                                    colleagues from work or play
+                                                    it as a
+                                                    corporate game and have fun
+                                                    with
+                                                    them for one hour.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion block wow fadeInUp"
+                                        data-wow-delay="100ms"
+                                        data-wow-duration="1500ms">
+                                        <div class="acc-btn">How to beat team
+                                            based
+                                            shooters? <div
+                                                class="icon flaticon-cross"></div></div>
+                                        <div class="acc-content">
+                                            <div class="content">
+                                                <div class="text"
+                                                    style="color: #ffff;">Lorem
+                                                    Ipsum is
+                                                    simply
+                                                    dummy text of the printing
+                                                    and
+                                                    typesetting industry. Lorem
+                                                    Ipsum
+                                                    has been the industry's
+                                                    standard
+                                                    dummy text ever since the
+                                                    1500s,
+                                                    when an unknown printer took
+                                                    a
+                                                    galley of type and scrambled
+                                                    it to
+                                                    make a type specimen book.
+                                                    It has
+                                                    survived not only five
+                                                    centuries.
+                                                    There are many variations of
+                                                    passages of Lorem Ipsum
+                                                    available,
+                                                    but the majority have
+                                                    suffered
+                                                    alteration in some form by
+                                                    injected
+                                                    humour.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion block wow fadeInUp"
+                                        data-wow-delay="200ms"
+                                        data-wow-duration="1500ms">
+                                        <div class="acc-btn"> Is It Scary? <div
+                                                class="icon flaticon-cross"></div></div>
+                                        <div class="acc-content">
+                                            <div class="content">
+                                                <div class="text"
+                                                    style="color: #ffff;">The
+                                                    products
+                                                    of the
+                                                    Black-Out are the most
+                                                    scariest
+                                                    Escape Games in the Middle
+                                                    East but
+                                                    in case of request level can
+                                                    be set.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion block wow fadeInUp"
+                                        data-wow-delay="300ms"
+                                        data-wow-duration="1500ms">
+                                        <div class="acc-btn"> How Long Does The
+                                            Whole
+                                            Experience Take? <div
+                                                class="icon flaticon-cross"></div></div>
+                                        <div class="acc-content">
+                                            <div class="content"
+                                                style="color: #ffff;">
+                                                <div class="text">You must
+                                                    puzzle your
+                                                    way to the intriguing
+                                                    conclusion and
+                                                    escape the room in 60
+                                                    minutes.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion block wow fadeInUp"
+                                        data-wow-delay="400ms"
+                                        data-wow-duration="1500ms">
+                                        <div class="acc-btn"> How Difficult Is
+                                            The Game?
+                                            <div
+                                                class="icon flaticon-cross"></div></div>
+                                        <div class="acc-content">
+                                            <div class="content">
+                                                <div class="text"
+                                                    style="color: #ffff;">The
+                                                    games
+                                                    designed to
+                                                    be completed in 60 minutes
+                                                    by
+                                                    concentration and solving
+                                                    puzzles.
+                                                    You do not need any special
+                                                    talent
+                                                    other than using your brain
+                                                    and
+                                                    acting fast. Remember that
+                                                    you can
+                                                    request a hint! This,
+                                                    however, does
+                                                    not necessarily mean that
+                                                    everybody
+                                                    can finish the game! .</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion block wow fadeInUp"
+                                        data-wow-delay="400ms"
+                                        data-wow-duration="1500ms">
+                                        <div class="acc-btn"> Do We Have To Wear
+                                            Special
+                                            Costumes To Play The Game? <div
+                                                class="icon flaticon-cross"></div></div>
+                                        <div class="acc-content">
+                                            <div class="content">
+                                                <div class="text"
+                                                    style="color: #ffff;">No.
+                                                    However,
+                                                    we
+                                                    recommend that you bring the
+                                                    least
+                                                    amount of belongings and
+                                                    accessories
+                                                    possible with you in order
+                                                    to move
+                                                    comfortably and fast during
+                                                    the
+                                                    game.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion block wow fadeInUp"
+                                        data-wow-delay="400ms"
+                                        data-wow-duration="1500ms">
+                                        <div class="acc-btn"> Will It Be Safe
+                                            During The
+                                            Game? <div
+                                                class="icon flaticon-cross"></div></div>
+                                        <div class="acc-content">
+                                            <div class="content">
+                                                <div class="text"
+                                                    style="color: #ffff;">Yes.
+                                                    Although
+                                                    all of
+                                                    our games is based on the
+                                                    concept of
+                                                    Fear, you will not come
+                                                    across with
+                                                    creatures such as those you
+                                                    would
+                                                    see in a fear tunnel. In
+                                                    addition,
+                                                    there will be real time
+                                                    monitoring
+                                                    in all of the rooms in the
+                                                    house.
+                                                    You can end the game
+                                                    whenever you
+                                                    want and leave the
+                                                    house.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion block wow fadeInUp"
+                                        data-wow-delay="400ms"
+                                        data-wow-duration="1500ms">
+                                        <div class="acc-btn"> How Much Is An
+                                            Escape Room
+                                            In Dubai Al Quoz? <div
+                                                class="icon flaticon-cross"></div></div>
+                                        <div class="acc-content">
+                                            <div class="content">
+                                                <div class="text"
+                                                    style="color: #ffff;">The
+                                                    cost of an
+                                                    escape
+                                                    room in Dubai varies
+                                                    depending on
+                                                    the type, duration and size
+                                                    of the
+                                                    game. Generally speaking,
+                                                    expect to
+                                                    pay between AED 160-200 per
+                                                    person
+                                                    for a one hour game. More
+                                                    complex
+                                                    games may require a longer
+                                                    time
+                                                    limit or additional players
+                                                    which could increase the
+                                                    total
+                                                    cost.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                    <section class="reviews-section">
+
+                        <div class="auto-container">
+
+                            <div class="row">
+
+                                <div class="col-12">
+
+                                    <div class="slide-item">
+                                        <div class="inner">
+                                            <div class="text">
+                                                <p
+                                                    style="text-align: center; font-size: 20px; color: #910613;">
+                                                    <strong
+                                                        style="color: #cbcbcb;">Black
+                                                        Out's escape rooms are a
+                                                        unique and fun way to
+                                                        engage</strong> with
+                                                    your
+                                                    colleagues and test how well
+                                                    your team works together.
+                                                </p>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+
+
             <footer class="main-footer">
-                <div class="top-pattern-layer-dark"
-                    style="background: url(../../images/newImages/layers/pattern-red.webp); top: -1px;"></div>
+               <div class="top-pattern-layer-dark"
+                            style="background: url(../../images/newImages/layers/pattern-black-up.webp); top: -72px;"></div>
 
                 <div class="auto-container">
 

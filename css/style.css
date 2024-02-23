@@ -105,6 +105,12 @@ body {
 
 /* option css */
 
+.images_Item::before{
+	background: none !important;
+
+	position:unset !important;
+}
+
 
 
 option:checked,
