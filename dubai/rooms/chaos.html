@@ -461,10 +461,11 @@ margin-bottom: 6px;
 
         <div class="page-wrapper">
 
-            <header class="main-header header-style-two">
+            <header
+                class="main-header header-style-two mobile__main__header__back">
                 <div class="header-container">
 
-                    <div class="header-top">
+                    <div class="header-top mobile__top__header">
                         <div class="auto-container">
                             <div class="inner clearfix">
                                 <div class="top-left"
@@ -498,7 +499,7 @@ margin-bottom: 6px;
                     </div>
 
                     <div class="header-upper">
-                        <div class="auto-container" style="max-width: 1500px;">
+                        <div class="auto-container">
                             <div class="inner-container clearfix">
 
                                 <div class="logo-box mobile__logo__move">
@@ -512,7 +513,8 @@ margin-bottom: 6px;
 
                                 <div class="nav-outer clearfix">
 
-                                    <div class="mobile-nav-toggler"><span
+                                    <div class="mobile-nav-toggler"
+                                        style="color: #ffff;"><span
                                             class="icon flaticon-menu-2"></span></div>
 
                                     <nav
@@ -524,6 +526,37 @@ margin-bottom: 6px;
                                                 <li class="current "><a
                                                         href="../index.html">HOME</a>
 
+                                                </li>
+
+                                                <li class="dropdown"><a
+                                                        href="index.html"> BOOK NOW </a>
+
+                                                    <ul>
+
+                                                        <li class><a
+                                                                href="psychiatric.html">
+                                                                Psychiatric
+                                                            </a>
+
+                                                        </li>
+                                                        <li class><a
+                                                                href="exorcism.html">
+                                                                Exorcism
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li class><a
+                                                                href="torture.html">
+                                                                Torture
+                                                            </a></li>
+
+                                                        <li class><a
+                                                                href="chaos.html">
+                                                                Chaos
+                                                            </a></li>
+
+                                                    </ul>
                                                 </li>
 
                                                 <li class="dropdown"><a
@@ -553,53 +586,6 @@ margin-bottom: 6px;
                                                     </ul>
                                                 </li>
 
-                                                <li class="dropdown"><a
-                                                        href="index.html">OUR
-                                                        ROOMS</a>
-
-                                                    <ul>
-
-                                                        <li class><a
-                                                                href="psychiatric.html">
-                                                                Psychiatric
-                                                            </a>
-                                                            <!-- 
-                                                            <ul>
-                                                                <li><a
-                                                                        href="#">Header
-                                                                        Type
-                                                                        01</a></li>
-                                                                <li><a
-                                                                        href="#">Header
-                                                                        Type
-                                                                        02</a></li>
-                                                                <li><a
-                                                                        href="#">Header
-                                                                        Type
-                                                                        03</a></li>
-                                                            </ul> -->
-
-                                                        </li>
-                                                        <li class><a
-                                                                href="exorcism.html">
-                                                                Exorcism
-                                                            </a>
-
-                                                        </li>
-
-                                                        <li class><a
-                                                                href="torture.html">
-                                                                Torture
-                                                            </a></li>
-
-                                                        <li class><a
-                                                                href="chaos.html">
-                                                                Chaos
-                                                            </a></li>
-
-                                                    </ul>
-                                                </li>
-
                                                 <li><a
                                                         href="../video-order.html">REQUEST
                                                         VIDEO</a></li>
@@ -609,21 +595,23 @@ margin-bottom: 6px;
 
                                                 <li class><a
                                                         href="../blog.html">BLOG</a>
-                                                    <!-- <ul>
-                                                        <li><a
-                                                                href="#">Blog
-                                                                Sidebar</a></li>
-                                                        <li><a
-                                                                href="#">Blog
-                                                                Grid
-                                                                View</a></li>
-                                                        <li><a
-                                                                href="#">Blog
-                                                                Single</a></li>
-                                                    </ul> -->
+
                                                 </li>
                                                 <li><a
                                                         href="../contact.html">CONTACT</a></li>
+
+                                                <li class="redButtonNav">
+
+                                                    <a
+                                                        href="../../abudhabi/index.html"
+                                                        class="theme-btn btn-style-one"
+                                                        style><span
+                                                            class="btn-title"
+                                                            style="background: #910613; padding: 5px 20px;">
+                                                            Abudhabi</span></a>
+
+                                                </li>
+
                                             </ul>
                                         </div>
                                     </nav>
@@ -648,7 +636,6 @@ margin-bottom: 6px;
 
                 <div class="sticky-header">
                     <div class="auto-container clearfix">
-
                         <div
                             style="display: flex; justify-content: space-between; align-items: center;">
 
@@ -687,7 +674,7 @@ margin-bottom: 6px;
 
                         <div class="link-box"
                             style="padding: 30px 25px 0px 25px;">
-                            <a href="../../abudhabi/rooms/index.html"
+                            <a href="../../abudhabi/index.html"
                                 class="theme-btn btn-style-one"
                                 style="padding: 0px 0px !important;"><span
                                     class="btn-title"
@@ -730,7 +717,7 @@ margin-bottom: 6px;
                                 style="height: 500px !important;">
                                 <div class="content"
                                     style="vertical-align: bottom !important;">
-                                    <h2>CHAOS</h2>
+                                    <h2 class="glitch">CHAOS</h2>
                                 </div>
                             </div>
                         </div>
@@ -1167,15 +1154,13 @@ margin-bottom: 6px;
                         <h2 class
                             style="color: #910613; font-weight: 800; font-size: 36px;">
                             <span id="showPhotos"
-                                style="cursor: pointer;">PHOTO</span> / <span
+                                style="cursor: pointer;" class="glitch">PHOTO</span> / <span
                                 id="showVideos"
-                                style="color: #fff; cursor: pointer;">VIDEO</span>
+                                style="color: #fff; cursor: pointer;" class="glitch">VIDEO</span>
                         </h2>
 
                         <p style="color: #cccccc; font-size: 20px;"
-                            class="mb-5">
-                            Your Comments are
-                            important to us </p>
+                            class="mb-5"> Images & Videos </p>
 
                         <div class="row featured-active" id="photosContainer">
 
@@ -1280,12 +1265,11 @@ margin-bottom: 6px;
                                     <div
                                         class="section-title title-style-three white-title"
                                         style="text-align: center;">
-                                        <h2 style="color: #910611;">FAQ
+                                        <h2 style="color: #910611;" class="glitch">FAQ
                                             <span></span></h2>
                                         <p
                                             style="color: #cccccc; font-size: 20px;">
-                                            Your Comments are
-                                            important to us </p>
+                                            Answers to Common Questions </p>
                                     </div>
 
                                 </div>

@@ -29,6 +29,7 @@ $(document).ready(function () {
         const message = document.querySelectorAll('.description__message');
 
 
+        
         // Initially hide the buttons until the video is about to end
         dubaiLink.style.opacity = '0';
         abudhabiLink.style.opacity = '0';
@@ -36,7 +37,7 @@ $(document).ready(function () {
 
         video.addEventListener('timeupdate', function () {
 
-            if (video.duration - video.currentTime < 1) {
+            if (video.duration - video.currentTime < 3) {
                 video.pause(); // Pause the video 1 second before it ends
                 // Make links visible and start the animations
                 document.querySelectorAll('.link-boxx a').forEach(link => {
@@ -44,13 +45,13 @@ $(document).ready(function () {
                 });
 
 
-                message.forEach(messages =>{
+                message.forEach(messages => {
                     messages.classList.add('show-message');
 
                 })
 
 
-               
+
                 // message__logo.classList.add('show-logo');
 
                 // Trigger animations by adding classes that apply the animation CSS
