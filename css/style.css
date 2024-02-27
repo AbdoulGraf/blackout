@@ -283,6 +283,11 @@ section {
 }
 
 
+.link-box p{
+	margin-bottom: 0px;
+	display: flex;
+	align-items: center;
+}
 
 
 
@@ -2016,7 +2021,7 @@ img {
 	font-size: 30px;
 	line-height: 50px;
 	cursor: pointer;
-	color: #910611;
+	color: #ffffff;
 	margin-left: 25px;
 	margin-top: 25px;
 	display: none;
