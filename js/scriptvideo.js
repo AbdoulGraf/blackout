@@ -37,8 +37,8 @@ $(document).ready(function () {
 
         video.addEventListener('timeupdate', function () {
 
-            if (video.duration - video.currentTime < 3) {
-                video.pause(); // Pause the video 1 second before it ends
+            if (video.duration - video.currentTime < 4) {
+               // video.pause(); // Pause the video 1 second before it ends
                 // Make links visible and start the animations
                 document.querySelectorAll('.link-boxx a').forEach(link => {
                     link.style.opacity = '1'; // Make the link visible just before the animation starts
