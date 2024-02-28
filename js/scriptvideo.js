@@ -29,7 +29,7 @@ $(document).ready(function () {
         const message = document.querySelectorAll('.description__message');
 
 
-        
+
         // Initially hide the buttons until the video is about to end
         dubaiLink.style.opacity = '0';
         abudhabiLink.style.opacity = '0';
@@ -38,10 +38,13 @@ $(document).ready(function () {
         video.addEventListener('timeupdate', function () {
 
             if (video.duration - video.currentTime < 4) {
-               // video.pause(); // Pause the video 1 second before it ends
+                // video.pause(); // Pause the video 1 second before it ends
                 // Make links visible and start the animations
                 document.querySelectorAll('.link-boxx a').forEach(link => {
-                    link.style.opacity = '1'; // Make the link visible just before the animation starts
+                    // link.style.opacity = '1'; // Make the link visible just before the animation starts
+
+                    link.style.display = 'block';
+
                 });
 
 
