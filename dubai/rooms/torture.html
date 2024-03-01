@@ -41,6 +41,102 @@
             href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
         <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+        <!-- modal openeing -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
+
+        <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                  // Toggle display of photos and videos
+                  document.getElementById('showPhotos').addEventListener('click', function() {
+                    document.getElementById('imageGallery').style.display = 'flex';
+                    document.getElementById('videoGallery').style.display = 'none';
+                  });
+                
+                  document.getElementById('showVideos').addEventListener('click', function() {
+                    document.getElementById('imageGallery').style.display = 'none';
+                    document.getElementById('videoGallery').style.display = 'flex';
+                  });
+                
+                  // Click event for gallery items (images)
+                  document.querySelectorAll('#imageGallery .gallery-item').forEach(function(item) {
+                    item.addEventListener('click', function() {
+                      const content = `<img src="${this.getAttribute('src')}" class="img-fluid" style="max-height: 80vh;">`;
+                      showModal(content);
+                    });
+                  });
+                
+                  // Click event for video items
+                  document.querySelectorAll('.video-item iframe').forEach(function(item) {
+                    item.addEventListener('click', function(event) {
+                      event.stopPropagation(); // Prevent triggering the click on the .video-item container
+                      const src = this.getAttribute('src').split('?')[0] + "?autoplay=1"; // Ensure autoplay starts
+                      const content = `<iframe src="${src}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%; height: 500px; border-radius: 15px;"></iframe>`;
+                      showModal(content);
+                    });
+                  });
+                
+                  // Function to show modal with provided content
+                  function showModal(content) {
+                    document.querySelector('#imageModal .modal-body').innerHTML = content;
+                    var myModal = new bootstrap.Modal(document.getElementById('imageModal'), {
+                      keyboard: true
+                    });
+                    myModal.show();
+                  }
+                
+                  // Clear modal content on close to stop any video playback
+                  document.getElementById('imageModal').addEventListener('hidden.bs.modal', function () {
+                    document.querySelector('#imageModal .modal-body').innerHTML = '';
+                  });
+                });
+                </script>
+
+        <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const videoWrappers = document.querySelectorAll('.videoWrapper');
+      const modalBody = document.querySelector('#imageModal .modal-body');
+      let currentIndex = 0; // Track the current video index
+    
+      function updateModalContent(index) {
+        const src = videoWrappers[index].querySelector('iframe').src;
+        const newSrc = src.split('?')[0] + "?autoplay=1"; // Ensure autoplay
+        const iframe = `<iframe src="${newSrc}" width="100%" height="500" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius: 15px;"></iframe>`;
+        modalBody.innerHTML = iframe;
+      }
+    
+      videoWrappers.forEach((wrapper, index) => {
+        wrapper.querySelector('.videoOverlay').addEventListener('click', function() {
+          currentIndex = index; // Update current index to clicked video
+          updateModalContent(currentIndex);
+          $('#imageModal').modal('show'); // Bootstrap 5 syntax to show modal
+        });
+      });
+    
+      // Next and Previous buttons
+      document.getElementById('nextImage').addEventListener('click', function() {
+        currentIndex = (currentIndex + 1) % videoWrappers.length; // Cycle to next
+        updateModalContent(currentIndex);
+      });
+    
+      document.getElementById('prevImage').addEventListener('click', function() {
+        currentIndex = (currentIndex - 1 + videoWrappers.length) % videoWrappers.length; // Cycle to previous
+        updateModalContent(currentIndex);
+      });
+    
+      // Clear modal content on close to ensure videos stop playing
+      $('#imageModal').on('hidden.bs.modal', function () {
+        modalBody.innerHTML = ''; // Clear the content
+      });
+    });
+    </script>
+
+        <!-- endOfModal -->
+
         <script>
 
             document.addEventListener('DOMContentLoaded', function() {
@@ -97,7 +193,17 @@ const persons = {
         { time: "14:30-15:30", price: "AED 220.00" },
         { time: "14:30-15:30", price: "AED 220.00" },
         { time: "14:30-15:30", price: "AED 220.00" },
-        { time: "14:30-15:30", price: "AED 220.00" }
+        { time: "14:30-15:30", price: "AED 220.00" },
+        { time: "14:30-15:30", price: "AED 220.00" },
+        { time: "14:30-15:30", price: "AED 220.00" },
+        { time: "14:30-15:30", price: "AED 220.00" },
+        { time: "14:30-15:30", price: "AED 220.00" },
+        { time: "14:30-15:30", price: "AED 220.00" },
+        { time: "14:30-15:30", price: "AED 220.00" },
+        { time: "14:30-15:30", price: "AED 220.00" },
+        { time: "14:30-15:30", price: "AED 220.00" },
+        { time: "14:30-15:30", price: "AED 220.00" },
+        { time: "14:30-15:30", price: "AED 220.00" },
     ],
 
     2: [
@@ -731,19 +837,63 @@ margin-bottom: 6px;
                 </div>
             </section>
 
+            <!-- Modal Structure -->
+            <div class="modal fade"
+                id="imageModal" tabindex="-1"
+                aria-labelledby="imageModalLabel"
+                aria-hidden="true">
+                <div
+                    class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content"
+                        style="background-color: #0a0a14;">
+                        <div
+                            class="modal-header border-0">
+                            <button
+                                type="button"
+                                class="btn-close btn-close-white"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div
+                            class="modal-body d-flex justify-content-center align-items-center"
+                            style="position: relative;">
+                            <img id="modalImage"
+                                src
+                                class="img-fluid"
+                                style="border-radius: 15px; max-height: 80vh;">
+                            <a id="prevImage"
+                                class="position-absolute"
+                                style="left: 0; top: 50%; transform: translateY(-50%); cursor: pointer;">
+                                <i
+                                    class="bi bi-chevron-left"
+                                    style="color: white; font-size: 2rem;"></i>
+                            </a>
+                            <a id="nextImage"
+                                class="position-absolute"
+                                style="right: 0; top: 50%; transform: translateY(-50%); cursor: pointer;">
+                                <i
+                                    class="bi bi-chevron-right"
+                                    style="color: white; font-size: 2rem;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!--Reviews Section-->
-            <section class="about-section" style="background: #950004 ;">
+            <section class="about-section"
+                style="background: #910613 ; padding-bottom: 100px; padding-top: 50px;">
 
                 <div class="top-pattern-layer"
                     style="background: url(../../images/newImages/layers/pattern.png); top: -72px;"></div>
 
                 <!-- <div class="top-pattern-layer-dark" style="top: -72px;"></div>
-                <div class="bottom-pattern-layer-dark"></div> -->
+              <div class="bottom-pattern-layer-dark"></div> -->
 
                 <div class="auto-container">
 
                     <!-- <div class="sec-title"><h2> Players Reviews  </h2><span
-                            class="bottom-curve"></span></div> -->
+                          class="bottom-curve"></span></div> -->
 
                     <div class="row">
 
@@ -1011,7 +1161,7 @@ margin-bottom: 6px;
                             <div class="col-12 mt-4">
 
                                 <div class="row">
-                                    <div class="col-lg-2 col-md-12 col-sm-12">
+                                    <div class="col-lg-3 col-md-12 col-sm-12">
 
                                         <div class="row "
                                             style="display: flex; flex-direction: row; justify-content: space-between; gap: 25px; height: 100%;">
@@ -1030,85 +1180,157 @@ margin-bottom: 6px;
 
                                                     </div>
 
-                                                </div>
-
-                                            </div>
-
-                                            <div class="col-12">
-
-                                                <div
-                                                    style="display: flex; justify-content: space-between; gap: 5px; margin-top: 8px;">
                                                     <div
-                                                        style="flex-basis: 100%; height: 50px; background-color: #950004; border-radius: 5px; display: flex; align-items: center;">
+                                                        class="featured-game-content">
 
                                                         <div
                                                             class="featured-game-meta"
-                                                            style=" width: 100%;  padding-top: 2px; padding-bottom: 2px; padding-left: 10px; padding-right: 2px;">
+                                                            style="width: 100%; font-size: 20px;">
+                                                            <i
+                                                                class="fas fa-clock"></i>
+                                                            <span
+                                                                style="font-weight: 300;">60
+                                                                Mins</span>
+                                                            &nbsp;
+                                                            &nbsp;
 
                                                             <i
-                                                                class="fa-solid fa-hourglass-half"
-                                                                style="color: #ffff; "></i>
-                                                            &nbsp;
-                                                            &nbsp;
+                                                                class="fas fa-hammer"></i>
                                                             <span
-                                                                style="font-weight: 800; font-size: 16px;">
-                                                                60 Mins </span>
-                                                        </div>
+                                                                style="font-weight: 300;">
+                                                                Hard
+                                                            </span>
+                                                            &nbsp;
+                                                            &nbsp;
 
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-
-                                            <div class="col-12">
-
-                                                <div
-                                                    style="display: flex; justify-content: space-between; gap: 5px; margin-top: 8px;">
-                                                    <div
-                                                        style="flex-basis: 100%; height: 50px; background-color: #950004; border-radius: 5px; display: flex; align-items: center;">
-
-                                                        <div
-                                                            class="featured-game-meta"
-                                                            style=" width: 100%;  padding-top: 2px; padding-bottom: 2px; padding-left: 10px; padding-right: 2px;">
                                                             <i
-                                                                class="fa-solid fa-puzzle-piece"
-                                                                style="color: #ffff; "></i>
-
-                                                            &nbsp;
-                                                            &nbsp;
+                                                                class="fas fa-running"></i>
                                                             <span
-                                                                style="font-weight: 800; font-size: 16px;">
-                                                                Hard </span>
-                                                        </div>
-
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-
-                                            <div class="col-12">
-
-                                                <div
-                                                    style="display: flex; justify-content: space-between; gap: 5px; margin-top: 8px;">
-                                                    <div
-                                                        style="flex-basis: 100%; height: 50px; background-color: #950004; border-radius: 5px; display: flex; align-items: center;">
-
-                                                        <div
-                                                            class="featured-game-meta"
-                                                            style=" width: 100%;  padding-top: 2px; padding-bottom: 2px; padding-left: 10px; padding-right: 2px;">
-                                                            <i
-                                                                class="fa-solid fa-user-group"
-                                                                style="color: #ffff; "></i>
-                                                            &nbsp;
-                                                            &nbsp;
-                                                            <span
-                                                                style="font-weight: 800; font-size: 16px; ">
-                                                                2-10 Person
+                                                                style="font-weight: 300;">
+                                                                2- 10
                                                             </span>
                                                         </div>
+                                                    </div>
 
+                                                </div>
+
+                                            </div>
+
+                                            <div class="col-12">
+
+                                                <h2 class
+                                                    style="color: #910613; font-weight: 800; font-size: 30px;">
+                                                    <span id="showPhotos"
+                                                        style="cursor: pointer;"
+                                                        class="glitch">PHOTO</span>
+                                                    / <span
+                                                        id="showVideos"
+                                                        style="color: #fff; cursor: pointer;"
+                                                        class="glitch">VIDEO</span>
+                                                </h2>
+
+                                            </div>
+
+                                            <div class="col-12">
+
+                                                <div class="row"
+                                                    id="imageGallery">
+                                                    <div class="col-6">
+                                                        <img
+                                                            src="../../images/blog/blog_imaage_1.webp"
+                                                            alt="Image 1"
+                                                            class="img-fluid gallery-item"
+                                                            style="border-radius: 15px; cursor: pointer;">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <img
+                                                            src="../../images/blog/blog_imaage_2.webp"
+                                                            alt="Image 2"
+                                                            class="img-fluid gallery-item"
+                                                            style="border-radius: 15px; cursor: pointer;">
+                                                    </div>
+                                                    <!-- Repeat for other images -->
+                                                    <div class="col-6">
+                                                        <img
+                                                            src="../../images/blog/blog_imaage_3.webp"
+                                                            alt="Image 2"
+                                                            class="img-fluid gallery-item"
+                                                            style="border-radius: 15px; cursor: pointer;">
+                                                    </div>
+
+                                                    <div class="col-6">
+                                                        <img
+                                                            src="../../images/blog/blog_imaage_1.webp"
+                                                            alt="Image 2"
+                                                            class="img-fluid gallery-item"
+                                                            style="border-radius: 15px; cursor: pointer;">
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="row"
+                                                    id="videoGallery"
+                                                    style="display: none;">
+                                                    <!-- Video Item -->
+
+                                                    <div
+                                                        class="col-6 videoWrapper">
+                                                        <div
+                                                            class="videoOverlay"
+                                                            style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 1; cursor: pointer;"></div>
+                                                        <iframe width="100%"
+                                                            class="img-fluid gallery-item video-item"
+                                                            style="border-radius: 15px; cursor: pointer; height: 89px;"
+                                                            src="https://www.youtube.com/embed/BYysLg8Hzlo"
+                                                            title="YouTube video player"
+                                                            frameborder="0"
+                                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                            allowfullscreen></iframe>
+                                                    </div>
+
+                                                    <div
+                                                        class="col-6 videoWrapper">
+                                                        <div
+                                                            class="videoOverlay"
+                                                            style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 1; cursor: pointer;"></div>
+                                                        <iframe width="100%"
+                                                            class="img-fluid gallery-item video-item"
+                                                            style="border-radius: 15px; cursor: pointer; height: 89px;"
+                                                            src="https://www.youtube.com/embed/BYysLg8Hzlo"
+                                                            title="YouTube video player"
+                                                            frameborder="0"
+                                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                            allowfullscreen></iframe>
+                                                    </div>
+
+                                                    <div
+                                                        class="col-6 videoWrapper">
+                                                        <div
+                                                            class="videoOverlay"
+                                                            style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 1; cursor: pointer;"></div>
+                                                        <iframe width="100%"
+                                                            class="img-fluid gallery-item video-item"
+                                                            style="border-radius: 15px; cursor: pointer; height: 89px;"
+                                                            src="https://www.youtube.com/embed/BYysLg8Hzlo"
+                                                            title="YouTube video player"
+                                                            frameborder="0"
+                                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                            allowfullscreen></iframe>
+                                                    </div>
+
+                                                    <div
+                                                        class="col-6 videoWrapper">
+                                                        <div
+                                                            class="videoOverlay"
+                                                            style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 1; cursor: pointer;"></div>
+                                                        <iframe width="100%"
+                                                            class="img-fluid gallery-item video-item"
+                                                            style="border-radius: 15px; cursor: pointer; height: 89px;"
+                                                            src="https://www.youtube.com/embed/BYysLg8Hzlo"
+                                                            title="YouTube video player"
+                                                            frameborder="0"
+                                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                            allowfullscreen></iframe>
                                                     </div>
 
                                                 </div>
@@ -1120,7 +1342,7 @@ margin-bottom: 6px;
                                     </div>
 
                                     <div
-                                        class="col-lg-10 col-sm-12 col-md-12 mt-md-5"
+                                        class="col-lg-9 col-sm-12 col-md-12 mt-md-5"
                                         style="display: flex; flex-direction: column;">
                                         <div class="mb-4 calendar__web"
                                             style="display: flex; justify-content: space-around; text-align: center;">
@@ -1155,10 +1377,7 @@ margin-bottom: 6px;
             <!-- photo and video -->
 
             <section class="faq-section"
-                style=" padding-bottom: 100px; padding-top: 90px;">
-
-                <div class="top-pattern-layer"
-                    style="background: url(../../images/newImages/layers/pattern-black-up.webp);"></div>
+                style=" padding-bottom: 100px; padding-top: 0px;">
 
                 <!-- bottom for pattern -->
                 <div class="bottom-pattern-layer-dark-allblack"
@@ -1179,109 +1398,221 @@ margin-bottom: 6px;
 
                     <div class="sec-title centered">
 
-                        <h2 class
-                            style="color: #910613; font-weight: 800; font-size: 36px;">
-                            <span id="showPhotos"
-                                style="cursor: pointer;"
-                                class="glitch">PHOTO</span> / <span
-                                id="showVideos"
-                                style="color: #fff; cursor: pointer;"
-                                class="glitch">VIDEO</span>
-                        </h2>
+                        <div class="reviews-section" style="background: none;">
 
-                        <p style="color: #cccccc; font-size: 20px;"
-                            class="mb-5">
-                            Images & Videos </p>
+                            <div class="auto-container">
 
-                        <div class="row featured-active" id="photosContainer">
+                                <div class="row">
 
-                            <div class="col-lg-4 col-sm-6 grid-item">
-                                <div
-                                    class="featured-game-item  images_Item mb-30">
+                                    <div class="col-12">
+                                        <div
+                                            class="section-title title-style-three white-title">
+                                            <h2 style="text-align: left;">
+                                                <span>TESTIMONIALS</span></h2>
+                                            <p
+                                                style="font-size: 20px; text-align: left;">
+                                                Your Comments are
+                                                important to us</p>
+                                        </div>
 
-                                    <div class="featured-game-thumb">
-                                        <img
-                                            src="../../images/blog/blog_imaage_1.webp"
-                                            alt style="border-radius: 15px;">
                                     </div>
 
                                 </div>
-                            </div>
 
-                            <div class="col-lg-4 col-sm-6 grid-item">
                                 <div
-                                    class="featured-game-item images_Item mb-30">
+                                    class="testimonial-slider carousel-outer clearfix"
+                                    style="margin-bottom: 75px;">
 
-                                    <div class="featured-game-thumb">
-                                        <img
-                                            src="../../images/blog/blog_imaage_2.webp"
-                                            alt style="border-radius: 15px;">
+                                    <div class="thumb-carousel-box">
+                                        <ul
+                                            class="thumb-carousel owl-carousel owl-theme">
+                                            <li class="thumb"><img
+                                                    src="../../images/resource/rev-thumb-1.jpg"
+                                                    alt></li>
+                                            <li class="thumb"><img
+                                                    src="../../images/resource/rev-thumb-2.jpg"
+                                                    alt></li>
+                                            <li class="thumb"><img
+                                                    src="../../images/resource/rev-thumb-3.jpg"
+                                                    alt></li>
+                                            <li class="thumb"><img
+                                                    src="../../images/resource/rev-thumb-1.jpg"
+                                                    alt></li>
+                                            <li class="thumb"><img
+                                                    src="../../images/resource/rev-thumb-2.jpg"
+                                                    alt></li>
+                                            <li class="thumb"><img
+                                                    src="../../images/resource/rev-thumb-3.jpg"
+                                                    alt></li>
+                                        </ul>
                                     </div>
 
-                                </div>
-                            </div>
+                                    <div
+                                        class="text-carousel owl-carousel owl-theme">
 
-                            <div class="col-lg-4 col-sm-6 grid-item">
-                                <div
-                                    class="featured-game-item images_Item mb-30">
+                                        <div class="slide-item">
+                                            <div class="inner">
+                                                <div class="text"
+                                                    style="color: #fff;">This is
+                                                    due to their
+                                                    excellent service
+                                                    competitive pricing
+                                                    and customer support. It’s
+                                                    throughly
+                                                    refresing to get such a
+                                                    personal touch.
+                                                    There are many variations of
+                                                    passages of
+                                                    available, but the majority
+                                                    have
+                                                    suffered alteration in some
+                                                    form by
+                                                    injected humour.</div>
+                                                <div class="info clearfix"><span
+                                                        class="name">Jessica
+                                                        brown</span>
+                                                    &ensp;-&ensp; <span
+                                                        class="date">25 may,
+                                                        2019</span></div>
+                                            </div>
+                                        </div>
 
-                                    <div class="featured-game-thumb">
-                                        <img
-                                            src="../../images/blog/blog_imaage_3.webp"
-                                            alt style="border-radius: 15px;">
+                                        <div class="slide-item">
+                                            <div class="inner">
+                                                <div class="text"
+                                                    style="color: #fff;">This is
+                                                    due to their
+                                                    excellent service
+                                                    competitive pricing
+                                                    and customer support. It’s
+                                                    throughly
+                                                    refresing to get such a
+                                                    personal touch.
+                                                    There are many variations of
+                                                    passages of
+                                                    available, but the majority
+                                                    have
+                                                    suffered alteration in some
+                                                    form by
+                                                    injected humour.</div>
+                                                <div class="info clearfix"><span
+                                                        class="name">Kevin
+                                                        Smith</span>
+                                                    &ensp;-&ensp; <span
+                                                        class="date">25 may,
+                                                        2019</span></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="slide-item">
+                                            <div class="inner">
+                                                <div class="text"
+                                                    style="color: #fff;">This is
+                                                    due to their
+                                                    excellent service
+                                                    competitive pricing
+                                                    and customer support. It’s
+                                                    throughly
+                                                    refresing to get such a
+                                                    personal touch.
+                                                    There are many variations of
+                                                    passages of
+                                                    available, but the majority
+                                                    have
+                                                    suffered alteration in some
+                                                    form by
+                                                    injected humour.</div>
+                                                <div class="info clearfix"><span
+                                                        class="name">Christine
+                                                        eve</span>
+                                                    &ensp;-&ensp; <span
+                                                        class="date">25 may,
+                                                        2019</span></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="slide-item">
+                                            <div class="inner">
+                                                <div class="text"
+                                                    style="color: #fff;">This is
+                                                    due to their
+                                                    excellent service
+                                                    competitive pricing
+                                                    and customer support. It’s
+                                                    throughly
+                                                    refresing to get such a
+                                                    personal touch.
+                                                    There are many variations of
+                                                    passages of
+                                                    available, but the majority
+                                                    have
+                                                    suffered alteration in some
+                                                    form by
+                                                    injected humour.</div>
+                                                <div class="info clearfix"><span
+                                                        class="name">Jessica
+                                                        brown</span>
+                                                    &ensp;-&ensp; <span
+                                                        class="date">25 may,
+                                                        2019</span></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="slide-item">
+                                            <div class="inner">
+                                                <div class="text"
+                                                    style="color: #fff;">This is
+                                                    due to their
+                                                    excellent service
+                                                    competitive pricing
+                                                    and customer support. It’s
+                                                    throughly
+                                                    refresing to get such a
+                                                    personal touch.
+                                                    There are many variations of
+                                                    passages of
+                                                    available, but the majority
+                                                    have
+                                                    suffered alteration in some
+                                                    form by
+                                                    injected humour.</div>
+                                                <div class="info clearfix"><span
+                                                        class="name">Kevin
+                                                        Smith</span>
+                                                    &ensp;-&ensp; <span
+                                                        class="date">25 may,
+                                                        2019</span></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="slide-item">
+                                            <div class="inner">
+                                                <div class="text"
+                                                    style="color: #fff;">This is
+                                                    due to their
+                                                    excellent service
+                                                    competitive pricing
+                                                    and customer support. It’s
+                                                    throughly
+                                                    refresing to get such a
+                                                    personal touch.
+                                                    There are many variations of
+                                                    passages of
+                                                    available, but the majority
+                                                    have
+                                                    suffered alteration in some
+                                                    form by
+                                                    injected humour.</div>
+                                                <div class="info clearfix"><span
+                                                        class="name">Christine
+                                                        eve</span>
+                                                    &ensp;-&ensp; <span
+                                                        class="date">25 may,
+                                                        2019</span></div>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div id="videosContainer" class="row featured-active"
-                            style="display: none;">
-                            <!-- Example video div -->
-                            <div class="col-lg-4 col-sm-6 grid-item">
-                                <div
-                                    class="featured-game-item images_Item mb-30"
-                                    style="cursor: pointer;">
-                                    <div class="featured-game-thumb">
-                                        <iframe width="100%" height="215"
-                                            style="border-radius: 15px; border: none;"
-                                            src="https://www.youtube.com/embed/BYysLg8Hzlo"
-                                            title="YouTube video player"
-                                            frameborder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                            allowfullscreen></iframe>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 col-sm-6 grid-item">
-                                <div
-                                    class="featured-game-item images_Item mb-30"
-                                    style="cursor: pointer;">
-                                    <div class="featured-game-thumb">
-                                        <iframe width="100%" height="215"
-                                            style="border-radius: 15px; border: none;"
-                                            src="https://www.youtube.com/embed/BYysLg8Hzlo"
-                                            title="YouTube video player"
-                                            frameborder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                            allowfullscreen></iframe>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 col-sm-6 grid-item">
-                                <div
-                                    class="featured-game-item images_Item mb-30"
-                                    style="cursor: pointer;">
-                                    <div class="featured-game-thumb">
-                                        <iframe width="100%" height="215"
-                                            style="border-radius: 15px; border: none;"
-                                            src="https://www.youtube.com/embed/BYysLg8Hzlo"
-                                            title="YouTube video player"
-                                            frameborder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                            allowfullscreen></iframe>
-                                    </div>
                                 </div>
                             </div>
 
