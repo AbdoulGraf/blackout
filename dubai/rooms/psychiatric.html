@@ -41,22 +41,15 @@
             href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
         <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 
-
-
-
-
-        
         <link rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 
+        <!-- modal openeing -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
 
-
-         <!-- modal openeing -->
-         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-         <script
-             src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
- 
-         <script>
+        <script>
                  document.addEventListener("DOMContentLoaded", function() {
                    // Toggle display of photos and videos
                    document.getElementById('showPhotos').addEventListener('click', function() {
@@ -102,8 +95,8 @@
                    });
                  });
                  </script>
- 
-         <script>
+
+        <script>
      document.addEventListener("DOMContentLoaded", function() {
        const videoWrappers = document.querySelectorAll('.videoWrapper');
        const modalBody = document.querySelector('#imageModal .modal-body');
@@ -141,12 +134,8 @@
        });
      });
      </script>
- 
-         <!-- endOfModal -->
 
-
-
-
+        <!-- endOfModal -->
 
         <script>
 
@@ -443,7 +432,7 @@ document.addEventListener('DOMContentLoaded', function() {
 .boxes-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     gap: 20px; /* Reduced gap for smaller boxes */
     margin-top: 8px;
 }
@@ -792,7 +781,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         <div
                             class="menu-outer"></div>
 
-                            <div class="link-box"
+                        <div class="link-box"
                             style="padding: 30px 25px 0px 25px; display: flex; gap: 10px;">
                             <a href="../../abudhabi/index.html"
                                 class="theme-btn btn-style-one"
@@ -805,7 +794,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         </div>
 
                         <div class="social-links"
-                            style="">
+                            style>
 
                             <ul class="clearfix">
                                 <li><a href="#"><span
@@ -822,56 +811,53 @@ document.addEventListener('DOMContentLoaded', function() {
 
                         </div>
 
-
                     </nav>
                 </div>
 
             </header>
 
-
-              <!-- Modal Structure -->
-              <div class="modal fade"
-              id="imageModal" tabindex="-1"
-              aria-labelledby="imageModalLabel"
-              aria-hidden="true">
-              <div
-                  class="modal-dialog modal-lg modal-dialog-centered">
-                  <div class="modal-content"
-                      style="background-color: #0a0a14;">
-                      <div
-                          class="modal-header border-0">
-                          <button
-                              type="button"
-                              class="btn-close btn-close-white"
-                              data-bs-dismiss="modal"
-                              aria-label="Close"></button>
-                      </div>
-                      <div
-                          class="modal-body d-flex justify-content-center align-items-center"
-                          style="position: relative;">
-                          <img id="modalImage"
-                              src
-                              class="img-fluid"
-                              style="border-radius: 15px; max-height: 80vh;">
-                          <a id="prevImage"
-                              class="position-absolute"
-                              style="left: 0; top: 50%; transform: translateY(-50%); cursor: pointer;">
-                              <i
-                                  class="bi bi-chevron-left"
-                                  style="color: white; font-size: 2rem;"></i>
-                          </a>
-                          <a id="nextImage"
-                              class="position-absolute"
-                              style="right: 0; top: 50%; transform: translateY(-50%); cursor: pointer;">
-                              <i
-                                  class="bi bi-chevron-right"
-                                  style="color: white; font-size: 2rem;"></i>
-                          </a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-
+            <!-- Modal Structure -->
+            <div class="modal fade"
+                id="imageModal" tabindex="-1"
+                aria-labelledby="imageModalLabel"
+                aria-hidden="true">
+                <div
+                    class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content"
+                        style="background-color: transparent;">
+                        <div
+                            class="modal-header border-0">
+                            <button
+                                type="button"
+                                class="btn-close btn-close-white"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div
+                            class="modal-body d-flex justify-content-center align-items-center"
+                            style="position: relative;">
+                            <img id="modalImage"
+                                src
+                                class="img-fluid"
+                                style="border-radius: 15px; max-height: 80vh;">
+                            <a id="prevImage"
+                                class="position-absolute"
+                                style="left: 0; top: 50%; transform: translateY(-50%); cursor: pointer;">
+                                <i
+                                    class="bi bi-chevron-left"
+                                    style="color: white; font-size: 2rem;"></i>
+                            </a>
+                            <a id="nextImage"
+                                class="position-absolute"
+                                style="right: 0; top: 50%; transform: translateY(-50%); cursor: pointer;">
+                                <i
+                                    class="bi bi-chevron-right"
+                                    style="color: white; font-size: 2rem;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <!-- Banner Section -->
             <section class="banner-section"
@@ -896,126 +882,125 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
             </section>
 
-              <!--Reviews Section-->
-              <section class="about-section"
-              style="background: #910613 ; padding-bottom: 100px; padding-top: 50px;">
+            <!--Reviews Section-->
+            <section class="about-section"
+                style="background: #910613 ; padding-bottom: 100px; padding-top: 50px;">
 
-              <div class="top-pattern-layer"
-                  style="background: url(../../images/newImages/layers/pattern.png); top: -72px;"></div>
+                <div class="top-pattern-layer"
+                    style="background: url(../../images/newImages/layers/pattern.png); top: -72px;"></div>
 
-              <!-- <div class="top-pattern-layer-dark" style="top: -72px;"></div>
+                <!-- <div class="top-pattern-layer-dark" style="top: -72px;"></div>
               <div class="bottom-pattern-layer-dark"></div> -->
 
-              <div class="auto-container">
+                <div class="auto-container">
 
-                  <!-- <div class="sec-title"><h2> Players Reviews  </h2><span
+                    <!-- <div class="sec-title"><h2> Players Reviews  </h2><span
                           class="bottom-curve"></span></div> -->
 
-                  <div class="row">
+                    <div class="row">
 
-                      <div class="col-12">
-                          <div
-                              class="section-title title-style-three white-title"
-                              style="text-align: center;">
-                              <h2>
-                                  <span
-                                      style="color: #0f0f0f ;">STORYLINE</span></h2>
-                              <p style="font-size: 20px;"> Get ready to
-                                  experience our exorcism escape room!</p>
-                          </div>
+                        <div class="col-12">
+                            <div
+                                class="section-title title-style-three white-title"
+                                style="text-align: center;">
+                                <h2>
+                                    <span
+                                        style="color: #0f0f0f ;">STORYLINE</span></h2>
+                                <p style="font-size: 20px;"> Get ready to
+                                    experience our exorcism escape room!</p>
+                            </div>
 
-                      </div>
+                        </div>
 
-                  </div>
+                    </div>
 
-                  <div class="row">
+                    <div class="row">
 
-                      <div class="col-12">
+                        <div class="col-12">
 
-                          <div class="slide-item">
-                              <div class="inner">
-                                  <div class="text">
-                                      <p
-                                          style="text-align: center; font-size: 20px;">
-                                          This is due to their
-                                          excellent service competitive
-                                          pricing
-                                          and customer support. It’s throughly
-                                          refresing to get such a personal
-                                          touch.
-                                          There are many variations of
-                                          passages of
-                                          available, but the majority have
-                                          suffered alteration in some form by
-                                          injected humour.
-                                          This is due to their
-                                          excellent service competitive
-                                          pricing
-                                          and customer support. It’s throughly
-                                          refresing to get such a personal
-                                          touch.
-                                          There are many variations of
-                                          passages of
-                                          available, but the majority have
-                                          suffered alteration in some form by
-                                          injected humour.
-                                          This is due to their
-                                          excellent service competitive
-                                          pricing
-                                          and customer support. It’s throughly
-                                          refresing to get such a personal
-                                          touch.
-                                          There are many variations of
-                                          passages of
-                                          available, but the majority have
-                                          suffered alteration in some form by
-                                          injected humour.
-                                      </p>
+                            <div class="slide-item">
+                                <div class="inner">
+                                    <div class="text">
+                                        <p
+                                            style="text-align: center; font-size: 20px;">
+                                            This is due to their
+                                            excellent service competitive
+                                            pricing
+                                            and customer support. It’s throughly
+                                            refresing to get such a personal
+                                            touch.
+                                            There are many variations of
+                                            passages of
+                                            available, but the majority have
+                                            suffered alteration in some form by
+                                            injected humour.
+                                            This is due to their
+                                            excellent service competitive
+                                            pricing
+                                            and customer support. It’s throughly
+                                            refresing to get such a personal
+                                            touch.
+                                            There are many variations of
+                                            passages of
+                                            available, but the majority have
+                                            suffered alteration in some form by
+                                            injected humour.
+                                            This is due to their
+                                            excellent service competitive
+                                            pricing
+                                            and customer support. It’s throughly
+                                            refresing to get such a personal
+                                            touch.
+                                            There are many variations of
+                                            passages of
+                                            available, but the majority have
+                                            suffered alteration in some form by
+                                            injected humour.
+                                        </p>
 
-                                      <div class="row mt-5">
+                                        <div class="row mt-5">
 
-                                          <div class="col-lg-4 col-md-12">
-                                              <p
-                                                  style="text-align: center; font-size: 20px;">
-                                                  What happened during
-                                                  possession?
-                                              </p>
+                                            <div class="col-lg-4 col-md-12">
+                                                <p
+                                                    style="text-align: center; font-size: 20px;">
+                                                    What happened during
+                                                    possession?
+                                                </p>
 
-                                          </div>
+                                            </div>
 
-                                          <div class="col-lg-4 col-md-12">
-                                              <p
-                                                  style="text-align: center; font-size: 20px;">
-                                                  What happened to the Priest?
-                                              </p>
+                                            <div class="col-lg-4 col-md-12">
+                                                <p
+                                                    style="text-align: center; font-size: 20px;">
+                                                    What happened to the Priest?
+                                                </p>
 
-                                          </div>
+                                            </div>
 
-                                          <div class="col-lg-4 col-md-12">
+                                            <div class="col-lg-4 col-md-12">
 
-                                              <p
-                                                  style="text-align: center; font-size: 20px;">
-                                                  What happened to children?
-                                                  Find Out!
-                                              </p>
+                                                <p
+                                                    style="text-align: center; font-size: 20px;">
+                                                    What happened to children?
+                                                    Find Out!
+                                                </p>
 
-                                          </div>
+                                            </div>
 
-                                      </div>
+                                        </div>
 
-                                  </div>
+                                    </div>
 
-                              </div>
-                          </div>
+                                </div>
+                            </div>
 
-                      </div>
+                        </div>
 
-                  </div>
+                    </div>
 
-              </div>
+                </div>
 
-          </section>
-          
+            </section>
 
             <section class="about-section rooms__box"
                 style="background: #070711; padding-left: 20px; padding-right: 20px; ">
@@ -1197,7 +1182,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                             <div class="col-12">
 
                                                 <div
-                                                    class="featured-game-item ">
+                                                    class="featured-game-item  image_Item">
 
                                                     <div
                                                         class="featured-game-thumb">
@@ -1209,47 +1194,43 @@ document.addEventListener('DOMContentLoaded', function() {
                                                     </div>
 
                                                     <div
-                                                    class="featured-game-content">
+                                                        class="featured-game-content game__content_item">
 
-                                                    <div
-                                                        class="featured-game-meta"
-                                                        style="width: 100%; font-size: 20px;">
-                                                        <i
-                                                            class="fas fa-clock"></i>
-                                                        <span
-                                                            style="font-weight: 300;">60
-                                                            Mins</span>
-                                                        &nbsp;
-                                                        &nbsp;
+                                                        <div
+                                                            class="featured-game-meta"
+                                                            style="width: 100%; font-size: 20px; font-weight: 900;">
+                                                            <i
+                                                                class="fas fa-clock"></i>
+                                                            <span
+                                                                style="font-weight: 300;">60
+                                                                Mins</span>
+                                                            &nbsp;
+                                                            &nbsp;
 
-                                                        <i
-                                                            class="fas fa-hammer"></i>
-                                                        <span
-                                                            style="font-weight: 300;">
-                                                            Hard
-                                                        </span>
-                                                        &nbsp;
-                                                        &nbsp;
+                                                            <i
+                                                                class="fas fa-hammer"></i>
+                                                            <span
+                                                                style="font-weight: 300;">
+                                                                Hard
+                                                            </span>
+                                                            &nbsp;
+                                                            &nbsp;
 
-                                                        <i
-                                                            class="fas fa-running"></i>
-                                                        <span
-                                                            style="font-weight: 300;">
-                                                            2- 10
-                                                        </span>
+                                                            <i
+                                                                class="fas fa-running"></i>
+                                                            <span
+                                                                style="font-weight: 300;">
+                                                                2- 10
+                                                            </span>
+                                                        </div>
                                                     </div>
-                                                </div>
-
-
 
                                                 </div>
 
                                             </div>
 
-
-
-                                            
-                                            <div class="col-12">
+                                            <div class="col-12"
+                                                style="align-items: end; display: flex;">
 
                                                 <h2 class
                                                     style="color: #910613; font-weight: 800; font-size: 30px;">
@@ -1267,53 +1248,59 @@ document.addEventListener('DOMContentLoaded', function() {
                                             <div class="col-12">
 
                                                 <div class="row"
-                                                    id="imageGallery">
-                                                    <div class="col-6">
+                                                    id="imageGallery"
+                                                    style="height: 100%;">
+                                                    <div class="col-6"
+                                                        style="display: flex; align-items: end;">
                                                         <img
                                                             src="../../images/blog/blog_imaage_1.webp"
                                                             alt="Image 1"
                                                             class="img-fluid gallery-item"
-                                                            style="border-radius: 15px; cursor: pointer;">
+                                                            style="border-radius: 15px; cursor: pointer; margin-bottom: 10px; height: -webkit-fill-available ;">
                                                     </div>
-                                                    <div class="col-6">
+                                                    <div class="col-6"
+                                                        style="display: flex; align-items: end;">
                                                         <img
                                                             src="../../images/blog/blog_imaage_2.webp"
                                                             alt="Image 2"
                                                             class="img-fluid gallery-item"
-                                                            style="border-radius: 15px; cursor: pointer;">
+                                                            style="border-radius: 15px; cursor: pointer; margin-bottom: 10px; height: -webkit-fill-available ;">
                                                     </div>
                                                     <!-- Repeat for other images -->
-                                                    <div class="col-6">
+                                                    <div class="col-6"
+                                                        style="display: flex; align-items: end;">
                                                         <img
                                                             src="../../images/blog/blog_imaage_3.webp"
                                                             alt="Image 2"
                                                             class="img-fluid gallery-item"
-                                                            style="border-radius: 15px; cursor: pointer;">
+                                                            style="border-radius: 15px; cursor: pointer; margin-bottom: 0px; height: -webkit-fill-available ; ">
                                                     </div>
 
-                                                    <div class="col-6">
+                                                    <div class="col-6"
+                                                        style="display: flex; align-items: end;">
                                                         <img
                                                             src="../../images/blog/blog_imaage_1.webp"
                                                             alt="Image 2"
                                                             class="img-fluid gallery-item"
-                                                            style="border-radius: 15px; cursor: pointer;">
+                                                            style="border-radius: 15px; cursor: pointer; margin-bottom: 0px; height: -webkit-fill-available ;">
                                                     </div>
 
                                                 </div>
 
                                                 <div class="row"
                                                     id="videoGallery"
-                                                    style="display: none;">
+                                                    style="display: none; height: 100%;">
                                                     <!-- Video Item -->
 
                                                     <div
-                                                        class="col-6 videoWrapper">
+                                                        class="col-6 videoWrapper"
+                                                        style="display: flex; align-items: end;">
                                                         <div
                                                             class="videoOverlay"
                                                             style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 1; cursor: pointer;"></div>
-                                                        <iframe width="100%"
+                                                        <iframe
                                                             class="img-fluid gallery-item video-item"
-                                                            style="border-radius: 15px; cursor: pointer; height: 89px;"
+                                                            style="border-radius: 15px; cursor: pointer; height: 108px ; width: 158px; margin-bottom: 0px; "
                                                             src="https://www.youtube.com/embed/BYysLg8Hzlo"
                                                             title="YouTube video player"
                                                             frameborder="0"
@@ -1322,13 +1309,14 @@ document.addEventListener('DOMContentLoaded', function() {
                                                     </div>
 
                                                     <div
-                                                        class="col-6 videoWrapper">
+                                                        class="col-6 videoWrapper"
+                                                        style="display: flex; align-items: end;">
                                                         <div
                                                             class="videoOverlay"
                                                             style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 1; cursor: pointer;"></div>
-                                                        <iframe width="100%"
+                                                        <iframe
                                                             class="img-fluid gallery-item video-item"
-                                                            style="border-radius: 15px; cursor: pointer; height: 89px;"
+                                                            style="border-radius: 15px; cursor: pointer;height: 108px ; width: 158px; margin-bottom: 0px;"
                                                             src="https://www.youtube.com/embed/BYysLg8Hzlo"
                                                             title="YouTube video player"
                                                             frameborder="0"
@@ -1337,13 +1325,14 @@ document.addEventListener('DOMContentLoaded', function() {
                                                     </div>
 
                                                     <div
-                                                        class="col-6 videoWrapper">
+                                                        class="col-6 videoWrapper"
+                                                        style="display: flex; align-items: end;">
                                                         <div
                                                             class="videoOverlay"
                                                             style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 1; cursor: pointer;"></div>
-                                                        <iframe width="100%"
+                                                        <iframe
                                                             class="img-fluid gallery-item video-item"
-                                                            style="border-radius: 15px; cursor: pointer; height: 89px;"
+                                                            style="border-radius: 15px; cursor: pointer; height: 108px ; width: 158px;  margin-bottom: 0px;"
                                                             src="https://www.youtube.com/embed/BYysLg8Hzlo"
                                                             title="YouTube video player"
                                                             frameborder="0"
@@ -1352,13 +1341,14 @@ document.addEventListener('DOMContentLoaded', function() {
                                                     </div>
 
                                                     <div
-                                                        class="col-6 videoWrapper">
+                                                        class="col-6 videoWrapper"
+                                                        style="display: flex; align-items: end;">
                                                         <div
                                                             class="videoOverlay"
                                                             style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 1; cursor: pointer;"></div>
-                                                        <iframe width="100%"
+                                                        <iframe
                                                             class="img-fluid gallery-item video-item"
-                                                            style="border-radius: 15px; cursor: pointer; height: 89px;"
+                                                            style="border-radius: 15px; cursor: pointer; height: 108px ; width: 158px; margin-bottom: 0px;"
                                                             src="https://www.youtube.com/embed/BYysLg8Hzlo"
                                                             title="YouTube video player"
                                                             frameborder="0"
@@ -1369,9 +1359,6 @@ document.addEventListener('DOMContentLoaded', function() {
                                                 </div>
 
                                             </div>
-
-
-
 
                                         </div>
 
@@ -1410,14 +1397,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
             </section>
 
-           
-
             <!-- photo and video -->
 
             <section class="faq-section"
                 style=" padding-bottom: 100px; padding-top: 0px;">
-
-               
 
                 <!-- bottom for pattern -->
                 <div class="bottom-pattern-layer-dark-allblack"
@@ -1438,7 +1421,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
                     <div class="sec-title centered">
 
-                        
                         <div class="reviews-section" style="background: none;">
 
                             <div class="auto-container">
@@ -1658,7 +1640,6 @@ document.addEventListener('DOMContentLoaded', function() {
                             </div>
 
                         </div>
-
 
                         <div class="auto-container"
                             style="margin-bottom: 50px; margin-top: 100px;">
@@ -2083,9 +2064,11 @@ document.addEventListener('DOMContentLoaded', function() {
                                                             <li><a
                                                                     href="torture.html">Torture
                                                                 </a></li>
-                                                            <li><a href="exorcism.html">
+                                                            <li><a
+                                                                    href="exorcism.html">
                                                                     Exorticism</a></li>
-                                                            <li><a href="chaos.html">
+                                                            <li><a
+                                                                    href="chaos.html">
                                                                     Chaos
                                                                 </a></li>
                                                             <li><a

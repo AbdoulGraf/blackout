@@ -438,7 +438,7 @@ document.addEventListener('DOMContentLoaded', function() {
 .boxes-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     gap: 20px; /* Reduced gap for smaller boxes */
     margin-top: 8px;
 }
@@ -839,7 +839,7 @@ document.addEventListener('DOMContentLoaded', function() {
              <div
                  class="modal-dialog modal-lg modal-dialog-centered">
                  <div class="modal-content"
-                     style="background-color: #0a0a14;">
+                     style="background-color: transparent;">
                      <div
                          class="modal-header border-0">
                          <button
@@ -1201,7 +1201,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                             <div class="col-12">
 
                                                 <div
-                                                    class="featured-game-item ">
+                                                    class="featured-game-item image_Item ">
 
                                                     <div
                                                         class="featured-game-thumb">
@@ -1212,37 +1212,38 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                                     </div>
 
+                                                  
                                                     <div
-                                                    class="featured-game-content">
+                                                        class="featured-game-content game__content_item">
 
-                                                    <div
-                                                        class="featured-game-meta"
-                                                        style="width: 100%; font-size: 20px;">
-                                                        <i
-                                                            class="fas fa-clock"></i>
-                                                        <span
-                                                            style="font-weight: 300;">60
-                                                            Mins</span>
-                                                        &nbsp;
-                                                        &nbsp;
+                                                        <div
+                                                            class="featured-game-meta"
+                                                            style="width: 100%; font-size: 20px; font-weight: 900;">
+                                                            <i
+                                                                class="fas fa-clock"></i>
+                                                            <span
+                                                                style="font-weight: 300;">60
+                                                                Mins</span>
+                                                            &nbsp;
+                                                            &nbsp;
 
-                                                        <i
-                                                            class="fas fa-hammer"></i>
-                                                        <span
-                                                            style="font-weight: 300;">
-                                                            Hard
-                                                        </span>
-                                                        &nbsp;
-                                                        &nbsp;
+                                                            <i
+                                                                class="fas fa-hammer"></i>
+                                                            <span
+                                                                style="font-weight: 300;">
+                                                                Hard
+                                                            </span>
+                                                            &nbsp;
+                                                            &nbsp;
 
-                                                        <i
-                                                            class="fas fa-running"></i>
-                                                        <span
-                                                            style="font-weight: 300;">
-                                                            2- 10
-                                                        </span>
+                                                            <i
+                                                                class="fas fa-running"></i>
+                                                            <span
+                                                                style="font-weight: 300;">
+                                                                2- 10
+                                                            </span>
+                                                        </div>
                                                     </div>
-                                                </div>
 
                                                 </div>
 
@@ -1251,8 +1252,9 @@ document.addEventListener('DOMContentLoaded', function() {
                                            
 
                                           
-                                            
-                                            <div class="col-12">
+                                          
+                                            <div class="col-12"
+                                                style="align-items: end; display: flex;">
 
                                                 <h2 class
                                                     style="color: #910613; font-weight: 800; font-size: 30px;">
@@ -1270,53 +1272,59 @@ document.addEventListener('DOMContentLoaded', function() {
                                             <div class="col-12">
 
                                                 <div class="row"
-                                                    id="imageGallery">
-                                                    <div class="col-6">
+                                                    id="imageGallery"
+                                                    style="height: 100%;">
+                                                    <div class="col-6"
+                                                        style="display: flex; align-items: end;">
                                                         <img
                                                             src="../../images/blog/blog_imaage_1.webp"
                                                             alt="Image 1"
                                                             class="img-fluid gallery-item"
-                                                            style="border-radius: 15px; cursor: pointer;">
+                                                            style="border-radius: 15px; cursor: pointer; margin-bottom: 10px; height: -webkit-fill-available ;">
                                                     </div>
-                                                    <div class="col-6">
+                                                    <div class="col-6"
+                                                        style="display: flex; align-items: end;">
                                                         <img
                                                             src="../../images/blog/blog_imaage_2.webp"
                                                             alt="Image 2"
                                                             class="img-fluid gallery-item"
-                                                            style="border-radius: 15px; cursor: pointer;">
+                                                            style="border-radius: 15px; cursor: pointer; margin-bottom: 10px; height: -webkit-fill-available ;">
                                                     </div>
                                                     <!-- Repeat for other images -->
-                                                    <div class="col-6">
+                                                    <div class="col-6"
+                                                        style="display: flex; align-items: end;">
                                                         <img
                                                             src="../../images/blog/blog_imaage_3.webp"
                                                             alt="Image 2"
                                                             class="img-fluid gallery-item"
-                                                            style="border-radius: 15px; cursor: pointer;">
+                                                            style="border-radius: 15px; cursor: pointer; margin-bottom: 0px; height: -webkit-fill-available ; ">
                                                     </div>
 
-                                                    <div class="col-6">
+                                                    <div class="col-6"
+                                                        style="display: flex; align-items: end;">
                                                         <img
                                                             src="../../images/blog/blog_imaage_1.webp"
                                                             alt="Image 2"
                                                             class="img-fluid gallery-item"
-                                                            style="border-radius: 15px; cursor: pointer;">
+                                                            style="border-radius: 15px; cursor: pointer; margin-bottom: 0px; height: -webkit-fill-available ;">
                                                     </div>
 
                                                 </div>
 
                                                 <div class="row"
                                                     id="videoGallery"
-                                                    style="display: none;">
+                                                    style="display: none; height: 100%;">
                                                     <!-- Video Item -->
 
                                                     <div
-                                                        class="col-6 videoWrapper">
+                                                        class="col-6 videoWrapper"
+                                                        style="display: flex; align-items: end;">
                                                         <div
                                                             class="videoOverlay"
                                                             style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 1; cursor: pointer;"></div>
-                                                        <iframe width="100%"
+                                                        <iframe
                                                             class="img-fluid gallery-item video-item"
-                                                            style="border-radius: 15px; cursor: pointer; height: 89px;"
+                                                            style="border-radius: 15px; cursor: pointer; height: 108px ; width: 158px; margin-bottom: 0px; "
                                                             src="https://www.youtube.com/embed/BYysLg8Hzlo"
                                                             title="YouTube video player"
                                                             frameborder="0"
@@ -1325,13 +1333,14 @@ document.addEventListener('DOMContentLoaded', function() {
                                                     </div>
 
                                                     <div
-                                                        class="col-6 videoWrapper">
+                                                        class="col-6 videoWrapper"
+                                                        style="display: flex; align-items: end;">
                                                         <div
                                                             class="videoOverlay"
                                                             style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 1; cursor: pointer;"></div>
-                                                        <iframe width="100%"
+                                                        <iframe
                                                             class="img-fluid gallery-item video-item"
-                                                            style="border-radius: 15px; cursor: pointer; height: 89px;"
+                                                            style="border-radius: 15px; cursor: pointer;height: 108px ; width: 158px; margin-bottom: 0px;"
                                                             src="https://www.youtube.com/embed/BYysLg8Hzlo"
                                                             title="YouTube video player"
                                                             frameborder="0"
@@ -1340,13 +1349,14 @@ document.addEventListener('DOMContentLoaded', function() {
                                                     </div>
 
                                                     <div
-                                                        class="col-6 videoWrapper">
+                                                        class="col-6 videoWrapper"
+                                                        style="display: flex; align-items: end;">
                                                         <div
                                                             class="videoOverlay"
                                                             style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 1; cursor: pointer;"></div>
-                                                        <iframe width="100%"
+                                                        <iframe
                                                             class="img-fluid gallery-item video-item"
-                                                            style="border-radius: 15px; cursor: pointer; height: 89px;"
+                                                            style="border-radius: 15px; cursor: pointer; height: 108px ; width: 158px;  margin-bottom: 0px;"
                                                             src="https://www.youtube.com/embed/BYysLg8Hzlo"
                                                             title="YouTube video player"
                                                             frameborder="0"
@@ -1355,13 +1365,14 @@ document.addEventListener('DOMContentLoaded', function() {
                                                     </div>
 
                                                     <div
-                                                        class="col-6 videoWrapper">
+                                                        class="col-6 videoWrapper"
+                                                        style="display: flex; align-items: end;">
                                                         <div
                                                             class="videoOverlay"
                                                             style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 1; cursor: pointer;"></div>
-                                                        <iframe width="100%"
+                                                        <iframe
                                                             class="img-fluid gallery-item video-item"
-                                                            style="border-radius: 15px; cursor: pointer; height: 89px;"
+                                                            style="border-radius: 15px; cursor: pointer; height: 108px ; width: 158px; margin-bottom: 0px;"
                                                             src="https://www.youtube.com/embed/BYysLg8Hzlo"
                                                             title="YouTube video player"
                                                             frameborder="0"
@@ -1372,6 +1383,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                                 </div>
 
                                             </div>
+
 
 
 

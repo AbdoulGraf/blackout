@@ -448,11 +448,11 @@ label {
 
 
 
-@media (max-width: 790px){
+@media (max-width: 790px) {
 
-.faq-section{
-	padding-top: 120px !important;
-}
+	.faq-section {
+		padding-top: 120px !important;
+	}
 
 }
 
@@ -2873,6 +2873,13 @@ ul.minicart .cart-price .new {
 .featured-game-overlay-content h4 span,
 .featured-game-overlay-content .featured-game-meta i {
 	color: #fff;
+}
+
+.featured-game-item:hover .game__content_item {
+
+	opacity: 1 !important;
+	visibility: visible !important;
+
 }
 
 .featured-game-item:hover .featured-game-content {
