@@ -254,6 +254,15 @@ option:hover {
 
 	.rooms__box {
 		margin-bottom: 70px !important;
+		padding-bottom: 0px !important;
+	}
+
+	.faq__container{
+		margin-top: 0px !important;
+	}
+
+	.reviews_box{
+		padding-bottom: 50px !important;
 	}
 
 	.rooms__bottom_box {
